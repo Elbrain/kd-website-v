@@ -43,7 +43,7 @@ export function EnquiryForm({ mode: initialMode = "pt" }: { mode?: Mode }) {
   if (state === "sent") {
     return (
       <div className="border border-line bg-white p-8" role="status">
-        <h3 className="display text-3xl text-ink">Thank you</h3>
+        <h3 className="display text-2xl text-ink">Thank you</h3>
         <p className="mt-3 text-stone">
           {mode === "pt"
             ? "Your enquiry is on its way. We'll come back to you within one working day to arrange your free 30-minute introductory session."
@@ -270,7 +270,7 @@ export function EnquiryForm({ mode: initialMode = "pt" }: { mode?: Mode }) {
       </p>
 
       {state === "error" && (
-        <p role="alert" className="mt-3 text-sm text-red">
+        <p role="alert" className="mt-3 text-sm text-clay">
           Something went wrong sending your enquiry. Please try again, or email us directly.
         </p>
       )}

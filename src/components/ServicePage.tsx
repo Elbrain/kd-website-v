@@ -49,36 +49,59 @@ export function ServicePage({ slug }: { slug: string }) {
               { name: service.shortName, path: `/${service.slug}/` },
             ]}
           />
-          <div className="grid items-center gap-12 lg:grid-cols-2">
+          <div className="grid items-center gap-14 lg:grid-cols-2">
             <div>
-              <p className="eyebrow eyebrow-rule rise mb-3 text-red-bright" style={{ ["--rise-delay" as string]: "60ms" }}>
+              <p
+                className="eyebrow eyebrow-rule rise mb-5 text-gold"
+                style={{ ["--rise-delay" as string]: "60ms" }}
+              >
                 Personal training · Blackheath
               </p>
-              <h1 className="display rise text-5xl text-white sm:text-7xl" style={{ ["--rise-delay" as string]: "150ms" }}>
+              <h1
+                className="display rise text-4xl text-paper sm:text-5xl lg:text-[3.4rem]"
+                style={{ ["--rise-delay" as string]: "150ms" }}
+              >
                 {service.h1}
               </h1>
-              <p className="rise mt-5 text-lg text-mist" style={{ ["--rise-delay" as string]: "260ms" }}>
+              <p
+                className="rise mt-6 text-lg text-mist"
+                style={{ ["--rise-delay" as string]: "260ms" }}
+              >
                 {service.intro}
               </p>
-              <div className="rise mt-8 flex flex-wrap gap-4" style={{ ["--rise-delay" as string]: "370ms" }}>
+              <div
+                className="rise mt-9 flex flex-wrap gap-4"
+                style={{ ["--rise-delay" as string]: "370ms" }}
+              >
                 <Link href="/contact-us/" className="btn btn-primary">
                   Book a free intro session
                 </Link>
-                <a href={business.whatsapp} target="_blank" rel="noopener" className="btn btn-outline-light">
+                <a
+                  href={business.whatsapp}
+                  target="_blank"
+                  rel="noopener"
+                  className="btn btn-outline-light"
+                >
                   WhatsApp us
                 </a>
               </div>
             </div>
             {img && (
               <div className="rise hidden lg:block" style={{ ["--rise-delay" as string]: "300ms" }}>
-                <div className="card-img relative aspect-[4/3] w-full overflow-hidden border border-white/10">
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    fill
-                    priority
-                    sizes="45vw"
-                    className="photo object-cover"
+                <div className="relative">
+                  <div className="card-img relative aspect-[4/3] w-full overflow-hidden border border-paper/10">
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      priority
+                      sizes="45vw"
+                      className="photo object-cover"
+                    />
+                  </div>
+                  <span
+                    aria-hidden
+                    className="absolute -bottom-3 -right-3 -z-[1] h-full w-full border border-gold/30"
                   />
                 </div>
               </div>
@@ -89,13 +112,13 @@ export function ServicePage({ slug }: { slug: string }) {
 
       {/* Who it's for */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
-        <div className="grid gap-12 lg:grid-cols-2">
+        <div className="grid gap-14 lg:grid-cols-2">
           <Reveal>
             <SectionHeading eyebrow="Who it's for" title="Is this you?" />
             <ul className="space-y-3">
               {service.audience.map((a) => (
                 <li key={a} className="flex gap-3">
-                  <span aria-hidden className="mt-2.5 h-0.5 w-4 shrink-0 bg-red" />
+                  <span aria-hidden className="mt-3 h-px w-4 shrink-0 bg-brass" />
                   <span className="text-ink-soft">{a}</span>
                 </li>
               ))}
@@ -106,7 +129,10 @@ export function ServicePage({ slug }: { slug: string }) {
               <SectionHeading eyebrow="What we work on" title="Goals we train for" />
               <ul className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
                 {service.goals.map((g) => (
-                  <li key={g} className="border border-line bg-white px-4 py-3 text-ink transition-colors hover:border-red">
+                  <li
+                    key={g}
+                    className="border border-line bg-white px-4 py-3 text-ink transition-colors hover:border-brass"
+                  >
                     {g}
                   </li>
                 ))}
@@ -139,19 +165,19 @@ export function ServicePage({ slug }: { slug: string }) {
               },
             ].map((s, i) => (
               <Reveal key={s.t} delay={i * 110}>
-                <p aria-hidden className="ghost-num">
+                <p aria-hidden className="num-serif">
                   {s.n}
                 </p>
-                <h3 className="display mt-3 text-3xl text-ink">{s.t}</h3>
+                <h3 className="display mt-4 text-2xl text-ink">{s.t}</h3>
                 <p className="mt-2 text-stone">{s.c}</p>
               </Reveal>
             ))}
           </div>
           {isMoving() && (
-            <p className="mt-10 border-l-2 border-red pl-4 text-stone">
+            <p className="mt-10 border-l border-brass pl-4 text-stone">
               From {business.openingDateLabel}, sessions move to our new, larger Blackheath gym —
               more space, more equipment and even greater privacy.{" "}
-              <Link href="/gym/" className="text-red underline">
+              <Link href="/gym/" className="text-brass underline">
                 See what&apos;s coming
               </Link>
               .
@@ -166,12 +192,12 @@ export function ServicePage({ slug }: { slug: string }) {
           <SectionHeading eyebrow="Pricing" title={`${service.shortName} prices`} />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <Reveal className="h-full">
-              <div className="card-lift flex h-full flex-col border border-ink bg-ink p-6 text-white">
-                <p className="eyebrow text-red-bright">Pay as you go</p>
-                <p className="display mt-2 text-5xl text-white">
+              <div className="card-lift flex h-full flex-col border border-ink bg-ink p-6 text-paper">
+                <p className="eyebrow text-gold">Pay as you go</p>
+                <p className="display mt-3 text-4xl text-paper">
                   {currency}
                   {plan.single}
-                  <span className="ml-1 text-xl text-mist">/ session</span>
+                  <span className="ml-1.5 text-lg text-mist">/ session</span>
                 </p>
                 <p className="mt-2 text-sm text-mist">{plan.unitLabel} · no commitment</p>
               </div>
@@ -184,19 +210,19 @@ export function ServicePage({ slug }: { slug: string }) {
                 <Reveal key={b.sessions} delay={(i + 1) * 90} className="h-full">
                   <div
                     className={`card-lift relative flex h-full flex-col border p-6 ${
-                      best ? "border-red bg-white" : "border-line bg-white"
+                      best ? "border-brass bg-white" : "border-line bg-white"
                     }`}
                   >
                     {best && (
-                      <p className="eyebrow absolute -top-3 left-4 bg-red px-2 py-0.5 text-[0.7rem] text-white">
+                      <p className="eyebrow absolute -top-3 left-4 bg-brass px-2.5 py-1 text-[0.62rem] text-paper">
                         Best value
                       </p>
                     )}
-                    <p className="eyebrow text-red">Block of {b.sessions} sessions</p>
-                    <p className="display mt-2 text-5xl text-ink">
+                    <p className="eyebrow text-brass">Block of {b.sessions} sessions</p>
+                    <p className="display mt-3 text-4xl text-ink">
                       {currency}
                       {perSession}
-                      <span className="ml-1 text-xl text-stone">/ session</span>
+                      <span className="ml-1.5 text-lg text-stone">/ session</span>
                     </p>
                     <p className="mt-2 text-sm text-stone">
                       {currency}
@@ -204,7 +230,7 @@ export function ServicePage({ slug }: { slug: string }) {
                     </p>
                     {saving > 0 ? (
                       <p className="mt-auto pt-3">
-                        <span className="inline-block bg-red/10 px-2 py-1 text-sm font-medium text-red">
+                        <span className="inline-block bg-brass/10 px-2 py-1 text-sm font-medium text-brass">
                           Save {currency}
                           {saving} vs pay as you go
                         </span>
@@ -253,8 +279,8 @@ export function ServicePage({ slug }: { slug: string }) {
                       </div>
                     )}
                     <div className="p-6">
-                      <h3 className="display text-2xl text-ink group-hover:text-red">
-                        {r.shortName} <span className="card-arrow text-red">→</span>
+                      <h3 className="display text-2xl text-ink transition-colors group-hover:text-brass">
+                        {r.shortName} <span className="card-arrow text-brass">→</span>
                       </h3>
                       <p className="mt-2 text-stone">{r.card}</p>
                     </div>

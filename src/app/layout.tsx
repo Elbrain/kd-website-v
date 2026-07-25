@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Teko, Ubuntu } from "next/font/google";
+import { Cormorant_Garamond, Jost } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -9,17 +9,17 @@ import { localBusinessSchema, websiteSchema } from "@/lib/schema";
 import { business } from "@/data/business";
 import { SITE_URL } from "@/lib/seo";
 
-const teko = Teko({
-  variable: "--font-teko",
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
   subsets: ["latin"],
-  weight: ["500", "600"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
-const ubuntu = Ubuntu({
-  variable: "--font-ubuntu",
+const jost = Jost({
+  variable: "--font-jost",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
   display: "swap",
 });
 
@@ -45,7 +45,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en-GB" className={`${teko.variable} ${ubuntu.variable} h-full antialiased`}>
+    <html lang="en-GB" className={`${cormorant.variable} ${jost.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
         <SchemaScript schema={[localBusinessSchema(), websiteSchema()]} />
         <a

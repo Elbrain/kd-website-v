@@ -64,8 +64,8 @@ export default function TreatmentRoomsPage() {
           />
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
-              <p className="eyebrow mb-2 text-euca">For practitioners · Blackheath</p>
-              <h1 className="display max-w-2xl text-5xl text-ink sm:text-6xl">
+              <p className="eyebrow mb-4 text-euca">For practitioners · Blackheath</p>
+              <h1 className="display max-w-2xl text-4xl text-ink sm:text-5xl">
                 Therapy &amp; treatment rooms to rent in Blackheath
               </h1>
               <p className="mt-5 text-lg text-stone">
@@ -103,7 +103,7 @@ export default function TreatmentRoomsPage() {
                 "A building whose whole audience already cares about their health",
               ].map((s) => (
                 <li key={s} className="flex gap-3">
-                  <span aria-hidden className="mt-2.5 h-0.5 w-4 shrink-0 bg-euca" />
+                  <span aria-hidden className="mt-3 h-px w-4 shrink-0 bg-euca" />
                   <span>{s}</span>
                 </li>
               ))}

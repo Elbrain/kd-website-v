@@ -40,7 +40,7 @@ export function NavDropdown({ item }: { item: NavItem }) {
         onClick={close}
         aria-expanded={open}
         aria-haspopup="true"
-        className="nav-link display-light flex items-center gap-1.5 whitespace-nowrap py-6 text-[1.3rem] leading-none text-ink transition-colors hover:text-red"
+        className="nav-link flex items-center gap-1.5 whitespace-nowrap py-6 text-[0.76rem] font-medium uppercase tracking-[0.14em] text-paper/80 transition-colors hover:text-paper xl:tracking-[0.18em]"
       >
         {item.label}
         <svg
@@ -56,7 +56,7 @@ export function NavDropdown({ item }: { item: NavItem }) {
           open ? "visible opacity-100" : "invisible opacity-0"
         }`}
       >
-        <ul className="border border-line bg-white py-2 shadow-lg">
+        <ul className="border border-line-dark bg-espresso py-2 shadow-xl shadow-black/30">
           {item.children?.map((c) => (
             <li key={c.href}>
               <Link
@@ -64,7 +64,7 @@ export function NavDropdown({ item }: { item: NavItem }) {
                 onClick={close}
                 tabIndex={open ? 0 : -1}
                 onFocus={() => setOpen(true)}
-                className="block whitespace-nowrap px-5 py-2.5 text-[0.95rem] text-ink-soft hover:bg-paper hover:text-red"
+                className="block whitespace-nowrap px-5 py-2.5 text-[0.95rem] text-mist transition-colors hover:bg-ink hover:text-gold"
               >
                 {c.label}
               </Link>

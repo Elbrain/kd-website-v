@@ -65,11 +65,11 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               { name: post.title, path: `/${post.slug}/` },
             ]}
           />
-          <p className="eyebrow mb-3 text-red-bright">
+          <p className="eyebrow mb-4 text-gold">
             <time dateTime={post.datePublished}>{dateFmt.format(new Date(post.datePublished))}</time>{" "}
             · {post.readingMinutes} min read
           </p>
-          <h1 className="display max-w-4xl text-4xl text-white sm:text-6xl">{post.title}</h1>
+          <h1 className="display max-w-4xl text-3xl text-paper sm:text-5xl">{post.title}</h1>
         </div>
       </section>
 
@@ -109,7 +109,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                     />
                   </div>
                   <div className="p-6">
-                    <p className="eyebrow text-[0.8rem] text-red">Related service</p>
+                    <p className="eyebrow text-[0.72rem] text-brass">Related service</p>
                     <h2 className="display mt-1 text-2xl text-ink">{related.name}</h2>
                     <p className="mt-2 text-sm text-stone">{related.card}</p>
                     <Link href={`/${related.slug}/`} className="btn btn-primary mt-4 w-full text-base">
@@ -120,7 +120,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               )}
 
               <div className="border border-line bg-white p-6">
-                <p className="eyebrow text-[0.8rem] text-red">Latest posts</p>
+                <p className="eyebrow text-[0.72rem] text-brass">Latest posts</p>
                 <ul className="mt-3 divide-y divide-line">
                   {others.map((p) => (
                     <li key={p.slug}>
@@ -128,7 +128,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                         <p className="text-xs text-stone">
                           {dateFmt.format(new Date(p.datePublished))}
                         </p>
-                        <p className="display mt-0.5 text-xl leading-tight text-ink group-hover:text-red">
+                        <p className="display mt-0.5 text-xl leading-tight text-ink transition-colors group-hover:text-brass">
                           {p.title}
                         </p>
                       </Link>
@@ -138,8 +138,8 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               </div>
 
               <div className="bg-ink p-6">
-                <p className="eyebrow text-[0.8rem] text-red-bright">{business.offer.headline}</p>
-                <p className="display mt-1 text-2xl text-white">Train with KD</p>
+                <p className="eyebrow text-[0.72rem] text-gold">{business.offer.headline}</p>
+                <p className="display mt-2 text-2xl text-paper">Train with KD</p>
                 <p className="mt-2 text-sm text-mist">
                   A free 30-minute intro session in a completely private Blackheath studio.
                 </p>

@@ -57,8 +57,8 @@ export default function RoomsToRentPage() {
           <Breadcrumbs crumbs={[{ name: "Rooms to Rent", path: "/rooms-to-rent/" }]} />
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
-              <p className="eyebrow mb-2 text-euca">For practitioners &amp; professionals · Blackheath</p>
-              <h1 className="display max-w-2xl text-5xl text-ink sm:text-6xl">
+              <p className="eyebrow mb-4 text-euca">For practitioners &amp; professionals · Blackheath</p>
+              <h1 className="display max-w-2xl text-4xl text-ink sm:text-5xl">
                 Treatment &amp; professional rooms to rent in Blackheath
               </h1>
               <p className="mt-5 text-lg text-stone">
@@ -113,7 +113,7 @@ export default function RoomsToRentPage() {
                 "Alongside — but operated separately from — the private gym",
               ].map((p) => (
                 <li key={p} className="flex gap-3">
-                  <span aria-hidden className="mt-2.5 h-0.5 w-4 shrink-0 bg-euca" />
+                  <span aria-hidden className="mt-3 h-px w-4 shrink-0 bg-euca" />
                   <span>{p}</span>
                 </li>
               ))}
@@ -128,7 +128,7 @@ export default function RoomsToRentPage() {
                 </li>
               ))}
             </ul>
-            <p className="mt-5 border-l-2 border-euca pl-4 text-sm text-stone">
+            <p className="mt-5 border-l border-euca pl-4 text-sm text-stone">
               Suitability is subject to approval and depends on the nature of your business.
               We&apos;re building a considered, complementary community of professionals rather
               than filling rooms — tell us what you do and we&apos;ll have an honest
@@ -221,7 +221,7 @@ export default function RoomsToRentPage() {
             <ul className="mt-3 grid gap-x-8 gap-y-1.5 text-stone sm:grid-cols-2">
               {askUs.map((f) => (
                 <li key={f.q} className="flex gap-2.5">
-                  <span aria-hidden className="mt-2.5 h-0.5 w-3 shrink-0 bg-euca" />
+                  <span aria-hidden className="mt-3 h-px w-3 shrink-0 bg-euca" />
                   {f.q}
                 </li>
               ))}

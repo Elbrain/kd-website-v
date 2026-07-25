@@ -32,8 +32,8 @@ export default function PersonalTrainingHub() {
       <section className="bg-ink">
         <div className="mx-auto max-w-7xl px-4 pb-16 pt-10 sm:px-6">
           <Breadcrumbs tone="dark" crumbs={[{ name: "Personal Training", path: "/personal-training/" }]} />
-          <p className="eyebrow mb-2 text-red-bright">Established {business.foundingYear} · Blackheath</p>
-          <h1 className="display max-w-3xl text-5xl text-white sm:text-7xl">
+          <p className="eyebrow mb-4 text-gold">Established {business.foundingYear} · Blackheath</p>
+          <h1 className="display max-w-3xl text-4xl text-paper sm:text-6xl">
             Personal training in Blackheath
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-mist">
@@ -64,13 +64,13 @@ export default function PersonalTrainingHub() {
                       className="photo object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-ink/50 to-transparent" />
-                    <h2 className="display absolute bottom-3 left-4 right-4 text-3xl text-white">
+                    <h2 className="display absolute bottom-3 left-4 right-4 text-2xl text-paper">
                       {s.shortName}
                     </h2>
                   </div>
                   <div className="flex flex-1 flex-col p-6">
                     <p className="flex-1 text-stone">{s.card}</p>
-                    <span className="eyebrow mt-4 text-[0.8rem] text-red">
+                    <span className="eyebrow mt-4 text-[0.72rem] text-brass">
                       Explore <span className="card-arrow">→</span>
                     </span>
                   </div>
@@ -79,7 +79,7 @@ export default function PersonalTrainingHub() {
             );
           })}
           <div className="flex flex-col justify-center border border-dashed border-line bg-paper p-7">
-            <h2 className="display text-3xl text-ink">Not sure which fits?</h2>
+            <h2 className="display text-2xl text-ink">Not sure which fits?</h2>
             <p className="mt-3 text-stone">
               Book the free intro session and we&apos;ll recommend the right starting point — no
               obligation either way.

@@ -41,8 +41,8 @@ export default function LocationPage() {
       <section className="bg-ink">
         <div className="mx-auto max-w-7xl px-4 pb-16 pt-10 sm:px-6">
           <Breadcrumbs tone="dark" crumbs={[{ name: "Find Us", path: "/location/" }]} />
-          <p className="eyebrow mb-2 text-red-bright">Blackheath, London SE3</p>
-          <h1 className="display max-w-3xl text-5xl text-white sm:text-7xl">Find us</h1>
+          <p className="eyebrow mb-4 text-gold">Blackheath, London SE3</p>
+          <h1 className="display max-w-3xl text-4xl text-paper sm:text-6xl">Find us</h1>
           {isMoving() && (
             <p className="mt-5 max-w-2xl text-lg text-mist">
               One business, one area — and during our expansion, two addresses to know about.
@@ -56,24 +56,24 @@ export default function LocationPage() {
         <div className="grid gap-8 lg:grid-cols-2">
           {/* Current location */}
           <div className="border border-line bg-white p-8">
-            <p className="eyebrow text-red">
+            <p className="eyebrow text-brass">
               {isMoving() ? "Now — where your sessions happen" : "Our studio"}
             </p>
-            <h2 className="display mt-1 text-4xl text-ink">The studio</h2>
+            <h2 className="display mt-2 text-3xl text-ink">The studio</h2>
             <address className="mt-4 not-italic text-ink-soft">
               {business.currentAddress.display}
             </address>
             <ul className="mt-5 space-y-2.5 text-stone">
               <li className="flex gap-3">
-                <span aria-hidden className="mt-2.5 h-0.5 w-4 shrink-0 bg-red" />
+                <span aria-hidden className="mt-3 h-px w-4 shrink-0 bg-brass" />
                 {business.nearestStation} — trains to London Bridge, Charing Cross and Cannon Street
               </li>
               <li className="flex gap-3">
-                <span aria-hidden className="mt-2.5 h-0.5 w-4 shrink-0 bg-red" />
+                <span aria-hidden className="mt-3 h-px w-4 shrink-0 bg-brass" />
                 In the heart of Blackheath village — cafés and the heath on the doorstep
               </li>
               <li className="flex gap-3">
-                <span aria-hidden className="mt-2.5 h-0.5 w-4 shrink-0 bg-red" />
+                <span aria-hidden className="mt-3 h-px w-4 shrink-0 bg-brass" />
                 First-floor studio; on-street parking nearby
               </li>
             </ul>
@@ -96,7 +96,7 @@ export default function LocationPage() {
           {isMoving() && (
             <div className="border border-line bg-sand p-8">
               <p className="eyebrow text-euca">From {business.openingDateLabel} — our new home</p>
-              <h2 className="display mt-1 text-4xl text-ink">The new Blackheath premises</h2>
+              <h2 className="display mt-2 text-3xl text-ink">The new Blackheath premises</h2>
               <p className="mt-4 text-ink-soft">
                 {futureAddressConfirmed() ? (
                   business.futureAddress.display
@@ -108,15 +108,15 @@ export default function LocationPage() {
               </p>
               <ul className="mt-5 space-y-2.5 text-stone">
                 <li className="flex gap-3">
-                  <span aria-hidden className="mt-2.5 h-0.5 w-4 shrink-0 bg-euca" />A larger
+                  <span aria-hidden className="mt-3 h-px w-4 shrink-0 bg-euca" />A larger
                   private gym with upgraded equipment
                 </li>
                 <li className="flex gap-3">
-                  <span aria-hidden className="mt-2.5 h-0.5 w-4 shrink-0 bg-euca" />
+                  <span aria-hidden className="mt-3 h-px w-4 shrink-0 bg-euca" />
                   Professional treatment and office rooms to rent
                 </li>
                 <li className="flex gap-3">
-                  <span aria-hidden className="mt-2.5 h-0.5 w-4 shrink-0 bg-euca" />
+                  <span aria-hidden className="mt-3 h-px w-4 shrink-0 bg-euca" />
                   Same local area — staying in Blackheath
                 </li>
               </ul>

@@ -19,8 +19,8 @@ export default function ResultsPage() {
       <section className="bg-ink">
         <div className="mx-auto max-w-7xl px-4 pb-16 pt-10 sm:px-6">
           <Breadcrumbs tone="dark" crumbs={[{ name: "Results & Reviews", path: "/results/" }]} />
-          <p className="eyebrow mb-2 text-red-bright">Proof, not promises</p>
-          <h1 className="display max-w-3xl text-5xl text-white sm:text-7xl">
+          <p className="eyebrow mb-4 text-gold">Proof, not promises</p>
+          <h1 className="display max-w-3xl text-4xl text-paper sm:text-6xl">
             Results speak for themselves
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-mist">
@@ -51,7 +51,7 @@ export default function ResultsPage() {
             </div>
           </div>
           <div className="border border-line bg-white p-8">
-            <h2 className="display text-3xl text-ink">Trained with us?</h2>
+            <h2 className="display text-2xl text-ink">Trained with us?</h2>
             <p className="mt-3 text-stone">
               A short, honest review helps local people find a trainer they can trust — and it
               means a great deal to a small independent business. Thank you.

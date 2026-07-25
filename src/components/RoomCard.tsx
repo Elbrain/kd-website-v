@@ -24,7 +24,7 @@ export function RoomCard({ room }: { room: Room }) {
       ) : null}
       <div className="flex flex-1 flex-col p-6">
         <div className="flex items-start justify-between gap-3">
-          <h3 className="display text-3xl text-ink">{room.name}</h3>
+          <h3 className="display text-2xl text-ink">{room.name}</h3>
           <span className="eyebrow shrink-0 text-[0.75rem] text-euca">{statusLabels[room.status]}</span>
         </div>
         <p className="mt-2 text-stone">{room.summary}</p>

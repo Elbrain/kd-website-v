@@ -10,7 +10,7 @@ export interface Crumb {
 export function Breadcrumbs({ crumbs, tone = "light" }: { crumbs: Crumb[]; tone?: "light" | "dark" }) {
   const all = [{ name: "Home", path: "/" }, ...crumbs];
   const muted = tone === "dark" ? "text-mist" : "text-stone";
-  const strong = tone === "dark" ? "text-white" : "text-ink";
+  const strong = tone === "dark" ? "text-paper" : "text-ink";
   return (
     <nav aria-label="Breadcrumb" className="mb-6">
       <SchemaScript schema={breadcrumbSchema(all)} />

@@ -21,8 +21,8 @@ export default function BlogIndex() {
       <section className="bg-ink">
         <div className="mx-auto max-w-7xl px-4 pb-16 pt-10 sm:px-6">
           <Breadcrumbs tone="dark" crumbs={[{ name: "Blog", path: "/blog/" }]} />
-          <p className="eyebrow mb-2 text-red-bright">Useful information</p>
-          <h1 className="display max-w-3xl text-5xl text-white sm:text-7xl">The KD blog</h1>
+          <p className="eyebrow mb-4 text-gold">Useful information</p>
+          <h1 className="display max-w-3xl text-4xl text-paper sm:text-6xl">The KD blog</h1>
           <p className="mt-5 max-w-2xl text-lg text-mist">
             Practical advice on training, habits and health — written from the studio floor, not
             a content farm.
@@ -38,13 +38,13 @@ export default function BlogIndex() {
                 <time dateTime={p.datePublished}>{dateFmt.format(new Date(p.datePublished))}</time>{" "}
                 · {p.readingMinutes} min read
               </p>
-              <h2 className="display mt-2 text-3xl text-ink">
-                <Link href={`/${p.slug}/`} className="hover:text-red">
+              <h2 className="display mt-2 text-2xl text-ink">
+                <Link href={`/${p.slug}/`} className="transition-colors hover:text-brass">
                   {p.title}
                 </Link>
               </h2>
               <p className="mt-3 flex-1 text-stone">{p.excerpt}</p>
-              <Link href={`/${p.slug}/`} className="eyebrow mt-5 text-[0.8rem] text-red">
+              <Link href={`/${p.slug}/`} className="eyebrow mt-5 text-[0.72rem] text-brass">
                 Read more →
               </Link>
             </article>

@@ -25,8 +25,8 @@ export default function AboutPage() {
       <section className="bg-ink">
         <div className="mx-auto max-w-7xl px-4 pb-16 pt-10 sm:px-6">
           <Breadcrumbs tone="dark" crumbs={[{ name: "About", path: "/about-us/" }]} />
-          <p className="eyebrow mb-2 text-red-bright">Est. {business.foundingYear} · Blackheath</p>
-          <h1 className="display max-w-3xl text-5xl text-white sm:text-7xl">Who we are</h1>
+          <p className="eyebrow mb-4 text-gold">Est. {business.foundingYear} · Blackheath</p>
+          <h1 className="display max-w-3xl text-4xl text-paper sm:text-6xl">Who we are</h1>
           <p className="mt-5 max-w-2xl text-lg text-mist">
             A private personal training studio in the heart of Blackheath — helping locals lose
             fat, build strength and come back from injury since {business.foundingYear}.
@@ -85,7 +85,7 @@ export default function AboutPage() {
                   className="photo object-cover"
                 />
               </div>
-              <span aria-hidden className="absolute -bottom-3 -right-3 -z-10 hidden h-full w-full max-w-md border border-red/40 lg:block" />
+              <span aria-hidden className="absolute -bottom-3 -right-3 -z-10 hidden h-full w-full max-w-md border border-brass/40 lg:block" />
             </Reveal>
             <div>
               <SectionHeading eyebrow="Your coach" title={`Karolina — the K and D in KD`} />
@@ -99,7 +99,7 @@ export default function AboutPage() {
               <p className="mt-4 text-stone">
                 The approach is simple: fully personalised programmes, honest coaching, and a
                 private space where nobody is watching. Results speak for themselves —{" "}
-                <a href={business.googleReviewsUrl} target="_blank" rel="noopener" className="text-red underline">
+                <a href={business.googleReviewsUrl} target="_blank" rel="noopener" className="text-brass underline">
                   read what clients say on Google
                 </a>
                 .
@@ -155,8 +155,8 @@ export default function AboutPage() {
         <section className="bg-sand">
           <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6">
             <div className="max-w-3xl">
-              <p className="eyebrow mb-2 text-euca">The next chapter</p>
-              <h2 className="display text-4xl text-ink">
+              <p className="eyebrow mb-4 text-euca">The next chapter</p>
+              <h2 className="display text-3xl text-ink sm:text-4xl">
                 Same business. Same area. Bigger home.
               </h2>
               <p className="mt-4 text-stone">

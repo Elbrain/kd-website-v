@@ -13,7 +13,7 @@ export interface ShowcaseItem {
 }
 
 /**
- * Editorial service index: a list of large, fully readable titles.
+ * Editorial service index: a list of large, fully readable serif titles.
  * Hovering (or focusing) a row lights it up and swaps the photo in the
  * side panel — no text sits on top of imagery, so readability is total.
  * On mobile the panel hides and each row shows its own photo thumbnail.
@@ -39,8 +39,8 @@ export function ServicesShowcase({ items }: { items: ShowcaseItem[] }) {
               >
                 {/* number */}
                 <span
-                  className={`display text-xl transition-colors sm:text-2xl ${
-                    isActive ? "text-red-bright" : "text-stone/60"
+                  className={`display-light text-lg transition-colors sm:text-xl ${
+                    isActive ? "text-gold" : "text-stone/70"
                   }`}
                 >
                   {String(i + 1).padStart(2, "0")}
@@ -49,8 +49,8 @@ export function ServicesShowcase({ items }: { items: ShowcaseItem[] }) {
                 {/* title + tag */}
                 <span className="min-w-0">
                   <span
-                    className={`display block text-3xl leading-none transition-colors sm:text-5xl ${
-                      isActive ? "text-white" : "text-ink"
+                    className={`display block text-2xl leading-tight transition-colors sm:text-4xl ${
+                      isActive ? "text-paper" : "text-ink"
                     }`}
                   >
                     {item.title}
@@ -77,10 +77,10 @@ export function ServicesShowcase({ items }: { items: ShowcaseItem[] }) {
                 {/* arrow */}
                 <span
                   aria-hidden
-                  className={`flex h-11 w-11 shrink-0 items-center justify-center border text-xl transition-all duration-300 ${
+                  className={`flex h-11 w-11 shrink-0 items-center justify-center border text-lg transition-all duration-300 ${
                     isActive
-                      ? "border-red-bright bg-red text-white"
-                      : "border-line bg-white text-ink group-hover:border-ink"
+                      ? "border-gold/60 text-gold"
+                      : "border-line bg-paper text-ink group-hover:border-ink"
                   }`}
                 >
                   →
@@ -109,11 +109,14 @@ export function ServicesShowcase({ items }: { items: ShowcaseItem[] }) {
               />
             ))}
             {/* active label chip */}
-            <p className="display absolute bottom-4 left-4 z-[1] bg-red px-4 pb-1.5 pt-2.5 text-2xl text-white">
+            <p className="absolute bottom-4 left-4 z-[1] border border-gold/40 bg-ink/90 px-4 py-2 text-[0.7rem] uppercase tracking-[0.25em] text-gold">
               {items[active].title}
             </p>
           </div>
-          <span aria-hidden className="absolute -bottom-3 -right-3 -z-[1] h-full w-full border border-red/40" />
+          <span
+            aria-hidden
+            className="absolute -bottom-3 -right-3 -z-[1] h-full w-full border border-brass/40"
+          />
         </div>
       </div>
     </div>

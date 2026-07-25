@@ -68,8 +68,8 @@ export default function GymRentPage() {
         </div>
         <div className="relative mx-auto max-w-7xl px-4 pb-24 pt-10 sm:px-6">
           <Breadcrumbs tone="dark" crumbs={[{ name: "Studio Hire for PTs", path: "/gym-rent/" }]} />
-          <p className="eyebrow eyebrow-rule mb-3 text-red-bright">For independent trainers</p>
-          <h1 className="display max-w-3xl text-5xl text-white sm:text-7xl">
+          <p className="eyebrow eyebrow-rule mb-5 text-gold">For independent trainers</p>
+          <h1 className="display max-w-3xl text-4xl text-paper sm:text-6xl">
             Private gym hire in Blackheath
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-mist">
@@ -127,7 +127,7 @@ export default function GymRentPage() {
               </p>
               <p className="mt-4 text-stone">
                 Are you a therapist or practitioner rather than a PT? Our building also offers dedicated{" "}
-                <Link href="/rooms-to-rent/" className="text-red underline">
+                <Link href="/rooms-to-rent/" className="text-brass underline">
                   treatment and office rooms to rent
                 </Link>
                 .

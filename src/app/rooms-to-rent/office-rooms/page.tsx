@@ -64,8 +64,8 @@ export default function OfficeRoomsPage() {
           />
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
-              <p className="eyebrow mb-2 text-euca">Private offices · Blackheath</p>
-              <h1 className="display max-w-2xl text-5xl text-ink sm:text-6xl">
+              <p className="eyebrow mb-4 text-euca">Private offices · Blackheath</p>
+              <h1 className="display max-w-2xl text-4xl text-ink sm:text-5xl">
                 Small office rooms to rent in Blackheath
               </h1>
               <p className="mt-5 text-lg text-stone">
@@ -101,12 +101,12 @@ export default function OfficeRoomsPage() {
                 "Practitioners who need an admin base alongside clinic work",
               ].map((s) => (
                 <li key={s} className="flex gap-3">
-                  <span aria-hidden className="mt-2.5 h-0.5 w-4 shrink-0 bg-euca" />
+                  <span aria-hidden className="mt-3 h-px w-4 shrink-0 bg-euca" />
                   <span>{s}</span>
                 </li>
               ))}
             </ul>
-            <p className="mt-5 border-l-2 border-euca pl-4 text-sm text-stone">
+            <p className="mt-5 border-l border-euca pl-4 text-sm text-stone">
               Suitability is subject to approval and the nature of your business — quiet,
               professional uses fit best. High-footfall or noisy uses won&apos;t suit the
               building, and we&apos;ll say so honestly.
