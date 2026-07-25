@@ -9,10 +9,10 @@ import { NavDropdown } from "@/components/NavDropdown";
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line-dark bg-ink">
-      <div className="mx-auto flex h-[72px] max-w-7xl items-center gap-6 px-4 sm:px-6 xl:gap-8">
+      <div className="mx-auto flex h-[72px] max-w-7xl items-center gap-6 px-4 sm:px-6 lg:h-[84px] xl:gap-8">
         <Link
           href="/"
-          className="flex shrink-0 items-center gap-2.5"
+          className="flex shrink-0 items-center gap-3"
           aria-label="KD Personal Training — home"
         >
           <Image
@@ -21,8 +21,16 @@ export function Header() {
             width={76}
             height={50}
             priority
-            className="h-[50px] w-auto drop-shadow-[0_1px_2px_rgba(0,0,0,0.45)]"
+            className="h-[46px] w-auto drop-shadow-[0_1px_2px_rgba(0,0,0,0.45)] lg:h-[52px]"
           />
+          <span className="hidden md:block">
+            <span className="block text-[0.78rem] font-medium uppercase tracking-[0.3em] text-paper">
+              Personal Training
+            </span>
+            <span className="mt-1 block text-[0.5rem] uppercase tracking-[0.3em] text-paper/50">
+              Strength · Wellness · Healthy Living
+            </span>
+          </span>
         </Link>
 
         <nav aria-label="Main" className="hidden flex-1 lg:block">

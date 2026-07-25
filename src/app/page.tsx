@@ -84,16 +84,21 @@ export default function HomePage() {
         <div className="mx-auto flex max-w-7xl flex-col gap-9 px-4 py-10 sm:px-6 lg:flex-row lg:items-center lg:gap-0 lg:py-11">
           <ul className="grid flex-1 grid-cols-2 gap-y-8 sm:grid-cols-4 sm:divide-x sm:divide-ink/10">
             {stats.map((s) => (
-              <li key={s.label} className="pr-4 text-ink sm:px-7 sm:first:pl-0">
+              <li
+                key={s.label}
+                className="flex flex-col items-center px-3 text-center text-ink sm:px-6"
+              >
                 {s.icon}
                 <p className="mt-3 text-[0.68rem] font-medium uppercase tracking-[0.22em]">
                   {s.n}
                 </p>
-                <p className="mt-1 text-[0.8rem] leading-snug text-stone">{s.label}</p>
+                <p className="mt-1 max-w-[11rem] text-[0.8rem] leading-snug text-stone">
+                  {s.label}
+                </p>
               </li>
             ))}
           </ul>
-          <div className="border-ink/10 lg:ml-10 lg:max-w-xs lg:border-l lg:pl-10">
+          <div className="border-ink/10 text-center lg:ml-10 lg:max-w-xs lg:border-l lg:pl-10">
             <p aria-hidden className="tracking-[0.35em] text-ink">
               ★★★★★
             </p>
@@ -116,7 +121,7 @@ export default function HomePage() {
           One shared height, photo and cream panel flush to the band edges,
           text cells vertically centred — reads as a single composed strip. */}
       <section className="bg-ink">
-        <div className="mx-auto grid max-w-[1600px] items-stretch lg:min-h-[480px] lg:grid-cols-[0.95fr_1.15fr_1fr_1.05fr]">
+        <div className="mx-auto grid max-w-[1600px] items-stretch lg:min-h-[480px] lg:grid-cols-[0.95fr_1.15fr_1fr_1.05fr] xl:grid-cols-[0.85fr_1.1fr_0.95fr_1fr_0.5fr]">
           {/* Studio photo — flush, no frame */}
           <Reveal className="relative min-h-[240px] sm:min-h-[300px] lg:min-h-0">
             <Image
@@ -167,7 +172,7 @@ export default function HomePage() {
                       className="photo-noir object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </span>
-                  <span className="mt-2.5 block text-[0.6rem] font-medium uppercase leading-[1.5] tracking-[0.16em] text-paper/80 transition-colors group-hover:text-gold">
+                  <span className="mt-2.5 block text-[0.66rem] font-medium uppercase leading-[1.5] tracking-[0.14em] text-paper/80 transition-colors group-hover:text-gold">
                     {s.name}
                   </span>
                 </Link>
@@ -205,6 +210,17 @@ export default function HomePage() {
                 WhatsApp us
               </a>
             </div>
+          </Reveal>
+
+          {/* Closing photo — bookends the band on wide screens */}
+          <Reveal delay={330} className="relative hidden xl:block">
+            <Image
+              src={images.studioVertical.src}
+              alt={images.studioVertical.alt}
+              fill
+              sizes="12vw"
+              className="photo-noir object-cover"
+            />
           </Reveal>
         </div>
       </section>

@@ -90,7 +90,7 @@ export function HeroSlider() {
         Interior visualisation
       </p>
 
-      <div className="relative z-[1] mx-auto flex min-h-[58svh] w-full max-w-7xl items-center px-4 pb-16 pt-12 sm:px-6 lg:min-h-[540px]">
+      <div className="relative z-[1] mx-auto flex min-h-[62svh] w-full max-w-7xl items-center px-4 pb-16 pt-12 sm:px-6 lg:min-h-[580px]">
         {/* Stable, locality-rich H1 for search engines; the visible serif
             headline below changes per slide and stays presentational. */}
         <h1 className="sr-only">
@@ -101,7 +101,7 @@ export function HeroSlider() {
         {/* Copy — keyed so entrance animations replay per slide */}
         <div key={index} className="max-w-xl">
           <p
-            className="display-caps rise text-[1.9rem] leading-[1.2] text-paper sm:text-4xl lg:text-[2.9rem]"
+            className="display-caps rise text-[2.3rem] leading-[1.16] text-paper sm:text-5xl lg:text-[3.7rem]"
             role="heading"
             aria-level={2}
             style={{ ["--rise-delay" as string]: "60ms" }}
