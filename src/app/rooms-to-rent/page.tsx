@@ -58,7 +58,7 @@ export default function RoomsToRentPage() {
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
               <p className="eyebrow mb-4 text-euca">For practitioners &amp; professionals · Blackheath</p>
-              <h1 className="display max-w-2xl text-4xl text-ink sm:text-5xl">
+              <h1 className="display max-w-2xl text-3xl text-ink sm:text-[2.4rem]">
                 Treatment &amp; professional rooms to rent in Blackheath
               </h1>
               <p className="mt-5 text-lg text-stone">

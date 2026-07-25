@@ -28,7 +28,7 @@ export default async function ContactPage({
         <div className="mx-auto max-w-7xl px-4 pb-16 pt-10 sm:px-6">
           <Breadcrumbs tone="dark" crumbs={[{ name: "Contact", path: "/contact-us/" }]} />
           <p className="eyebrow mb-4 text-gold">{business.offer.headline}</p>
-          <h1 className="display max-w-3xl text-4xl text-paper sm:text-6xl">Let&apos;s talk</h1>
+          <h1 className="display max-w-3xl text-3xl text-paper sm:text-[2.6rem]">Let&apos;s talk</h1>
           <p className="mt-5 max-w-2xl text-lg text-mist">
             Tell us a bit about your goals — or your practice, if you&apos;re here about a room —
             and we&apos;ll come back within one working day.

@@ -22,7 +22,7 @@ export default function BlogIndex() {
         <div className="mx-auto max-w-7xl px-4 pb-16 pt-10 sm:px-6">
           <Breadcrumbs tone="dark" crumbs={[{ name: "Blog", path: "/blog/" }]} />
           <p className="eyebrow mb-4 text-gold">Useful information</p>
-          <h1 className="display max-w-3xl text-4xl text-paper sm:text-6xl">The KD blog</h1>
+          <h1 className="display max-w-3xl text-3xl text-paper sm:text-[2.6rem]">The KD blog</h1>
           <p className="mt-5 max-w-2xl text-lg text-mist">
             Practical advice on training, habits and health — written from the studio floor, not
             a content farm.

@@ -26,7 +26,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-4 pb-16 pt-10 sm:px-6">
           <Breadcrumbs tone="dark" crumbs={[{ name: "About", path: "/about-us/" }]} />
           <p className="eyebrow mb-4 text-gold">Est. {business.foundingYear} · Blackheath</p>
-          <h1 className="display max-w-3xl text-4xl text-paper sm:text-6xl">Who we are</h1>
+          <h1 className="display max-w-3xl text-3xl text-paper sm:text-[2.6rem]">Who we are</h1>
           <p className="mt-5 max-w-2xl text-lg text-mist">
             A private personal training studio in the heart of Blackheath — helping locals lose
             fat, build strength and come back from injury since {business.foundingYear}.
@@ -156,7 +156,7 @@ export default function AboutPage() {
           <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6">
             <div className="max-w-3xl">
               <p className="eyebrow mb-4 text-euca">The next chapter</p>
-              <h2 className="display text-3xl text-ink sm:text-4xl">
+              <h2 className="display text-2xl text-ink sm:text-3xl">
                 Same business. Same area. Bigger home.
               </h2>
               <p className="mt-4 text-stone">

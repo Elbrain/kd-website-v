@@ -42,7 +42,7 @@ export default function LocationPage() {
         <div className="mx-auto max-w-7xl px-4 pb-16 pt-10 sm:px-6">
           <Breadcrumbs tone="dark" crumbs={[{ name: "Find Us", path: "/location/" }]} />
           <p className="eyebrow mb-4 text-gold">Blackheath, London SE3</p>
-          <h1 className="display max-w-3xl text-4xl text-paper sm:text-6xl">Find us</h1>
+          <h1 className="display max-w-3xl text-3xl text-paper sm:text-[2.6rem]">Find us</h1>
           {isMoving() && (
             <p className="mt-5 max-w-2xl text-lg text-mist">
               One business, one area — and during our expansion, two addresses to know about.
@@ -59,7 +59,7 @@ export default function LocationPage() {
             <p className="eyebrow text-brass">
               {isMoving() ? "Now — where your sessions happen" : "Our studio"}
             </p>
-            <h2 className="display mt-2 text-3xl text-ink">The studio</h2>
+            <h2 className="display mt-2 text-2xl text-ink">The studio</h2>
             <address className="mt-4 not-italic text-ink-soft">
               {business.currentAddress.display}
             </address>
@@ -96,7 +96,7 @@ export default function LocationPage() {
           {isMoving() && (
             <div className="border border-line bg-sand p-8">
               <p className="eyebrow text-euca">From {business.openingDateLabel} — our new home</p>
-              <h2 className="display mt-2 text-3xl text-ink">The new Blackheath premises</h2>
+              <h2 className="display mt-2 text-2xl text-ink">The new Blackheath premises</h2>
               <p className="mt-4 text-ink-soft">
                 {futureAddressConfirmed() ? (
                   business.futureAddress.display

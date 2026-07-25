@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { business } from "@/data/business";
@@ -39,12 +39,14 @@ const slides: Slide[] = [
   },
 ];
 
-const HOLD_MS = 7000;
+const HOLD_MS = 8000;
 
 /**
- * Full-bleed noir hero: one dark studio visual, serif headlines that
- * crossfade per slide. The backdrop is the owner-supplied concept render,
- * so the discreet "Interior visualisation" caption is mandatory.
+ * Quiet noir hero in the client's prototype voice: one dark studio visual,
+ * modest uppercase serif headline, a single filled button and a text link.
+ * Slides crossfade on a slow timer; the only controls are three hairlines.
+ * The backdrop is the owner-supplied concept render, so the discreet
+ * "Interior visualisation" caption is mandatory.
  */
 export function HeroSlider() {
   const [index, setIndex] = useState(0);
@@ -55,10 +57,6 @@ export function HeroSlider() {
     reducedMotion.current = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   }, []);
 
-  const go = useCallback((next: number) => {
-    setIndex((next + slides.length) % slides.length);
-  }, []);
-
   useEffect(() => {
     if (paused || reducedMotion.current) return;
     const t = setInterval(() => setIndex((i) => (i + 1) % slides.length), HOLD_MS);
@@ -66,7 +64,6 @@ export function HeroSlider() {
   }, [paused]);
 
   const slide = slides[index];
-  const nn = (n: number) => String(n + 1).padStart(2, "0");
 
   return (
     <section
@@ -86,14 +83,14 @@ export function HeroSlider() {
           sizes="100vw"
           className="hero-zoom photo object-cover object-center opacity-70"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-ink/25" />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/75 to-ink/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-ink/40" />
       </div>
-      <p className="absolute bottom-5 right-4 z-10 text-[0.65rem] uppercase tracking-[0.22em] text-paper/50 sm:right-6">
+      <p className="absolute bottom-4 right-4 z-10 text-[0.6rem] uppercase tracking-[0.22em] text-paper/45 sm:right-6">
         Interior visualisation
       </p>
 
-      <div className="relative z-[1] mx-auto flex min-h-[86svh] w-full max-w-7xl items-center px-4 pb-28 pt-16 sm:px-6">
+      <div className="relative z-[1] mx-auto flex min-h-[76svh] w-full max-w-7xl items-center px-4 py-16 sm:px-6 lg:min-h-[80svh]">
         {/* Stable, locality-rich H1 for search engines; the visible serif
             headline below changes per slide and stays presentational. */}
         <h1 className="sr-only">
@@ -102,18 +99,12 @@ export function HeroSlider() {
         </h1>
 
         {/* Copy — keyed so entrance animations replay per slide */}
-        <div key={index} className="max-w-3xl">
+        <div key={index} className="max-w-xl">
           <p
-            className="eyebrow eyebrow-rule rise mb-6 text-gold"
-            style={{ ["--rise-delay" as string]: "40ms" }}
-          >
-            {slide.eyebrow}
-          </p>
-          <p
-            className="display-caps rise text-[2.55rem] leading-[1.08] text-paper sm:text-6xl lg:text-[4.6rem]"
+            className="display-caps rise text-[1.9rem] leading-[1.2] text-paper sm:text-4xl lg:text-[2.9rem]"
             role="heading"
             aria-level={2}
-            style={{ ["--rise-delay" as string]: "120ms" }}
+            style={{ ["--rise-delay" as string]: "60ms" }}
           >
             {slide.lines.map((l) =>
               l.accent ? (
@@ -131,19 +122,29 @@ export function HeroSlider() {
             )}
           </p>
           <p
-            className="rise mt-7 max-w-xl text-lg text-mist sm:text-xl"
-            style={{ ["--rise-delay" as string]: "220ms" }}
+            className="rise mt-5 flex items-center gap-3 text-[0.68rem] uppercase tracking-[0.28em] text-paper/70"
+            style={{ ["--rise-delay" as string]: "160ms" }}
+          >
+            <span aria-hidden className="h-px w-8 bg-gold/70" />
+            {slide.eyebrow}
+          </p>
+          <p
+            className="rise mt-6 max-w-md text-[0.95rem] leading-relaxed text-mist"
+            style={{ ["--rise-delay" as string]: "260ms" }}
           >
             {slide.sub}
           </p>
           <div
-            className="rise mt-10 flex flex-wrap gap-4"
-            style={{ ["--rise-delay" as string]: "320ms" }}
+            className="rise mt-8 flex flex-wrap items-center gap-6"
+            style={{ ["--rise-delay" as string]: "360ms" }}
           >
             <Link href={slide.primary.href} className="btn btn-primary">
               {slide.primary.label}
             </Link>
-            <Link href={slide.secondary.href} className="btn btn-outline-light">
+            <Link
+              href={slide.secondary.href}
+              className="border-b border-paper/40 pb-0.5 text-[0.68rem] uppercase tracking-[0.22em] text-paper/80 transition-colors hover:border-gold hover:text-paper"
+            >
               {slide.secondary.label}
             </Link>
           </div>
@@ -151,8 +152,8 @@ export function HeroSlider() {
             href={business.googleReviewsUrl}
             target="_blank"
             rel="noopener"
-            className="rise mt-9 inline-flex items-center gap-3 text-sm tracking-wide text-mist transition-colors hover:text-paper"
-            style={{ ["--rise-delay" as string]: "420ms" }}
+            className="rise mt-9 inline-flex items-center gap-3 text-xs tracking-wide text-mist transition-colors hover:text-paper"
+            style={{ ["--rise-delay" as string]: "460ms" }}
           >
             <span aria-hidden className="tracking-[0.3em] text-gold">
               ★★★★★
@@ -162,47 +163,21 @@ export function HeroSlider() {
         </div>
       </div>
 
-      {/* Controls */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-7 z-20">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6">
-          <div className="pointer-events-auto flex items-center gap-5">
-            <p aria-hidden className="display-light text-lg tracking-[0.1em] text-paper/70">
-              {nn(index)} <span className="text-gold">/</span>{" "}
-              {String(slides.length).padStart(2, "0")}
-            </p>
-            <div className="flex items-center gap-2.5">
-              {slides.map((s, i) => (
-                <button
-                  key={s.eyebrow}
-                  type="button"
-                  aria-label={`Slide ${i + 1}`}
-                  aria-current={i === index}
-                  onClick={() => go(i)}
-                  className={`h-px transition-all ${
-                    i === index ? "w-10 bg-gold" : "w-6 bg-paper/30 hover:bg-paper/60"
-                  }`}
-                />
-              ))}
-            </div>
-          </div>
-          <div className="pointer-events-auto flex gap-2">
+      {/* Controls — three hairlines, nothing else */}
+      <div className="absolute inset-x-0 bottom-6 z-20">
+        <div className="mx-auto flex max-w-7xl items-center gap-2.5 px-4 sm:px-6">
+          {slides.map((s, i) => (
             <button
+              key={s.eyebrow}
               type="button"
-              aria-label="Previous slide"
-              onClick={() => go(index - 1)}
-              className="flex h-11 w-11 items-center justify-center border border-paper/25 text-lg text-paper/80 transition-colors hover:border-gold hover:text-gold"
-            >
-              ←
-            </button>
-            <button
-              type="button"
-              aria-label="Next slide"
-              onClick={() => go(index + 1)}
-              className="flex h-11 w-11 items-center justify-center border border-paper/25 text-lg text-paper/80 transition-colors hover:border-gold hover:text-gold"
-            >
-              →
-            </button>
-          </div>
+              aria-label={`Slide ${i + 1}`}
+              aria-current={i === index}
+              onClick={() => setIndex(i)}
+              className={`h-px transition-all duration-300 ${
+                i === index ? "w-10 bg-gold" : "w-6 bg-paper/30 hover:bg-paper/60"
+              }`}
+            />
+          ))}
         </div>
       </div>
     </section>

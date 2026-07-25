@@ -69,7 +69,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             <time dateTime={post.datePublished}>{dateFmt.format(new Date(post.datePublished))}</time>{" "}
             · {post.readingMinutes} min read
           </p>
-          <h1 className="display max-w-4xl text-3xl text-paper sm:text-5xl">{post.title}</h1>
+          <h1 className="display max-w-4xl text-2xl text-paper sm:text-4xl">{post.title}</h1>
         </div>
       </section>
 

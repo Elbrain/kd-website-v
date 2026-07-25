@@ -20,7 +20,7 @@ export default function ResultsPage() {
         <div className="mx-auto max-w-7xl px-4 pb-16 pt-10 sm:px-6">
           <Breadcrumbs tone="dark" crumbs={[{ name: "Results & Reviews", path: "/results/" }]} />
           <p className="eyebrow mb-4 text-gold">Proof, not promises</p>
-          <h1 className="display max-w-3xl text-4xl text-paper sm:text-6xl">
+          <h1 className="display max-w-3xl text-3xl text-paper sm:text-[2.6rem]">
             Results speak for themselves
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-mist">

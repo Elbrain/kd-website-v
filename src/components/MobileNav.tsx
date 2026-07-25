@@ -58,13 +58,13 @@ export function MobileNav() {
           <nav aria-label="Mobile">
             <ul className="divide-y divide-line-dark">
               <li>
-                <Link href="/" className="display-light block py-4 text-3xl text-paper">
+                <Link href="/" className="display-light block py-3.5 text-2xl text-paper">
                   Home
                 </Link>
               </li>
               {mainNav.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="display-light block py-4 text-3xl text-paper">
+                  <Link href={item.href} className="display-light block py-3.5 text-2xl text-paper">
                     {item.label}
                   </Link>
                   {item.children && (

@@ -47,7 +47,7 @@ export default function GymPage() {
           <p className="eyebrow eyebrow-rule rise mb-5 text-gold" style={{ ["--rise-delay" as string]: "60ms" }}>
             Private · fully equipped · yours for the hour
           </p>
-          <h1 className="display rise max-w-3xl text-4xl text-paper sm:text-6xl" style={{ ["--rise-delay" as string]: "160ms" }}>
+          <h1 className="display rise max-w-3xl text-3xl text-paper sm:text-[2.6rem]" style={{ ["--rise-delay" as string]: "160ms" }}>
             A private gym in the heart of Blackheath
           </h1>
           <p className="rise mt-6 max-w-2xl text-lg text-mist" style={{ ["--rise-delay" as string]: "270ms" }}>
@@ -149,7 +149,7 @@ export default function GymPage() {
           <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-center">
             <Reveal>
               <p className="eyebrow eyebrow-rule mb-4 text-euca">Also in the building</p>
-              <h2 className="display text-3xl text-ink sm:text-4xl">
+              <h2 className="display text-2xl text-ink sm:text-3xl">
                 Treatment &amp; office rooms for professionals
               </h2>
               <p className="mt-3 max-w-2xl text-stone">

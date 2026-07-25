@@ -39,8 +39,8 @@ body {
   background: var(--color-paper);
   color: var(--color-ink-soft);
   font-family: var(--font-sans), system-ui, sans-serif;
-  font-size: 1.0625rem;
-  line-height: 1.7;
+  font-size: 0.9375rem;
+  line-height: 1.75;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -73,21 +73,21 @@ body {
   line-height: 1.1;
 }
 
-/* Uppercase serif — the prototype's hero voice. Wide tracking, airy. */
+/* Uppercase serif — the prototype's hero voice. Light, wide-tracked, airy. */
 .display-caps {
   font-family: var(--font-display), Georgia, serif;
   text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  line-height: 1.12;
+  font-weight: 400;
+  letter-spacing: 0.09em;
+  line-height: 1.16;
 }
 
 .eyebrow {
   font-family: var(--font-sans), sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.28em;
   font-weight: 500;
-  font-size: 0.75rem;
+  font-size: 0.68rem;
 }
 
 /* Eyebrow with a leading rule — sections feel anchored, not floating */
@@ -104,12 +104,12 @@ body {
   opacity: 0.7;
 }
 
-/* Large serif numerals (01 02 03) — quiet, editorial */
+/* Serif numerals (01 02 03) — quiet, editorial */
 .num-serif {
   font-family: var(--font-display), Georgia, serif;
   font-weight: 400;
   line-height: 1;
-  font-size: clamp(2.75rem, 4.5vw, 3.75rem);
+  font-size: clamp(1.8rem, 2.2vw, 2.3rem);
   color: var(--color-brass);
 }
 .num-serif-dark {
@@ -136,11 +136,11 @@ body {
   isolation: isolate;
   font-family: var(--font-sans), sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.18em;
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   line-height: 1;
-  padding: 1.05rem 1.9rem;
+  padding: 0.85rem 1.5rem;
   transition: color 0.25s ease, border-color 0.25s ease;
 }
 .btn::before {
@@ -187,6 +187,14 @@ body {
 .btn-outline-light:hover {
   color: var(--color-ink);
   border-color: var(--color-paper);
+}
+
+.btn-ink {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+.btn-ink::before {
+  background: var(--color-brass);
 }
 
 .btn-euca {

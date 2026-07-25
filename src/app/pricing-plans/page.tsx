@@ -19,7 +19,7 @@ export default function PricingPage() {
         <div className="mx-auto max-w-7xl px-4 pb-16 pt-10 sm:px-6">
           <Breadcrumbs tone="dark" crumbs={[{ name: "Pricing", path: "/pricing-plans/" }]} />
           <p className="eyebrow mb-4 text-gold">Transparent pricing</p>
-          <h1 className="display max-w-3xl text-4xl text-paper sm:text-6xl">Pricing plans</h1>
+          <h1 className="display max-w-3xl text-3xl text-paper sm:text-[2.6rem]">Pricing plans</h1>
           <p className="mt-5 max-w-2xl text-lg text-mist">
             Simple session pricing with block discounts — and a free 30-minute introductory
             session before you commit to anything.
@@ -35,7 +35,7 @@ export default function PricingPage() {
               <div className="border-b border-line bg-ink p-6">
                 <h2 className="display text-2xl text-paper">{p.serviceName}</h2>
                 <p className="mt-2">
-                  <span className="display text-4xl text-gold">
+                  <span className="display text-3xl text-gold">
                     {currency}
                     {p.single}
                   </span>{" "}

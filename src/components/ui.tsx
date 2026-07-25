@@ -14,16 +14,16 @@ export function SectionHeading({
   as?: "h1" | "h2" | "h3";
 }) {
   return (
-    <div className="mb-10">
+    <div className="mb-8">
       {eyebrow && (
         <p
-          className={`eyebrow eyebrow-rule mb-5 ${tone === "dark" ? "text-gold" : "text-brass"}`}
+          className={`eyebrow eyebrow-rule mb-4 ${tone === "dark" ? "text-gold" : "text-brass"}`}
         >
           {eyebrow}
         </p>
       )}
       <Tag
-        className={`display text-3xl sm:text-4xl lg:text-[2.8rem] ${
+        className={`display text-2xl sm:text-3xl ${
           tone === "dark" ? "text-paper" : "text-ink"
         }`}
       >
@@ -115,12 +115,12 @@ export function TrialCta({
 }) {
   return (
     <section className="relative overflow-hidden bg-cream">
-      <div className="relative z-[1] mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:py-24">
+      <div className="relative z-[1] mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
         <div className="max-w-3xl">
-          <p className="eyebrow eyebrow-rule mb-5 text-brass">{business.offer.headline}</p>
-          <h2 className="display text-4xl text-ink sm:text-5xl">{title}</h2>
-          <p className="mt-5 max-w-2xl text-lg text-stone">{copy}</p>
-          <div className="mt-9 flex flex-wrap gap-4">
+          <p className="eyebrow eyebrow-rule mb-4 text-brass">{business.offer.headline}</p>
+          <h2 className="display text-2xl text-ink sm:text-3xl">{title}</h2>
+          <p className="mt-4 max-w-2xl text-stone">{copy}</p>
+          <div className="mt-7 flex flex-wrap gap-3">
             <Link href="/contact-us/" className="btn btn-primary">
               Book your free session
             </Link>

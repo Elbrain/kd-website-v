@@ -58,13 +58,13 @@ export function ServicePage({ slug }: { slug: string }) {
                 Personal training · Blackheath
               </p>
               <h1
-                className="display rise text-4xl text-paper sm:text-5xl lg:text-[3.4rem]"
+                className="display rise text-3xl text-paper sm:text-[2.6rem]"
                 style={{ ["--rise-delay" as string]: "150ms" }}
               >
                 {service.h1}
               </h1>
               <p
-                className="rise mt-6 text-lg text-mist"
+                className="rise mt-5 text-mist"
                 style={{ ["--rise-delay" as string]: "260ms" }}
               >
                 {service.intro}
@@ -168,7 +168,7 @@ export function ServicePage({ slug }: { slug: string }) {
                 <p aria-hidden className="num-serif">
                   {s.n}
                 </p>
-                <h3 className="display mt-4 text-2xl text-ink">{s.t}</h3>
+                <h3 className="display mt-3 text-xl text-ink">{s.t}</h3>
                 <p className="mt-2 text-stone">{s.c}</p>
               </Reveal>
             ))}
@@ -194,10 +194,10 @@ export function ServicePage({ slug }: { slug: string }) {
             <Reveal className="h-full">
               <div className="card-lift flex h-full flex-col border border-ink bg-ink p-6 text-paper">
                 <p className="eyebrow text-gold">Pay as you go</p>
-                <p className="display mt-3 text-4xl text-paper">
+                <p className="display mt-3 text-3xl text-paper">
                   {currency}
                   {plan.single}
-                  <span className="ml-1.5 text-lg text-mist">/ session</span>
+                  <span className="ml-1.5 text-base text-mist">/ session</span>
                 </p>
                 <p className="mt-2 text-sm text-mist">{plan.unitLabel} · no commitment</p>
               </div>
@@ -219,10 +219,10 @@ export function ServicePage({ slug }: { slug: string }) {
                       </p>
                     )}
                     <p className="eyebrow text-brass">Block of {b.sessions} sessions</p>
-                    <p className="display mt-3 text-4xl text-ink">
+                    <p className="display mt-3 text-3xl text-ink">
                       {currency}
                       {perSession}
-                      <span className="ml-1.5 text-lg text-stone">/ session</span>
+                      <span className="ml-1.5 text-base text-stone">/ session</span>
                     </p>
                     <p className="mt-2 text-sm text-stone">
                       {currency}
@@ -279,7 +279,7 @@ export function ServicePage({ slug }: { slug: string }) {
                       </div>
                     )}
                     <div className="p-6">
-                      <h3 className="display text-2xl text-ink transition-colors group-hover:text-brass">
+                      <h3 className="display text-xl text-ink transition-colors group-hover:text-brass">
                         {r.shortName} <span className="card-arrow text-brass">→</span>
                       </h3>
                       <p className="mt-2 text-stone">{r.card}</p>

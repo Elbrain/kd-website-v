@@ -69,7 +69,7 @@ export default function GymRentPage() {
         <div className="relative mx-auto max-w-7xl px-4 pb-24 pt-10 sm:px-6">
           <Breadcrumbs tone="dark" crumbs={[{ name: "Studio Hire for PTs", path: "/gym-rent/" }]} />
           <p className="eyebrow eyebrow-rule mb-5 text-gold">For independent trainers</p>
-          <h1 className="display max-w-3xl text-4xl text-paper sm:text-6xl">
+          <h1 className="display max-w-3xl text-3xl text-paper sm:text-[2.6rem]">
             Private gym hire in Blackheath
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-mist">
