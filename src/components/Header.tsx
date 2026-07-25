@@ -35,7 +35,7 @@ export function Header() {
         </Link>
 
         <nav aria-label="Main" className="hidden flex-1 lg:block">
-          <ul className="flex items-center justify-end gap-4 xl:gap-6">
+          <ul className="flex items-center justify-center gap-4 xl:gap-6">
             {mainNav.map((item) =>
               item.children ? (
                 <NavDropdown key={item.href} item={item} />

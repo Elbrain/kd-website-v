@@ -68,6 +68,9 @@ const stats = [
   { n: "30′", label: "free intro session, every client", icon: <IconClock /> },
 ];
 
+/* The prototype's band shows this trio; the full six-card index follows below. */
+const bandServiceSlugs = ["1-to-1-training", "couples-training", "perimenopause-training"];
+
 export default function HomePage() {
   return (
     <>
@@ -112,18 +115,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ============ Editorial band — full-bleed: photo · about · consultation inset ============
-          One shared height; the photo is flush to the band edges and the cream
-          consultation card sits inset, framed by the dark band. */}
+      {/* ============ Editorial band — the prototype grid ============
+          Full-bleed compact strip, one shared height, four columns:
+          flush photo · about · services trio · cream consultation inset. */}
       <section className="bg-ink">
-        <div className="mx-auto grid max-w-[1600px] items-stretch lg:min-h-[440px] lg:grid-cols-[1fr_1.25fr_1.05fr]">
+        <div className="mx-auto grid max-w-[1600px] items-stretch lg:min-h-[350px] lg:grid-cols-[0.9fr_0.95fr_1.3fr_0.95fr]">
           {/* Studio photo — flush, no frame */}
           <Reveal className="relative min-h-[240px] sm:min-h-[300px] lg:min-h-0">
             <Image
               src={images.studioDark.src}
               alt={images.studioDark.alt}
               fill
-              sizes="(min-width: 1024px) 30vw, 100vw"
+              sizes="(min-width: 1024px) 22vw, 100vw"
               className="photo-warm object-cover"
             />
           </Reveal>
@@ -131,34 +134,74 @@ export default function HomePage() {
           {/* About the gym */}
           <Reveal
             delay={90}
-            className="flex flex-col justify-center px-6 py-10 sm:px-8 lg:px-12 lg:py-14"
+            className="flex flex-col justify-center px-6 py-10 sm:px-8 lg:px-9 lg:py-10"
           >
             <p className="eyebrow eyebrow-rule mb-4 text-gold">The gym</p>
-            <h2 className="display text-2xl leading-snug text-paper sm:text-[1.7rem]">
+            <h2 className="display text-[1.4rem] leading-snug text-paper">
               A private gym built around one client at a time
             </h2>
-            <p className="mt-4 text-[0.92rem] leading-relaxed text-mist">
+            <p className="mt-3 text-[0.85rem] leading-relaxed text-mist">
               No members, no crowds, no queues for equipment. When you train at KD, the whole
               floor is yours: a fully kitted-out private gym in Blackheath, with professional
               treatment and office rooms alongside it.
             </p>
-            <div className="mt-6">
-              <Link href="/gym/" className="btn btn-outline-light">
+            <div className="mt-5">
+              <Link href="/gym/" className="btn btn-outline-light px-4 py-3 text-[0.66rem]">
                 See the gym
               </Link>
             </div>
           </Reveal>
 
-          {/* Consultation — cream inset card framed by the dark band */}
-          <Reveal delay={180} className="flex items-center px-6 pb-10 sm:px-8 lg:p-6">
-            <div className="w-full bg-cream px-7 py-9 sm:px-8">
-              <p className="eyebrow mb-4 text-brass">{business.offer.headline}</p>
-              <h2 className="display text-2xl text-ink">First timers are welcome</h2>
-              <p className="mt-3 text-[0.88rem] leading-relaxed text-stone">
+          {/* Services trio — thumb, caps label, one-liner (prototype style) */}
+          <Reveal
+            delay={180}
+            className="flex flex-col justify-center px-6 pb-10 sm:px-8 lg:px-8 lg:py-10"
+          >
+            <p className="eyebrow eyebrow-rule mb-5 text-gold">Services</p>
+            <div className="grid grid-cols-3 gap-3.5">
+              {bandServiceSlugs.map((slug) => {
+                const s = services.find((x) => x.slug === slug)!;
+                return (
+                  <Link key={slug} href={`/${slug}/`} className="group block">
+                    <span className="relative block aspect-square overflow-hidden">
+                      <Image
+                        src={serviceImages[slug].src}
+                        alt={serviceImages[slug].alt}
+                        fill
+                        sizes="(min-width: 1024px) 10vw, 30vw"
+                        className="photo-warm object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </span>
+                    <span className="mt-2.5 block text-[0.62rem] font-medium uppercase leading-[1.45] tracking-[0.14em] text-paper transition-colors group-hover:text-gold">
+                      {s.shortName}
+                    </span>
+                    <span className="mt-1 line-clamp-2 text-[0.74rem] leading-snug text-mist">
+                      {s.card}
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
+            <div className="mt-5">
+              <Link
+                href="/personal-training/"
+                className="inline-flex items-center gap-2 border-b border-paper/30 pb-0.5 text-[0.64rem] uppercase tracking-[0.2em] text-paper/80 transition-colors hover:border-gold hover:text-gold"
+              >
+                View all services <span aria-hidden>→</span>
+              </Link>
+            </div>
+          </Reveal>
+
+          {/* Consultation — cream inset card, thin dark frame */}
+          <Reveal delay={270} className="flex items-stretch px-6 pb-10 sm:px-8 lg:p-4">
+            <div className="flex w-full flex-col justify-center bg-cream px-7 py-8">
+              <p className="eyebrow mb-3 text-brass">{business.offer.headline}</p>
+              <h2 className="display text-[1.4rem] text-ink">First timers are welcome</h2>
+              <p className="mt-2.5 text-[0.82rem] leading-relaxed text-stone">
                 {business.offer.detail}
               </p>
-              <div className="mt-7">
-                <Link href="/contact-us/" className="btn btn-ink">
+              <div className="mt-5">
+                <Link href="/contact-us/" className="btn btn-ink px-4 py-3 text-[0.66rem]">
                   Book your free session
                 </Link>
               </div>
@@ -166,7 +209,7 @@ export default function HomePage() {
                 href={business.whatsapp}
                 target="_blank"
                 rel="noopener"
-                className="mt-5 inline-block border-b border-ink/30 pb-0.5 text-[0.66rem] uppercase tracking-[0.2em] text-stone transition-colors hover:border-brass hover:text-brass"
+                className="mt-4 inline-block self-start border-b border-ink/30 pb-0.5 text-[0.64rem] uppercase tracking-[0.2em] text-stone transition-colors hover:border-brass hover:text-brass"
               >
                 WhatsApp us
               </a>
