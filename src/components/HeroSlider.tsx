@@ -81,10 +81,10 @@ export function HeroSlider() {
           fill
           priority
           sizes="100vw"
-          className="hero-zoom photo object-cover object-center opacity-70"
+          className="hero-zoom photo object-cover object-center opacity-90"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/75 to-ink/20" />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-ink/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
       </div>
       <p className="absolute bottom-4 right-4 z-10 text-[0.6rem] uppercase tracking-[0.22em] text-paper/45 sm:right-6">
         Interior visualisation

@@ -79,23 +79,21 @@ export default function HomePage() {
       {/* ============ HERO — quiet noir ============ */}
       <HeroSlider />
 
-      {/* ============ Feature strip — icons on cream ============ */}
+      {/* ============ Feature strip — icons on cream, hairline dividers ============ */}
       <section className="border-b border-line bg-cream">
-        <div className="mx-auto grid max-w-7xl items-center gap-x-10 gap-y-8 px-4 py-10 sm:px-6 lg:grid-cols-[1.6fr_1fr] lg:py-12">
-          <ul className="grid grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-4">
-            {stats.map((s, i) => (
-              <Reveal key={s.label} delay={i * 80}>
-                <li className="text-ink">
-                  {s.icon}
-                  <p className="mt-3 text-[0.68rem] font-medium uppercase tracking-[0.22em]">
-                    {s.n} <span className="sr-only">—</span>
-                  </p>
-                  <p className="mt-1 text-[0.82rem] leading-snug text-stone">{s.label}</p>
-                </li>
-              </Reveal>
+        <div className="mx-auto flex max-w-7xl flex-col gap-9 px-4 py-10 sm:px-6 lg:flex-row lg:items-center lg:gap-0 lg:py-11">
+          <ul className="grid flex-1 grid-cols-2 gap-y-8 sm:grid-cols-4 sm:divide-x sm:divide-ink/10">
+            {stats.map((s) => (
+              <li key={s.label} className="pr-4 text-ink sm:px-7 sm:first:pl-0">
+                {s.icon}
+                <p className="mt-3 text-[0.68rem] font-medium uppercase tracking-[0.22em]">
+                  {s.n}
+                </p>
+                <p className="mt-1 text-[0.8rem] leading-snug text-stone">{s.label}</p>
+              </li>
             ))}
           </ul>
-          <Reveal delay={200} className="lg:border-l lg:border-ink/10 lg:pl-10">
+          <div className="border-ink/10 lg:ml-10 lg:max-w-xs lg:border-l lg:pl-10">
             <p aria-hidden className="tracking-[0.35em] text-ink">
               ★★★★★
             </p>
@@ -110,7 +108,7 @@ export default function HomePage() {
             >
               Read the reviews
             </a>
-          </Reveal>
+          </div>
         </div>
       </section>
 
@@ -126,7 +124,7 @@ export default function HomePage() {
               alt={images.studioDark.alt}
               fill
               sizes="(min-width: 1024px) 24vw, 100vw"
-              className="photo object-cover"
+              className="photo-noir object-cover"
             />
           </Reveal>
 
@@ -166,7 +164,7 @@ export default function HomePage() {
                       alt={s.img.alt}
                       fill
                       sizes="(min-width: 1024px) 8vw, 30vw"
-                      className="photo object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="photo-noir object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </span>
                   <span className="mt-2.5 block text-[0.6rem] font-medium uppercase leading-[1.5] tracking-[0.16em] text-paper/80 transition-colors group-hover:text-gold">
@@ -209,6 +207,51 @@ export default function HomePage() {
               WhatsApp us
             </a>
           </Reveal>
+        </div>
+      </section>
+
+      {/* ============ Rooms teaser — calm sand ============ */}
+      <section className="relative overflow-hidden bg-sand">
+        <div className="relative z-[1] mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
+            <Reveal className="order-last lg:order-first">
+              <div className="relative max-w-lg">
+                <BlueprintPanel
+                  label="Architectural plan sketch of a professional room — our rooms will be photographed on completion"
+                  caption="Plan sketch — real photography after fit-out"
+                  className="relative aspect-[4/3] w-full border border-euca/20"
+                />
+                <span
+                  aria-hidden
+                  className="absolute -bottom-3 -left-3 -z-[1] h-full w-full border border-euca/30"
+                />
+              </div>
+            </Reveal>
+            <Reveal delay={120}>
+              <p className="eyebrow eyebrow-rule mb-4 text-euca">
+                For practitioners &amp; professionals
+              </p>
+              <h2 className="display text-2xl text-ink sm:text-3xl">
+                Looking for a professional treatment or office room?
+              </h2>
+              <p className="mt-4 text-[0.92rem] leading-relaxed text-stone">
+                Alongside the gym, our building offers private treatment, therapy and office
+                rooms to rent — a clean, professional base in Blackheath for independent
+                practitioners and selected professional users.
+              </p>
+              <div className="mt-7 flex flex-wrap items-center gap-6">
+                <Link href="/rooms-to-rent/" className="btn btn-euca">
+                  Rooms to rent
+                </Link>
+                <Link
+                  href="/rooms-to-rent/treatment-rooms/"
+                  className="border-b border-ink/30 pb-0.5 text-[0.66rem] uppercase tracking-[0.2em] text-stone transition-colors hover:border-euca hover:text-euca"
+                >
+                  Treatment rooms
+                </Link>
+              </div>
+            </Reveal>
+          </div>
         </div>
       </section>
 
@@ -261,58 +304,13 @@ export default function HomePage() {
                     alt={images.oneToOne.alt}
                     fill
                     sizes="(min-width: 1024px) 45vw, 100vw"
-                    className="photo object-cover"
+                    className="photo-noir object-cover"
                   />
                 </div>
                 <span
                   aria-hidden
                   className="absolute -bottom-3 -left-3 -z-[1] h-full w-full border border-gold/30"
                 />
-              </div>
-            </Reveal>
-          </div>
-        </div>
-      </section>
-
-      {/* ============ Rooms teaser — calm sand ============ */}
-      <section className="relative overflow-hidden bg-sand">
-        <div className="relative z-[1] mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
-            <Reveal className="order-last lg:order-first">
-              <div className="relative max-w-lg">
-                <BlueprintPanel
-                  label="Architectural plan sketch of a professional room — our rooms will be photographed on completion"
-                  caption="Plan sketch — real photography after fit-out"
-                  className="relative aspect-[4/3] w-full border border-euca/20"
-                />
-                <span
-                  aria-hidden
-                  className="absolute -bottom-3 -left-3 -z-[1] h-full w-full border border-euca/30"
-                />
-              </div>
-            </Reveal>
-            <Reveal delay={120}>
-              <p className="eyebrow eyebrow-rule mb-4 text-euca">
-                For practitioners &amp; professionals
-              </p>
-              <h2 className="display text-2xl text-ink sm:text-3xl">
-                Looking for a professional treatment or office room?
-              </h2>
-              <p className="mt-4 text-[0.92rem] leading-relaxed text-stone">
-                Alongside the gym, our building offers private treatment, therapy and office
-                rooms to rent — a clean, professional base in Blackheath for independent
-                practitioners and selected professional users.
-              </p>
-              <div className="mt-7 flex flex-wrap items-center gap-6">
-                <Link href="/rooms-to-rent/" className="btn btn-euca">
-                  Rooms to rent
-                </Link>
-                <Link
-                  href="/rooms-to-rent/treatment-rooms/"
-                  className="border-b border-ink/30 pb-0.5 text-[0.66rem] uppercase tracking-[0.2em] text-stone transition-colors hover:border-euca hover:text-euca"
-                >
-                  Treatment rooms
-                </Link>
               </div>
             </Reveal>
           </div>

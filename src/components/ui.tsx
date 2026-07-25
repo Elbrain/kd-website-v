@@ -114,7 +114,7 @@ export function TrialCta({
   copy?: string;
 }) {
   return (
-    <section className="relative overflow-hidden bg-cream">
+    <section className="relative overflow-hidden border-t border-ink/10 bg-cream">
       <div className="relative z-[1] mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
         <div className="max-w-3xl">
           <p className="eyebrow eyebrow-rule mb-4 text-brass">{business.offer.headline}</p>

@@ -22,8 +22,8 @@
   --color-brass: #82683f; /* primary accent — AA as text on paper, AA under white */
   --color-gold: #c5a877; /* accent on dark */
   --color-clay: #9c4a35; /* muted terracotta — form errors only */
-  /* Rooms mood */
-  --color-sand: #ece7db;
+  /* Rooms mood — sage-washed, visibly distinct from the warm cream band */
+  --color-sand: #e7e8db;
   --color-euca: #5d6b52; /* muted sage-olive, AA on sand */
   --color-euca-deep: #414c39;
 
@@ -234,6 +234,13 @@ body {
 /* Warm, slightly desaturated grade — pulls mixed photography together */
 .photo {
   filter: saturate(0.82) contrast(1.05);
+}
+
+/* Heavier unifying grade for photos sitting on noir surfaces — knocks the
+   V1 studio's red flooring back into the brown/gold palette until the
+   reshoot delivers matching imagery */
+.photo-noir {
+  filter: grayscale(0.55) sepia(0.24) saturate(0.95) contrast(1.05) brightness(0.92);
 }
 
 /* Slow cinematic zoom for hero imagery */
