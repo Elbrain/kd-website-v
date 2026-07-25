@@ -183,29 +183,28 @@ export default function HomePage() {
             </div>
           </Reveal>
 
-          {/* Consultation — cream, flush full height */}
-          <Reveal
-            delay={270}
-            className="flex flex-col justify-center bg-cream px-7 py-10 sm:px-9 lg:py-14"
-          >
-            <p className="eyebrow mb-4 text-brass">{business.offer.headline}</p>
-            <h2 className="display text-2xl text-ink">First timers are welcome</h2>
-            <p className="mt-3 text-[0.88rem] leading-relaxed text-stone">
-              {business.offer.detail}
-            </p>
-            <div className="mt-7">
-              <Link href="/contact-us/" className="btn btn-ink">
-                Book your free session
-              </Link>
+          {/* Consultation — cream inset card framed by the dark band */}
+          <Reveal delay={270} className="flex items-center px-6 pb-10 sm:px-8 lg:p-6">
+            <div className="w-full bg-cream px-7 py-9 sm:px-8">
+              <p className="eyebrow mb-4 text-brass">{business.offer.headline}</p>
+              <h2 className="display text-2xl text-ink">First timers are welcome</h2>
+              <p className="mt-3 text-[0.88rem] leading-relaxed text-stone">
+                {business.offer.detail}
+              </p>
+              <div className="mt-7">
+                <Link href="/contact-us/" className="btn btn-ink">
+                  Book your free session
+                </Link>
+              </div>
+              <a
+                href={business.whatsapp}
+                target="_blank"
+                rel="noopener"
+                className="mt-5 inline-block border-b border-ink/30 pb-0.5 text-[0.66rem] uppercase tracking-[0.2em] text-stone transition-colors hover:border-brass hover:text-brass"
+              >
+                WhatsApp us
+              </a>
             </div>
-            <a
-              href={business.whatsapp}
-              target="_blank"
-              rel="noopener"
-              className="mt-5 inline-block self-start border-b border-ink/30 pb-0.5 text-[0.66rem] uppercase tracking-[0.2em] text-stone transition-colors hover:border-brass hover:text-brass"
-            >
-              WhatsApp us
-            </a>
           </Reveal>
         </div>
       </section>

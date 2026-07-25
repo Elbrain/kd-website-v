@@ -87,13 +87,10 @@ export function BlueprintPanel({
           {/* treatment couch / desk */}
           <rect x="150" y="110" width="100" height="52" fill="none" stroke="#5d6b52" strokeWidth="1.8" />
           <line x1="150" y1="123" x2="250" y2="123" stroke="#5d6b52" strokeWidth="1" />
-          {/* dimension marks */}
+          {/* dimension marks — no text; the figcaption carries the honesty note */}
           <line x1="70" y1="272" x2="330" y2="272" stroke="#5d6b52" strokeWidth="1" />
           <line x1="70" y1="266" x2="70" y2="278" stroke="#5d6b52" strokeWidth="1" />
           <line x1="330" y1="266" x2="330" y2="278" stroke="#5d6b52" strokeWidth="1" />
-          <text x="200" y="290" textAnchor="middle" fill="#5d6b52" fontSize="11" fontFamily="monospace">
-            dimensions to be confirmed
-          </text>
         </svg>
       </div>
       {caption && (

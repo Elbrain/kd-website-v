@@ -7,7 +7,7 @@ export function StickyCta() {
     <div className="sticky-cta">
       <Link
         href="/contact-us/"
-        className="bg-brass px-4 py-4 text-center text-[0.72rem] font-medium uppercase tracking-[0.18em] text-paper"
+        className="bg-brass whitespace-nowrap px-2 py-4 text-center text-[0.66rem] font-medium uppercase tracking-[0.12em] text-paper"
       >
         Book consultation
       </Link>
@@ -15,7 +15,7 @@ export function StickyCta() {
         href={business.whatsapp}
         target="_blank"
         rel="noopener"
-        className="bg-ink px-4 py-4 text-center text-[0.72rem] font-medium uppercase tracking-[0.18em] text-paper"
+        className="bg-ink whitespace-nowrap px-2 py-4 text-center text-[0.66rem] font-medium uppercase tracking-[0.12em] text-paper"
       >
         WhatsApp us
       </a>

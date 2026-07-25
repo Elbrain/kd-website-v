@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 /**
  * Scroll-entrance wrapper: children rise+fade in when they enter the
@@ -25,6 +25,9 @@ export function Reveal({
   className?: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
+  // State (not classList) so the class survives re-renders — an imperative
+  // classList.add gets wiped whenever React re-writes className (e.g. HMR).
+  const [inView, setInView] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
@@ -45,7 +48,7 @@ export function Reveal({
       const vh = window.innerHeight || document.documentElement.clientHeight;
       if (r.top < vh - 40 && r.bottom > 0) {
         revealed = true;
-        el.classList.add("in-view");
+        setInView(true);
         cleanup();
       }
     };
@@ -68,7 +71,7 @@ export function Reveal({
   return (
     <div
       ref={ref}
-      className={`reveal ${className}`}
+      className={`reveal ${inView ? "in-view" : ""} ${className}`}
       style={{ ["--reveal-delay" as string]: `${delay}ms` }}
     >
       {children}
