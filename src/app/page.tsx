@@ -114,24 +114,27 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ============ Editorial band — photo · about · services · consultation ============ */}
+      {/* ============ Editorial band — full-bleed mosaic: photo · about · services · consultation ============
+          One shared height, photo and cream panel flush to the band edges,
+          text cells vertically centred — reads as a single composed strip. */}
       <section className="bg-ink">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-12 lg:gap-8 lg:py-16">
-          {/* Studio photo */}
-          <Reveal className="hidden lg:col-span-3 lg:block">
-            <div className="relative h-full min-h-[420px] w-full overflow-hidden">
-              <Image
-                src={images.studioDark.src}
-                alt={images.studioDark.alt}
-                fill
-                sizes="(min-width: 1024px) 24vw, 100vw"
-                className="photo object-cover"
-              />
-            </div>
+        <div className="mx-auto grid max-w-[1600px] items-stretch lg:min-h-[480px] lg:grid-cols-[0.95fr_1.15fr_1fr_1.05fr]">
+          {/* Studio photo — flush, no frame */}
+          <Reveal className="relative min-h-[240px] sm:min-h-[300px] lg:min-h-0">
+            <Image
+              src={images.studioDark.src}
+              alt={images.studioDark.alt}
+              fill
+              sizes="(min-width: 1024px) 24vw, 100vw"
+              className="photo object-cover"
+            />
           </Reveal>
 
           {/* About the gym */}
-          <Reveal delay={90} className="lg:col-span-3">
+          <Reveal
+            delay={90}
+            className="flex flex-col justify-center px-6 py-10 sm:px-8 lg:px-10 lg:py-14"
+          >
             <p className="eyebrow eyebrow-rule mb-4 text-gold">The gym</p>
             <h2 className="display text-2xl leading-snug text-paper">
               A private gym built around one client at a time
@@ -141,64 +144,70 @@ export default function HomePage() {
               floor is yours: a fully kitted-out private gym in Blackheath, with professional
               treatment and office rooms alongside it.
             </p>
-            <Link href="/gym/" className="btn btn-outline-light mt-6">
-              See the gym
-            </Link>
+            <div className="mt-6">
+              <Link href="/gym/" className="btn btn-outline-light">
+                See the gym
+              </Link>
+            </div>
           </Reveal>
 
           {/* Services mini-index */}
-          <Reveal delay={180} className="lg:col-span-3">
-            <p className="eyebrow eyebrow-rule mb-4 text-gold">Our services</p>
+          <Reveal
+            delay={180}
+            className="flex flex-col justify-center px-6 pb-10 sm:px-8 lg:py-14 lg:pl-2 lg:pr-8"
+          >
+            <p className="eyebrow eyebrow-rule mb-5 text-gold">Our services</p>
             <div className="grid grid-cols-3 gap-2.5">
               {miniServices.map((s) => (
                 <Link key={s.slug} href={`/${s.slug}/`} className="group block">
-                  <span className="card-img block">
-                    <span className="relative block aspect-[4/5] overflow-hidden">
-                      <Image
-                        src={s.img.src}
-                        alt={s.img.alt}
-                        fill
-                        sizes="(min-width: 1024px) 8vw, 30vw"
-                        className="photo object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                    </span>
+                  <span className="relative block aspect-[4/5] overflow-hidden">
+                    <Image
+                      src={s.img.src}
+                      alt={s.img.alt}
+                      fill
+                      sizes="(min-width: 1024px) 8vw, 30vw"
+                      className="photo object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
                   </span>
-                  <span className="mt-2.5 block text-[0.6rem] font-medium uppercase leading-[1.5] tracking-[0.18em] text-paper/80 transition-colors group-hover:text-gold">
+                  <span className="mt-2.5 block text-[0.6rem] font-medium uppercase leading-[1.5] tracking-[0.16em] text-paper/80 transition-colors group-hover:text-gold">
                     {s.name}
                   </span>
                 </Link>
               ))}
             </div>
-            <Link
-              href="/personal-training/"
-              className="mt-5 inline-flex items-center gap-2 border-b border-paper/30 pb-0.5 text-[0.66rem] uppercase tracking-[0.2em] text-paper/80 transition-colors hover:border-gold hover:text-gold"
-            >
-              View all services <span aria-hidden>→</span>
-            </Link>
+            <div className="mt-6">
+              <Link
+                href="/personal-training/"
+                className="inline-flex items-center gap-2 border-b border-paper/30 pb-0.5 text-[0.66rem] uppercase tracking-[0.2em] text-paper/80 transition-colors hover:border-gold hover:text-gold"
+              >
+                View all services <span aria-hidden>→</span>
+              </Link>
+            </div>
           </Reveal>
 
-          {/* Consultation inset */}
-          <Reveal delay={270} className="lg:col-span-3">
-            <div className="flex h-full flex-col bg-cream p-7">
-              <p className="eyebrow mb-4 text-brass">{business.offer.headline}</p>
-              <h2 className="display text-2xl text-ink">First timers are welcome</h2>
-              <p className="mt-3 text-[0.88rem] leading-relaxed text-stone">
-                {business.offer.detail}
-              </p>
-              <div className="mt-6 lg:mt-auto lg:pt-6">
-                <Link href="/contact-us/" className="btn btn-ink w-full">
-                  Book your free session
-                </Link>
-                <a
-                  href={business.whatsapp}
-                  target="_blank"
-                  rel="noopener"
-                  className="mt-4 inline-block border-b border-ink/30 pb-0.5 text-[0.66rem] uppercase tracking-[0.2em] text-stone transition-colors hover:border-brass hover:text-brass"
-                >
-                  WhatsApp us
-                </a>
-              </div>
+          {/* Consultation — cream, flush full height */}
+          <Reveal
+            delay={270}
+            className="flex flex-col justify-center bg-cream px-7 py-10 sm:px-9 lg:py-14"
+          >
+            <p className="eyebrow mb-4 text-brass">{business.offer.headline}</p>
+            <h2 className="display text-2xl text-ink">First timers are welcome</h2>
+            <p className="mt-3 text-[0.88rem] leading-relaxed text-stone">
+              {business.offer.detail}
+            </p>
+            <div className="mt-7">
+              <Link href="/contact-us/" className="btn btn-ink">
+                Book your free session
+              </Link>
             </div>
+            <a
+              href={business.whatsapp}
+              target="_blank"
+              rel="noopener"
+              className="mt-5 inline-block self-start border-b border-ink/30 pb-0.5 text-[0.66rem] uppercase tracking-[0.2em] text-stone transition-colors hover:border-brass hover:text-brass"
+            >
+              WhatsApp us
+            </a>
           </Reveal>
         </div>
       </section>

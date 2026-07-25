@@ -90,7 +90,7 @@ export function HeroSlider() {
         Interior visualisation
       </p>
 
-      <div className="relative z-[1] mx-auto flex min-h-[76svh] w-full max-w-7xl items-center px-4 py-16 sm:px-6 lg:min-h-[80svh]">
+      <div className="relative z-[1] mx-auto flex min-h-[58svh] w-full max-w-7xl items-center px-4 pb-16 pt-12 sm:px-6 lg:min-h-[540px]">
         {/* Stable, locality-rich H1 for search engines; the visible serif
             headline below changes per slide and stays presentational. */}
         <h1 className="sr-only">
