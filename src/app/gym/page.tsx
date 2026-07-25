@@ -44,13 +44,13 @@ export default function GymPage() {
         </div>
         <div className="relative mx-auto max-w-7xl px-4 pb-24 pt-10 sm:px-6">
           <Breadcrumbs tone="dark" crumbs={[{ name: "The Gym", path: "/gym/" }]} />
-          <p className="eyebrow eyebrow-rule rise mb-3 text-red-bright" style={{ ["--rise-delay" as string]: "60ms" }}>
+          <p className="eyebrow eyebrow-rule rise mb-5 text-gold" style={{ ["--rise-delay" as string]: "60ms" }}>
             Private · fully equipped · yours for the hour
           </p>
-          <h1 className="display rise max-w-3xl text-5xl text-white sm:text-7xl" style={{ ["--rise-delay" as string]: "160ms" }}>
+          <h1 className="display rise max-w-3xl text-3xl text-paper sm:text-[2.6rem]" style={{ ["--rise-delay" as string]: "160ms" }}>
             A private gym in the heart of Blackheath
           </h1>
-          <p className="rise mt-5 max-w-2xl text-lg text-white/85" style={{ ["--rise-delay" as string]: "270ms" }}>
+          <p className="rise mt-6 max-w-2xl text-lg text-mist" style={{ ["--rise-delay" as string]: "270ms" }}>
             No members. No crowds. When you train at KD, the whole gym is yours — one client,
             one coach, and everything you need within arm&apos;s reach.
           </p>
@@ -79,7 +79,7 @@ export default function GymPage() {
             <ul className="mt-5 space-y-2.5">
               {equipment.map((e) => (
                 <li key={e} className="flex gap-3">
-                  <span aria-hidden className="mt-2.5 h-0.5 w-4 shrink-0 bg-red" />
+                  <span aria-hidden className="mt-3 h-px w-4 shrink-0 bg-brass" />
                   <span>{e}</span>
                 </li>
               ))}
@@ -96,10 +96,10 @@ export default function GymPage() {
                   className="object-cover"
                 />
               </div>
-              <p className="display absolute -bottom-5 left-4 bg-red px-4 pb-1.5 pt-2.5 text-2xl text-white">
+              <p className="absolute -bottom-4 left-5 border border-brass/40 bg-paper px-4 py-2 text-[0.7rem] uppercase tracking-[0.25em] text-brass">
                 Est. {business.foundingYear}
               </p>
-              <p className="absolute right-3 top-3 bg-ink/70 px-2.5 py-1 text-xs text-white/90">
+              <p className="absolute right-3 top-3 bg-ink/70 px-2.5 py-1 text-[0.65rem] uppercase tracking-[0.22em] text-paper/80">
                 Interior visualisation
               </p>
             </div>
@@ -148,8 +148,8 @@ export default function GymPage() {
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
           <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-center">
             <Reveal>
-              <p className="eyebrow eyebrow-rule mb-2 text-euca">Also in the building</p>
-              <h2 className="display text-4xl text-ink sm:text-5xl">
+              <p className="eyebrow eyebrow-rule mb-4 text-euca">Also in the building</p>
+              <h2 className="display text-2xl text-ink sm:text-3xl">
                 Treatment &amp; office rooms for professionals
               </h2>
               <p className="mt-3 max-w-2xl text-stone">

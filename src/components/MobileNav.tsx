@@ -39,11 +39,11 @@ export function MobileNav() {
         className="flex h-11 w-11 flex-col items-center justify-center gap-1.5"
       >
         <span
-          className={`block h-0.5 w-6 bg-ink transition-transform ${open ? "translate-y-2 rotate-45" : ""}`}
+          className={`block h-px w-6 bg-paper transition-transform ${open ? "translate-y-[6.5px] rotate-45" : ""}`}
         />
-        <span className={`block h-0.5 w-6 bg-ink transition-opacity ${open ? "opacity-0" : ""}`} />
+        <span className={`block h-px w-6 bg-paper transition-opacity ${open ? "opacity-0" : ""}`} />
         <span
-          className={`block h-0.5 w-6 bg-ink transition-transform ${open ? "-translate-y-2 -rotate-45" : ""}`}
+          className={`block h-px w-6 bg-paper transition-transform ${open ? "-translate-y-[6.5px] -rotate-45" : ""}`}
         />
       </button>
 
@@ -53,25 +53,25 @@ export function MobileNav() {
       {open && (
         <div
           id="mobile-menu"
-          className="absolute inset-x-0 top-full z-40 h-[calc(100svh-72px)] overflow-y-auto bg-paper px-6 pb-10 pt-4"
+          className="absolute inset-x-0 top-full z-40 h-[calc(100svh-72px)] overflow-y-auto bg-ink px-6 pb-10 pt-4"
         >
           <nav aria-label="Mobile">
-            <ul className="divide-y divide-line">
+            <ul className="divide-y divide-line-dark">
               <li>
-                <Link href="/" className="display-light block py-4 text-3xl text-ink">
+                <Link href="/" className="display-light block py-3.5 text-2xl text-paper">
                   Home
                 </Link>
               </li>
               {mainNav.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="display-light block py-4 text-3xl text-ink">
+                  <Link href={item.href} className="display-light block py-3.5 text-2xl text-paper">
                     {item.label}
                   </Link>
                   {item.children && (
                     <ul className="pb-4 pl-4">
                       {item.children.map((c) => (
                         <li key={c.href}>
-                          <Link href={c.href} className="block py-1.5 text-stone">
+                          <Link href={c.href} className="block py-1.5 text-mist">
                             {c.label}
                           </Link>
                         </li>
@@ -86,7 +86,7 @@ export function MobileNav() {
             <Link href="/contact-us/" className="btn btn-primary">
               Book consultation
             </Link>
-            <a href={`tel:${business.phone}`} className="btn btn-outline">
+            <a href={`tel:${business.phone}`} className="btn btn-outline-light">
               Call {business.phoneDisplay}
             </a>
           </div>

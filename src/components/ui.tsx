@@ -14,14 +14,18 @@ export function SectionHeading({
   as?: "h1" | "h2" | "h3";
 }) {
   return (
-    <div className="mb-10">
+    <div className="mb-8">
       {eyebrow && (
-        <p className={`eyebrow eyebrow-rule mb-3 ${tone === "dark" ? "text-red-bright" : "text-red"}`}>
+        <p
+          className={`eyebrow eyebrow-rule mb-4 ${tone === "dark" ? "text-gold" : "text-brass"}`}
+        >
           {eyebrow}
         </p>
       )}
       <Tag
-        className={`display text-4xl sm:text-5xl ${tone === "dark" ? "text-white" : "text-ink"}`}
+        className={`display text-2xl sm:text-3xl ${
+          tone === "dark" ? "text-paper" : "text-ink"
+        }`}
       >
         {title}
       </Tag>
@@ -73,27 +77,24 @@ export function BlueprintPanel({
           preserveAspectRatio="xMidYMid meet"
         >
           {/* room outline */}
-          <rect x="70" y="48" width="260" height="204" fill="none" stroke="#55705f" strokeWidth="2.5" />
+          <rect x="70" y="48" width="260" height="204" fill="none" stroke="#5d6b52" strokeWidth="2.5" />
           {/* door swing */}
-          <path d="M 70 210 A 42 42 0 0 1 112 252" fill="none" stroke="#55705f" strokeWidth="1.5" strokeDasharray="4 4" />
-          <line x1="70" y1="252" x2="70" y2="210" stroke="#f3f0ea" strokeWidth="4" />
+          <path d="M 70 210 A 42 42 0 0 1 112 252" fill="none" stroke="#5d6b52" strokeWidth="1.5" strokeDasharray="4 4" />
+          <line x1="70" y1="252" x2="70" y2="210" stroke="#ece7db" strokeWidth="4" />
           {/* window */}
-          <line x1="150" y1="48" x2="250" y2="48" stroke="#f3f0ea" strokeWidth="5" />
-          <line x1="150" y1="48" x2="250" y2="48" stroke="#55705f" strokeWidth="1.5" strokeDasharray="10 6" />
+          <line x1="150" y1="48" x2="250" y2="48" stroke="#ece7db" strokeWidth="5" />
+          <line x1="150" y1="48" x2="250" y2="48" stroke="#5d6b52" strokeWidth="1.5" strokeDasharray="10 6" />
           {/* treatment couch / desk */}
-          <rect x="150" y="110" width="100" height="52" fill="none" stroke="#55705f" strokeWidth="1.8" />
-          <line x1="150" y1="123" x2="250" y2="123" stroke="#55705f" strokeWidth="1" />
-          {/* dimension marks */}
-          <line x1="70" y1="272" x2="330" y2="272" stroke="#55705f" strokeWidth="1" />
-          <line x1="70" y1="266" x2="70" y2="278" stroke="#55705f" strokeWidth="1" />
-          <line x1="330" y1="266" x2="330" y2="278" stroke="#55705f" strokeWidth="1" />
-          <text x="200" y="290" textAnchor="middle" fill="#55705f" fontSize="11" fontFamily="monospace">
-            dimensions to be confirmed
-          </text>
+          <rect x="150" y="110" width="100" height="52" fill="none" stroke="#5d6b52" strokeWidth="1.8" />
+          <line x1="150" y1="123" x2="250" y2="123" stroke="#5d6b52" strokeWidth="1" />
+          {/* dimension marks — no text; the figcaption carries the honesty note */}
+          <line x1="70" y1="272" x2="330" y2="272" stroke="#5d6b52" strokeWidth="1" />
+          <line x1="70" y1="266" x2="70" y2="278" stroke="#5d6b52" strokeWidth="1" />
+          <line x1="330" y1="266" x2="330" y2="278" stroke="#5d6b52" strokeWidth="1" />
         </svg>
       </div>
       {caption && (
-        <figcaption className="absolute bottom-3 left-3 bg-white/85 px-3 py-1.5 text-xs text-euca-deep">
+        <figcaption className="absolute bottom-3 left-3 bg-paper/90 px-3 py-1.5 text-xs text-euca-deep">
           {caption}
         </figcaption>
       )}
@@ -110,25 +111,25 @@ export function TrialCta({
   copy?: string;
 }) {
   return (
-    <section className="grain relative overflow-hidden bg-red">
-      <div className="relative z-[1] mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:py-24">
+    <section className="relative overflow-hidden border-t border-ink/10 bg-cream">
+      <div className="relative z-[1] mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
         <div className="max-w-3xl">
-          <p className="eyebrow eyebrow-rule mb-3 text-white/90">{business.offer.headline}</p>
-          <h2 className="display text-5xl text-white sm:text-6xl">{title}</h2>
-          <p className="mt-4 max-w-2xl text-lg text-white/90">{copy}</p>
-          <div className="mt-9 flex flex-wrap gap-4">
-            <Link href="/contact-us/" className="btn btn-white">
+          <p className="eyebrow eyebrow-rule mb-4 text-brass">{business.offer.headline}</p>
+          <h2 className="display text-2xl text-ink sm:text-3xl">{title}</h2>
+          <p className="mt-4 max-w-2xl text-stone">{copy}</p>
+          <div className="mt-7 flex flex-wrap gap-3">
+            <Link href="/contact-us/" className="btn btn-primary">
               Book your free session
             </Link>
             <a
               href={business.whatsapp}
               target="_blank"
               rel="noopener"
-              className="btn btn-outline-light"
+              className="btn btn-outline"
             >
               WhatsApp us
             </a>
-            <a href={`tel:${business.phone}`} className="btn btn-outline-light">
+            <a href={`tel:${business.phone}`} className="btn btn-outline">
               Call {business.phoneDisplay}
             </a>
           </div>
@@ -146,7 +147,7 @@ export function FaqList({ faqs }: { faqs: { q: string; a: string }[] }) {
         <details key={f.q} className="faq-item group py-4">
           <summary className="flex items-center justify-between gap-4 text-lg font-medium text-ink">
             {f.q}
-            <span aria-hidden className="faq-icon shrink-0 text-2xl leading-none text-red">
+            <span aria-hidden className="faq-icon shrink-0 text-2xl leading-none text-brass">
               +
             </span>
           </summary>

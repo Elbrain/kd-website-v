@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function NotFound() {
   return (
     <section className="mx-auto flex max-w-7xl flex-col items-start px-4 py-24 sm:px-6">
-      <p className="eyebrow text-red">404</p>
-      <h1 className="display mt-2 text-5xl text-ink sm:text-7xl">
+      <p className="eyebrow text-brass">404</p>
+      <h1 className="display mt-3 text-3xl text-ink sm:text-[2.6rem]">
         That page has done a runner
       </h1>
       <p className="mt-5 max-w-xl text-stone">

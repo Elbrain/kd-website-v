@@ -49,9 +49,12 @@ room placeholder). Design tokens live in `globals.css` `@theme` — repalette th
   kd2-prod, kd2-dev). V1 runs on 3010; both can run simultaneously. Port 3000 is occupied
   by an unrelated project (hubline-website) — never kill it.
 - Verify before pushing: `npm run lint`, `npm run build`, check pages at 375px/1024px/1440px.
-  Testing gotchas in the embedded browser pane: screenshots time out (verify via
-  read_page/javascript_tool); programmatic scrolling needs `behavior: "instant"` (smooth
-  scroll + rAF are frozen in a hidden pane; the site's CSS has `scroll-behavior: smooth`).
+  Testing gotchas in the embedded browser pane: screenshots WORK (as of 2026-07) — always
+  verify design changes visually, don't rely on JS probes alone; programmatic scrolling
+  needs `behavior: "instant"` (smooth scroll + rAF are frozen in a hidden pane; the site's
+  CSS has `scroll-behavior: smooth`). Reveal-wrapped sections appear ~1s after a scroll —
+  screenshot twice if a section looks empty. After editing a page, fully reload before
+  judging a screenshot (HMR can leave stale animation states).
 
 ## Who's who
 

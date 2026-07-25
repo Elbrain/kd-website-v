@@ -27,8 +27,8 @@ export default async function ContactPage({
       <section className="bg-ink">
         <div className="mx-auto max-w-7xl px-4 pb-16 pt-10 sm:px-6">
           <Breadcrumbs tone="dark" crumbs={[{ name: "Contact", path: "/contact-us/" }]} />
-          <p className="eyebrow mb-2 text-red-bright">{business.offer.headline}</p>
-          <h1 className="display max-w-3xl text-5xl text-white sm:text-7xl">Let&apos;s talk</h1>
+          <p className="eyebrow mb-4 text-gold">{business.offer.headline}</p>
+          <h1 className="display max-w-3xl text-3xl text-paper sm:text-[2.6rem]">Let&apos;s talk</h1>
           <p className="mt-5 max-w-2xl text-lg text-mist">
             Tell us a bit about your goals — or your practice, if you&apos;re here about a room —
             and we&apos;ll come back within one working day.
@@ -43,7 +43,7 @@ export default async function ContactPage({
             <SectionHeading eyebrow="Reach us directly" title="Contact details" />
             <dl className="space-y-5">
               <div>
-                <dt className="eyebrow text-[0.8rem] text-red">Address</dt>
+                <dt className="eyebrow text-[0.72rem] text-brass">Address</dt>
                 <dd className="mt-1">
                   <address className="not-italic">{address.display}</address>
                   {isMoving() && (
@@ -58,7 +58,7 @@ export default async function ContactPage({
                 </dd>
               </div>
               <div>
-                <dt className="eyebrow text-[0.8rem] text-red">Phone / WhatsApp</dt>
+                <dt className="eyebrow text-[0.72rem] text-brass">Phone / WhatsApp</dt>
                 <dd className="mt-1">
                   <a href={`tel:${business.phone}`} className="text-ink underline">
                     {business.phoneDisplay}
@@ -70,7 +70,7 @@ export default async function ContactPage({
                 </dd>
               </div>
               <div>
-                <dt className="eyebrow text-[0.8rem] text-red">Email</dt>
+                <dt className="eyebrow text-[0.72rem] text-brass">Email</dt>
                 <dd className="mt-1">
                   <a href={`mailto:${business.email}`} className="text-ink underline">
                     {business.email}
@@ -78,11 +78,11 @@ export default async function ContactPage({
                 </dd>
               </div>
               <div>
-                <dt className="eyebrow text-[0.8rem] text-red">Hours</dt>
+                <dt className="eyebrow text-[0.72rem] text-brass">Hours</dt>
                 <dd className="mt-1 text-stone">{business.openingHoursNote}</dd>
               </div>
               <div>
-                <dt className="eyebrow text-[0.8rem] text-red">Connect</dt>
+                <dt className="eyebrow text-[0.72rem] text-brass">Connect</dt>
                 <dd className="mt-1 flex gap-4">
                   <a href={business.social.facebook} target="_blank" rel="noopener" className="underline">
                     Facebook
@@ -96,7 +96,7 @@ export default async function ContactPage({
                 </dd>
               </div>
             </dl>
-            <div className="mt-8 border-l-2 border-red pl-4 text-sm text-stone">
+            <div className="mt-8 border-l border-brass pl-4 text-sm text-stone">
               <p>
                 New to KD? Every personal training journey starts with a{" "}
                 <strong className="text-ink">free 30-minute introductory session</strong> — use
