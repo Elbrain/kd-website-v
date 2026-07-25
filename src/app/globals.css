@@ -1,0 +1,524 @@
+@import "tailwindcss";
+
+/*
+ * KD Personal Training design system.
+ * Evolves the existing brand: Teko condensed display headings, Ubuntu body,
+ * red-orange accent, charcoal darks. Two moods on one system:
+ *  - training surfaces: energetic (ink sections, red accent, grain, motion)
+ *  - rooms surfaces: calm/architectural (sand background, eucalyptus accent)
+ */
+@theme {
+  --color-ink: #29282d; /* brand near-black (from current site) */
+  --color-ink-soft: #3a393e;
+  --color-charcoal: #323232;
+  --color-red: #e0452c; /* evolved from #F34E3A for AA contrast on white */
+  --color-red-bright: #f34e3a; /* original accent, used on dark only */
+  --color-paper: #fafaf8;
+  --color-stone: #63626a; /* secondary text on white, AA */
+  --color-mist: #b9b8bf; /* secondary text on ink */
+  --color-line: #e6e5e1;
+  /* Rooms mood */
+  --color-sand: #f3f0ea;
+  --color-euca: #55705f; /* eucalyptus accent, AA on sand */
+  --color-euca-deep: #3d5348;
+
+  --font-display: var(--font-teko);
+  --font-sans: var(--font-ubuntu);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink-soft);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Typography ---------- */
+
+/* NOTE: no `color` here — this un-layered rule would override Tailwind
+   text-* utilities (cascade layers), turning white headings ink-on-ink.
+   Colour always comes from a text-* class or inheritance. */
+.display {
+  font-family: var(--font-display), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 0.95;
+  font-weight: 600;
+}
+
+.display-light {
+  font-family: var(--font-display), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 0.95;
+  font-weight: 500;
+}
+
+.eyebrow {
+  font-family: var(--font-display), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* Eyebrow with a leading rule — sections feel anchored, not floating */
+.eyebrow-rule {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.eyebrow-rule::before {
+  content: "";
+  width: 2.25rem;
+  height: 2px;
+  background: currentColor;
+  opacity: 0.9;
+}
+
+/* Big solid numerals (01 02 03) — poster numbers, solid brand red */
+.ghost-num {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  line-height: 0.8;
+  font-size: clamp(3.75rem, 6.5vw, 5.5rem);
+  color: var(--color-red);
+}
+.ghost-num-dark {
+  color: var(--color-red-bright);
+}
+
+/* ---------- Buttons: sliding-fill hover ---------- */
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  overflow: hidden;
+  isolation: isolate;
+  font-family: var(--font-display), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  font-size: 1.15rem;
+  line-height: 1;
+  padding: 0.85rem 1.6rem 0.7rem; /* Teko sits high — optical centring */
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transform: translateX(-101%);
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.btn:hover::before {
+  transform: translateX(0);
+}
+
+.btn-primary {
+  background: var(--color-red);
+  color: #fff;
+}
+.btn-primary::before {
+  background: var(--color-ink);
+}
+
+.btn-outline {
+  border: 1px solid currentColor;
+  color: var(--color-ink);
+  background: transparent;
+}
+.btn-outline::before {
+  background: var(--color-ink);
+}
+.btn-outline:hover {
+  color: #fff;
+  border-color: var(--color-ink);
+}
+
+.btn-outline-light {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  background: transparent;
+}
+.btn-outline-light::before {
+  background: #fff;
+}
+.btn-outline-light:hover {
+  color: var(--color-ink);
+  border-color: #fff;
+}
+
+.btn-euca {
+  background: var(--color-euca);
+  color: #fff;
+}
+.btn-euca::before {
+  background: var(--color-euca-deep);
+}
+
+.btn-white {
+  background: #fff;
+  color: var(--color-ink);
+}
+.btn-white::before {
+  background: var(--color-ink);
+}
+.btn-white:hover {
+  color: #fff;
+}
+
+/* ---------- Texture: film grain + photo treatment ---------- */
+
+.grain {
+  position: relative;
+}
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+}
+
+.photo {
+  filter: saturate(0.92) contrast(1.06);
+}
+
+/* Slow cinematic zoom for hero imagery */
+@keyframes hero-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
+}
+.hero-zoom {
+  animation: hero-zoom 18s ease-out forwards;
+}
+
+/* ---------- Entrance reveals (driven by <Reveal/>) ---------- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+.reveal.in-view {
+  opacity: 1;
+  transform: none;
+}
+
+/* Hero text: staggered rise on load (no JS needed) */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(34px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rise {
+  opacity: 0;
+  animation: rise-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: var(--rise-delay, 0ms);
+}
+
+/* ---------- Marquee ticker ---------- */
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 28s linear infinite;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* ---------- Cards ---------- */
+
+.card-lift {
+  transition:
+    transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+.card-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px -18px rgba(41, 40, 45, 0.35);
+}
+.card-img {
+  overflow: hidden;
+}
+.card-img img {
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.card-lift:hover .card-img img {
+  transform: scale(1.06);
+}
+.card-arrow {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.card-lift:hover .card-arrow {
+  transform: translateX(6px);
+}
+
+/* ---------- Nav link underline ---------- */
+
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1.05rem; /* sits just under the label inside the py-6 hit area */
+  height: 2px;
+  width: 100%;
+  background: var(--color-red);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.nav-link:hover::after,
+.nav-link[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+/* ---------- KD monogram watermark ---------- */
+
+.kd-watermark {
+  position: relative;
+  overflow: hidden;
+}
+.kd-watermark::before {
+  content: "";
+  position: absolute;
+  right: -6%;
+  bottom: -18%;
+  width: clamp(280px, 38vw, 560px);
+  aspect-ratio: 1;
+  background: url("/logo-kd-dark.png") no-repeat center / contain;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+/* Light variant — dark monogram lines ghosted onto light backgrounds
+   (the original site's hero had giant pale "KD" letters behind the copy) */
+.kd-watermark-light {
+  position: relative;
+  overflow: hidden;
+}
+.kd-watermark-light::before {
+  content: "";
+  position: absolute;
+  left: clamp(-120px, -6vw, -40px);
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(380px, 46vw, 720px);
+  aspect-ratio: 1;
+  background: url("/logo-kd-light.png") no-repeat center / contain;
+  opacity: 0.055;
+  pointer-events: none;
+}
+
+/* Fine horizontal hairlines — the original hero's light texture */
+.stripes {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(41, 40, 45, 0.045) 0,
+    rgba(41, 40, 45, 0.045) 1px,
+    transparent 1px,
+    transparent 8px
+  );
+}
+
+/* Gentle float for the hero cut-out */
+@keyframes float-y {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+.float-y {
+  animation: float-y 5s ease-in-out infinite alternate;
+}
+
+/* Blueprint pattern for rooms placeholders — intentional, architectural */
+.blueprint {
+  background-color: var(--color-sand);
+  background-image:
+    linear-gradient(rgba(85, 112, 95, 0.14) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(85, 112, 95, 0.14) 1px, transparent 1px),
+    linear-gradient(rgba(85, 112, 95, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(85, 112, 95, 0.07) 1px, transparent 1px);
+  background-size:
+    120px 120px,
+    120px 120px,
+    24px 24px,
+    24px 24px;
+}
+
+/* ---------- Art-directed placeholder panels ---------- */
+
+.art-panel {
+  background:
+    radial-gradient(120% 90% at 85% 10%, rgba(243, 78, 58, 0.28), transparent 55%),
+    radial-gradient(90% 110% at 10% 90%, rgba(85, 112, 95, 0.22), transparent 50%),
+    linear-gradient(160deg, #29282d 0%, #38363d 55%, #232227 100%);
+}
+.art-panel-calm {
+  background:
+    radial-gradient(110% 90% at 80% 15%, rgba(85, 112, 95, 0.35), transparent 55%),
+    radial-gradient(90% 100% at 15% 85%, rgba(185, 169, 143, 0.3), transparent 55%),
+    linear-gradient(160deg, #ece8e0 0%, #f3f0ea 60%, #e2ddd2 100%);
+}
+
+/* ---------- Misc ---------- */
+
+.kd-mark {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.prose-kd {
+  max-width: 46rem;
+}
+.prose-kd p {
+  margin-bottom: 1.15rem;
+}
+.prose-kd h2 {
+  font-family: var(--font-display), sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.9rem;
+  line-height: 1;
+  color: var(--color-ink);
+  margin: 2.2rem 0 0.9rem;
+}
+.prose-kd h3 {
+  font-family: var(--font-display), sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.45rem;
+  line-height: 1.05;
+  color: var(--color-ink);
+  margin: 1.8rem 0 0.7rem;
+}
+.prose-kd ul {
+  list-style: none;
+  margin: 0 0 1.15rem;
+  padding: 0;
+}
+.prose-kd ul li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 0.55rem;
+}
+.prose-kd ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 0.55rem;
+  height: 2px;
+  background: var(--color-red);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-red);
+  outline-offset: 2px;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item summary .faq-icon {
+  transition: transform 0.2s ease;
+}
+.faq-item[open] summary .faq-icon {
+  transform: rotate(45deg);
+}
+
+/* Sticky mobile CTA bar */
+.sticky-cta {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 40;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(41, 40, 45, 0.2);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 -10px 30px -12px rgba(41, 40, 45, 0.4);
+}
+@media (min-width: 1024px) {
+  .sticky-cta {
+    display: none;
+  }
+}
+
+/* ---------- Reduced motion: switch it all off ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .hero-zoom,
+  .marquee-track,
+  .float-y {
+    animation: none;
+  }
+  .rise {
+    animation: none;
+    opacity: 1;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .btn::before {
+    transition: none;
+  }
+  .card-lift,
+  .card-img img {
+    transition: none;
+  }
+}
