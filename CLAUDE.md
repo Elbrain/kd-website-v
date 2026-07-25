@@ -54,7 +54,11 @@ room placeholder). Design tokens live in `globals.css` `@theme` — repalette th
   needs `behavior: "instant"` (smooth scroll + rAF are frozen in a hidden pane; the site's
   CSS has `scroll-behavior: smooth`). Reveal-wrapped sections appear ~1s after a scroll —
   screenshot twice if a section looks empty. After editing a page, fully reload before
-  judging a screenshot (HMR can leave stale animation states).
+  judging a screenshot (HMR can leave stale animation states). CRITICAL: while the pane is
+  hidden, CSS animations freeze at frame zero and restart on show — screenshots then catch
+  `.rise`/`.reveal` content at opacity 0 ("missing" hero text etc.). Before judging, inject:
+  `document.head.appendChild(Object.assign(document.createElement('style'),{textContent:
+  '.rise,.reveal{opacity:1!important;transform:none!important;animation:none!important}'}))`.
 
 ## Who's who
 
