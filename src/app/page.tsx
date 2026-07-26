@@ -119,7 +119,7 @@ export default function HomePage() {
           Full-bleed compact strip, one shared height, four columns:
           flush photo · about · services trio · cream consultation inset. */}
       <section className="bg-ink">
-        <div className="mx-auto grid max-w-[1600px] items-stretch lg:min-h-[350px] lg:grid-cols-[0.9fr_0.95fr_1.3fr_0.95fr]">
+        <div className="grid items-stretch lg:min-h-[350px] lg:grid-cols-[0.9fr_0.95fr_1.3fr_0.95fr] 2xl:grid-cols-[1fr_1fr_1.25fr_0.9fr]">
           {/* Studio photo — flush, no frame */}
           <Reveal className="relative min-h-[240px] sm:min-h-[300px] lg:min-h-0">
             <Image
@@ -192,9 +192,10 @@ export default function HomePage() {
             </div>
           </Reveal>
 
-          {/* Consultation — cream inset card, thin dark frame */}
-          <Reveal delay={270} className="flex items-stretch px-6 pb-10 sm:px-8 lg:p-4">
-            <div className="flex w-full flex-col justify-center bg-cream px-7 py-8">
+          {/* Consultation — cream fills the cell full height, flush to the
+              band edge like the photo column opposite */}
+          <Reveal delay={270} className="flex items-stretch">
+            <div className="flex w-full flex-col justify-center bg-cream px-6 py-10 sm:px-8 lg:px-8 lg:py-12">
               <p className="eyebrow mb-3 text-brass">{business.offer.headline}</p>
               <h2 className="display text-[1.4rem] text-ink">First timers are welcome</h2>
               <p className="mt-2.5 text-[0.82rem] leading-relaxed text-stone">
@@ -218,76 +219,50 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ============ Services — every programme, light and airy ============ */}
-      <section className="bg-paper">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
-          <div className="flex flex-wrap items-start justify-between gap-x-8">
-            <SectionHeading eyebrow="Our services" title="Built to bring the best results" />
-            <Link
-              href="/personal-training/"
-              className="mt-2 hidden items-center gap-2 border-b border-ink/30 pb-0.5 text-[0.66rem] uppercase tracking-[0.2em] text-stone transition-colors hover:border-brass hover:text-brass sm:inline-flex"
-            >
-              All programmes <span aria-hidden>→</span>
-            </Link>
-          </div>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((s, i) => (
-              <Reveal key={s.slug} delay={(i % 3) * 90} className="h-full">
-                <Link
-                  href={`/${s.slug}/`}
-                  className="card-lift group flex h-full flex-col border border-line bg-white"
-                >
-                  <span className="card-img relative block aspect-[3/2] overflow-hidden">
-                    <Image
-                      src={serviceImages[s.slug].src}
-                      alt={serviceImages[s.slug].alt}
-                      fill
-                      sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw"
-                      className="photo object-cover"
-                    />
-                  </span>
-                  <span className="flex flex-1 flex-col p-6">
-                    <span className="display text-xl text-ink transition-colors group-hover:text-brass">
-                      {s.shortName}
-                    </span>
-                    <span className="mt-2 flex-1 text-[0.88rem] leading-relaxed text-stone">
-                      {s.card}
-                    </span>
-                    <span className="mt-4 text-[0.64rem] uppercase tracking-[0.2em] text-brass">
-                      Explore <span className="card-arrow">→</span>
-                    </span>
-                  </span>
-                </Link>
-              </Reveal>
-            ))}
-            {/* Studio hire — the sixth door */}
-            <Reveal delay={180} className="h-full">
-              <Link
-                href="/gym-rent/"
-                className="card-lift group flex h-full flex-col border border-line bg-white"
-              >
-                <span className="card-img relative block aspect-[3/2] overflow-hidden">
+      {/* ============ Trainer — ivory portrait ============ */}
+      <section className="relative overflow-hidden bg-paper">
+        <div className="relative z-[1] mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
+          <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.2fr]">
+            <Reveal>
+              <div className="relative max-w-xl">
+                <div className="card-img relative aspect-[4/3] w-full overflow-hidden">
                   <Image
-                    src={images.heroStudio.src}
-                    alt={images.heroStudio.alt}
+                    src={images.trainerBarbell.src}
+                    alt={images.trainerBarbell.alt}
                     fill
-                    sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw"
+                    sizes="(min-width: 1024px) 40vw, 100vw"
                     className="photo object-cover"
                   />
-                </span>
-                <span className="flex flex-1 flex-col p-6">
-                  <span className="display text-xl text-ink transition-colors group-hover:text-brass">
-                    Studio Hire for PTs
-                  </span>
-                  <span className="mt-2 flex-1 text-[0.88rem] leading-relaxed text-stone">
-                    Pay-as-you-go private studio for independent trainers — keep 100% of what
-                    you earn.
-                  </span>
-                  <span className="mt-4 text-[0.64rem] uppercase tracking-[0.2em] text-brass">
-                    Explore <span className="card-arrow">→</span>
-                  </span>
-                </span>
-              </Link>
+                </div>
+                <span
+                  aria-hidden
+                  className="absolute -bottom-3 -right-3 -z-[1] h-full w-full border border-brass/30"
+                />
+                <p className="absolute -bottom-3.5 left-5 border border-brass/40 bg-paper px-3.5 py-1.5 text-[0.62rem] uppercase tracking-[0.25em] text-brass">
+                  Est. {business.foundingYear}
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={140}>
+              <SectionHeading eyebrow="Your coach" title={`Meet ${business.trainer.name}`} />
+              <p className="text-[0.95rem] leading-relaxed text-stone">
+                KD is {business.trainer.fullName} — {business.trainer.role.toLowerCase()} and the
+                reason clients stay for years, not weeks. Since {business.foundingYear} Karolina
+                has coached Blackheath locals through fat loss, strength building, post-injury
+                comebacks and the training realities of midlife — always one client at a time, in
+                a completely private studio.
+              </p>
+              <div className="mt-7 flex flex-wrap items-center gap-6">
+                <Link href="/results/" className="btn btn-primary">
+                  Results &amp; reviews
+                </Link>
+                <Link
+                  href="/about-us/"
+                  className="border-b border-ink/30 pb-0.5 text-[0.66rem] uppercase tracking-[0.2em] text-stone transition-colors hover:border-brass hover:text-brass"
+                >
+                  Karolina&apos;s story
+                </Link>
+              </div>
             </Reveal>
           </div>
         </div>
@@ -349,55 +324,6 @@ export default function HomePage() {
                   aria-hidden
                   className="absolute -bottom-3 -left-3 -z-[1] h-full w-full border border-gold/30"
                 />
-              </div>
-            </Reveal>
-          </div>
-        </div>
-      </section>
-
-      {/* ============ Trainer — ivory portrait ============ */}
-      <section className="relative overflow-hidden bg-paper">
-        <div className="relative z-[1] mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
-          <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.2fr]">
-            <Reveal>
-              <div className="relative max-w-xl">
-                <div className="card-img relative aspect-[4/3] w-full overflow-hidden">
-                  <Image
-                    src={images.trainerBarbell.src}
-                    alt={images.trainerBarbell.alt}
-                    fill
-                    sizes="(min-width: 1024px) 40vw, 100vw"
-                    className="photo object-cover"
-                  />
-                </div>
-                <span
-                  aria-hidden
-                  className="absolute -bottom-3 -right-3 -z-[1] h-full w-full border border-brass/30"
-                />
-                <p className="absolute -bottom-3.5 left-5 border border-brass/40 bg-paper px-3.5 py-1.5 text-[0.62rem] uppercase tracking-[0.25em] text-brass">
-                  Est. {business.foundingYear}
-                </p>
-              </div>
-            </Reveal>
-            <Reveal delay={140}>
-              <SectionHeading eyebrow="Your coach" title={`Meet ${business.trainer.name}`} />
-              <p className="text-[0.95rem] leading-relaxed text-stone">
-                KD is {business.trainer.fullName} — {business.trainer.role.toLowerCase()} and the
-                reason clients stay for years, not weeks. Since {business.foundingYear} Karolina
-                has coached Blackheath locals through fat loss, strength building, post-injury
-                comebacks and the training realities of midlife — always one client at a time, in
-                a completely private studio.
-              </p>
-              <div className="mt-7 flex flex-wrap items-center gap-6">
-                <Link href="/results/" className="btn btn-primary">
-                  Results &amp; reviews
-                </Link>
-                <Link
-                  href="/about-us/"
-                  className="border-b border-ink/30 pb-0.5 text-[0.66rem] uppercase tracking-[0.2em] text-stone transition-colors hover:border-brass hover:text-brass"
-                >
-                  Karolina&apos;s story
-                </Link>
               </div>
             </Reveal>
           </div>

@@ -5,8 +5,10 @@ export interface NavItem {
 }
 
 export const mainNav: NavItem[] = [
+  { label: "The Gym", href: "/gym/" },
   {
-    label: "Personal Training",
+    // Label reads "Services" (client's menu); URL/dropdown unchanged.
+    label: "Services",
     href: "/personal-training/",
     children: [
       { label: "1 to 1 Training", href: "/1-to-1-training/" },
@@ -16,12 +18,11 @@ export const mainNav: NavItem[] = [
       { label: "Perimenopause Training", href: "/perimenopause-training/" },
     ],
   },
-  { label: "The Gym", href: "/gym/" },
-  { label: "Pricing", href: "/pricing-plans/" },
+  { label: "Packages", href: "/pricing-plans/" },
   { label: "Rooms to Rent", href: "/rooms-to-rent/" },
   { label: "About", href: "/about-us/" },
-  { label: "Blog", href: "/blog/" },
-  { label: "Contact", href: "/contact-us/" },
+  // Label reads "Academy" (client's menu); the /blog/ route is unchanged.
+  { label: "Academy", href: "/blog/" },
 ];
 
 export const footerNav = {
