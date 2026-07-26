@@ -11,11 +11,11 @@
  */
 @theme {
   --color-ink: #1c1712; /* warm noir — dark surfaces + headings on light */
-  --color-ink-soft: #3b342b; /* body text on light */
+  --color-ink-soft: #292621; /* body text on light — dark charcoal */
   --color-espresso: #272019; /* raised surface on noir */
   --color-paper: #f7f4ed; /* page background — warm ivory */
   --color-cream: #efe8db; /* editorial band background — bright, warm */
-  --color-stone: #6e6557; /* secondary text on light, AA */
+  --color-stone: #524d45; /* secondary text on light — charcoal, AA */
   --color-mist: #b9afa0; /* secondary text on noir */
   --color-line: #e3dccd; /* hairlines on light */
   --color-line-dark: #38302a; /* hairlines on noir */
