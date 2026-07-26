@@ -13,25 +13,26 @@ export function Header() {
       <div className="mx-auto flex h-[72px] max-w-7xl items-center gap-6 px-4 sm:px-6 lg:h-[84px] xl:gap-8">
         <Link
           href="/"
-          className="flex shrink-0 items-center gap-3"
+          className="flex shrink-0 items-center gap-2.5"
           aria-label="KD Personal Training — home"
         >
           <Image
-            src="/logo-kd-mark-white.png"
+            src="/logo-kd-serif-white.png"
             alt=""
-            width={76}
-            height={50}
+            width={54}
+            height={56}
             priority
-            className="h-[46px] w-auto drop-shadow-[0_1px_2px_rgba(0,0,0,0.45)] lg:h-[52px]"
+            className="h-[58px] w-auto lg:h-[70px]"
           />
-          <span className="hidden md:block">
-            <span className="block text-[0.78rem] font-medium uppercase tracking-[0.3em] text-paper">
-              Personal Training
-            </span>
-            <span className="mt-1 block text-[0.5rem] uppercase tracking-[0.3em] text-paper/50">
-              Strength · Wellness · Healthy Living
-            </span>
-          </span>
+          {/* Wordmark cropped from the client's own logo (her typeface). */}
+          <Image
+            src="/logo-kd-wordmark-white.png"
+            alt=""
+            width={1014}
+            height={182}
+            priority
+            className="h-[22px] w-auto sm:h-[26px] lg:h-[30px]"
+          />
         </Link>
 
         <nav aria-label="Main" className="hidden flex-1 lg:block">

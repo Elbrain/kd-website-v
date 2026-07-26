@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   description:
     "KD Personal Training is an established private personal training studio in Blackheath, London SE3 — 1-to-1 coaching, couples training, over-50s and perimenopause programmes. Free 30-minute intro session.",
-  icons: { icon: "/logo-kd-light.png", apple: "/logo-kd-light.png" },
+  icons: { icon: "/icon-kd.png", apple: "/icon-kd.png" },
   other: {
     // Legacy geo tags — some local crawlers/directories still read them
     "geo.region": "GB-LEW",
@@ -46,7 +46,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en-GB" className={`${cormorant.variable} ${jost.variable} h-full antialiased`}>
-      <body className="flex min-h-full flex-col">
+      {/* suppressHydrationWarning: browser extensions (e.g. ColorZilla adds
+          cz-shortcut-listen) inject attributes on <body> before hydration;
+          this silences that false positive without masking app-level ones. */}
+      <body className="flex min-h-full flex-col" suppressHydrationWarning>
         <SchemaScript schema={[localBusinessSchema(), websiteSchema()]} />
         <a
           href="#main"

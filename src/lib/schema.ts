@@ -41,7 +41,7 @@ export function localBusinessSchema(): JsonLd {
     description:
       "KD Personal Training is a private personal training studio in Blackheath, London, offering 1-to-1 personal training, couples training, sport rehabilitation, fitness for over 50s and perimenopause training. Free 30-minute introductory session for new clients.",
     image: `${SITE_URL}/og-default.png`,
-    logo: `${SITE_URL}/logo-kd.png`,
+    logo: `${SITE_URL}/icon-kd.png`,
     address: postalAddress(),
     geo:
       business.moveStatus === "NEW_LOCATION_OPEN"

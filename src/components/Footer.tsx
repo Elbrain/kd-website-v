@@ -11,10 +11,13 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand + NAP */}
           <div>
-            <div className="flex items-center gap-3">
-              <Image src="/logo-kd-mark-white.png" alt="" width={61} height={40} className="h-10 w-auto" />
-              <span className="kd-mark text-xl uppercase text-paper">KD Personal Training</span>
-            </div>
+            <Image
+              src="/logo-kd-serif-white.png"
+              alt="KD Personal Training"
+              width={54}
+              height={56}
+              className="h-16 w-auto"
+            />
             <address className="mt-5 not-italic leading-relaxed">
               {address.display}
               <br />
