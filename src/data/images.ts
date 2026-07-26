@@ -103,6 +103,32 @@ export const images = {
     alt: "Woman in her forties doing core work with a dumbbell alongside her coach",
     provenance: "owner-published",
   },
+  /** Owner-supplied render of a premium private gym interior — a
+   *  visualisation, not a photograph of the Lee Road studio. The discreet
+   *  "Interior visualisation" caption is mandatory wherever it is shown. */
+  gymVisual: {
+    src: "/images/gym-visual.jpg",
+    width: 1448,
+    height: 1086,
+    alt: "Visualisation of a private gym interior — power rack, bench and dumbbell and kettlebell racks under warm low lighting",
+    provenance: "concept",
+  },
+  /** Trainer portrait for the About coach section. */
+  coachPortrait: {
+    src: "/images/coach-portrait.jpg",
+    width: 1280,
+    height: 853,
+    alt: "KD personal trainer standing in a private studio with arms folded",
+    provenance: "owner-published",
+  },
+  /** Bright private studio, two clients training together — illustrative. */
+  wellnessStudio: {
+    src: "/images/wellness-studio.jpg",
+    width: 1280,
+    height: 720,
+    alt: "Two women doing bodyweight squats together in a bright private training studio",
+    provenance: "owner-published",
+  },
 } satisfies Record<string, SiteImage>;
 
 /** Photo per service page hero. */

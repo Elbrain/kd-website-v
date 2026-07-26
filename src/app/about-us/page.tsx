@@ -60,8 +60,8 @@ export default function AboutPage() {
           <Reveal delay={130}>
             <div className="card-img relative aspect-[4/3] w-full overflow-hidden">
               <Image
-                src={images.heroStudio.src}
-                alt={images.heroStudio.alt}
+                src={images.wellnessStudio.src}
+                alt={images.wellnessStudio.alt}
                 fill
                 sizes="(min-width: 1024px) 45vw, 100vw"
                 className="photo object-cover"
@@ -78,8 +78,8 @@ export default function AboutPage() {
             <Reveal className="relative">
               <div className="card-img relative aspect-[4/5] w-full max-w-md overflow-hidden">
                 <Image
-                  src={images.trainerBarbell.src}
-                  alt={images.trainerBarbell.alt}
+                  src={images.coachPortrait.src}
+                  alt={images.coachPortrait.alt}
                   fill
                   sizes="(min-width: 1024px) 33vw, 100vw"
                   className="photo object-cover"
