@@ -99,9 +99,6 @@ export default function GymPage() {
               <p className="absolute -bottom-4 left-5 border border-brass/40 bg-paper px-4 py-2 text-[0.7rem] uppercase tracking-[0.25em] text-brass">
                 Est. {business.foundingYear}
               </p>
-              <p className="absolute right-3 top-3 bg-ink/70 px-2.5 py-1 text-[0.65rem] uppercase tracking-[0.22em] text-paper/80">
-                Interior visualisation
-              </p>
             </div>
           </Reveal>
         </div>

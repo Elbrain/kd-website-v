@@ -45,8 +45,6 @@ const HOLD_MS = 8000;
  * Noir hero in the prototype's voice: one bright warm studio visual, a big
  * light uppercase serif headline, a single filled button plus a text link.
  * Slides crossfade on a slow timer; controls are three hairlines only.
- * The backdrop is the owner-supplied concept render, so the discreet
- * "Interior visualisation" caption is mandatory.
  */
 export function HeroSlider() {
   const [index, setIndex] = useState(0);
@@ -87,9 +85,6 @@ export function HeroSlider() {
         <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/60 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
       </div>
-      <p className="absolute bottom-4 right-4 z-10 text-[0.6rem] uppercase tracking-[0.22em] text-paper/45 sm:right-6">
-        Interior visualisation
-      </p>
 
       <div className="relative z-[1] mx-auto flex min-h-[62svh] w-full max-w-7xl items-center px-4 pb-16 pt-12 sm:px-6 lg:min-h-[580px]">
         {/* Stable, locality-rich H1 for search engines; the visible serif

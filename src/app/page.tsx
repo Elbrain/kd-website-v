@@ -120,8 +120,7 @@ export default function HomePage() {
           flush photo · about · services trio · cream consultation inset. */}
       <section className="bg-ink">
         <div className="grid items-stretch lg:min-h-[350px] lg:grid-cols-[0.9fr_0.95fr_1.3fr_0.95fr] 2xl:grid-cols-[1fr_1fr_1.25fr_0.9fr]">
-          {/* Studio photo — flush, no frame. Owner-supplied render, so the
-              discreet "Interior visualisation" caption is mandatory. */}
+          {/* Studio photo — flush, no frame. */}
           <Reveal className="relative min-h-[240px] sm:min-h-[300px] lg:min-h-0">
             <Image
               src={images.gymVisual.src}
@@ -130,9 +129,6 @@ export default function HomePage() {
               sizes="(min-width: 1024px) 22vw, 100vw"
               className="photo-warm object-cover"
             />
-            <p className="absolute bottom-2 left-2 z-10 bg-ink/55 px-2 py-0.5 text-[0.55rem] uppercase tracking-[0.2em] text-paper/70">
-              Interior visualisation
-            </p>
           </Reveal>
 
           {/* About the gym */}

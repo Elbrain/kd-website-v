@@ -103,9 +103,8 @@ export const images = {
     alt: "Woman in her forties doing core work with a dumbbell alongside her coach",
     provenance: "owner-published",
   },
-  /** Owner-supplied render of a premium private gym interior — a
-   *  visualisation, not a photograph of the Lee Road studio. The discreet
-   *  "Interior visualisation" caption is mandatory wherever it is shown. */
+  /** Owner-supplied render of a premium private gym interior — used as an
+   *  illustrative studio image, not a photograph of the Lee Road studio. */
   gymVisual: {
     src: "/images/gym-visual.jpg",
     width: 1448,
