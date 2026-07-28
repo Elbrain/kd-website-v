@@ -90,10 +90,10 @@ export const images = {
     provenance: "owner-published",
   },
   fifties: {
-    src: "/images/studio-3.jpg",
-    width: 1820,
-    height: 1280,
-    alt: "Two women in their fifties smiling mid-workout on cross-trainers",
+    src: "/images/fitness-50.jpg",
+    width: 1600,
+    height: 1200,
+    alt: "A man and a woman in their fifties smiling mid-workout on cross-trainers in a private studio",
     provenance: "owner-published",
   },
   perimenopause: {

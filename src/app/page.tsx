@@ -64,7 +64,7 @@ function IconClock() {
 const stats = [
   { n: "2016", label: "coaching in Blackheath since", icon: <IconCalendar /> },
   { n: "1:1", label: "one client at a time — always", icon: <IconPerson /> },
-  { n: "5", label: "specialist programmes", icon: <IconDumbbell /> },
+  { n: String(services.length), label: "specialist programmes", icon: <IconDumbbell /> },
   { n: "30′", label: "free intro session, every client", icon: <IconClock /> },
 ];
 
