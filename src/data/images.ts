@@ -128,12 +128,12 @@ export const images = {
     alt: "Two women doing bodyweight squats together in a bright private training studio",
     provenance: "owner-published",
   },
-  /** Coach guiding a client through a movement/strength check — consultation. */
+  /** Personal trainer taking notes during a movement & pain consultation. */
   movementConsult: {
     src: "/images/movement-consultation.jpg",
-    width: 1280,
-    height: 720,
-    alt: "Coach guiding a client through a movement and strength assessment in a private studio",
+    width: 1600,
+    height: 1200,
+    alt: "Personal trainer taking notes on a clipboard during a movement and pain consultation with a client in a private studio",
     provenance: "owner-published",
   },
 } satisfies Record<string, SiteImage>;
