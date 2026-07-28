@@ -70,8 +70,8 @@ export const images = {
   },
   oneToOne: {
     src: "/images/training-1to1.jpg",
-    width: 750,
-    height: 576,
+    width: 1600,
+    height: 1143,
     alt: "Client training at the smith machine in the KD private studio",
     provenance: "studio",
   },
