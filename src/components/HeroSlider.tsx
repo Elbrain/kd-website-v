@@ -17,8 +17,8 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    eyebrow: `Private fitness studio · Blackheath · est. ${business.foundingYear}`,
-    lines: [{ text: "Personal training," }, { text: "made personal.", accent: true }],
+    eyebrow: "Strength • Longevity • Confidence",
+    lines: [{ text: "Private personal training" }, { text: "in Blackheath", accent: true }],
     sub: "Lose fat, build muscle, get stronger or come back from injury — one-to-one coaching in a completely private studio, built around you.",
     primary: { label: "Book your free 30-min session", href: "/contact-us/" },
     secondary: { label: "Explore training", href: "/personal-training/" },
