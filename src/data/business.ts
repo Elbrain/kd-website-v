@@ -34,7 +34,7 @@ export const business = {
   name: "KD Personal Training",
   legalName: "KD Personal Training LTD",
   domain: "https://kdpersonaltraining.co.uk",
-  foundingYear: 2018,
+  foundingYear: 2016,
   tagline: "Private personal training in Blackheath, London",
 
   /**

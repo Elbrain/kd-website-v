@@ -302,7 +302,7 @@ export const posts: Post[] = [
       {
         paragraphs: [
           "Choosing a personal trainer is a strange purchase. You're committing real money and — more importantly — months of your life to someone you've usually known for one conversation. Get it right and it changes how you feel every single day. Get it wrong and you'll conclude, unfairly, that \"personal training doesn't work for me\".",
-          "We've coached in Blackheath since 2018, and we'd rather you choose well — even if that's not us. These are the seven questions that do the filtering.",
+          "We've coached in Blackheath since 2016, and we'd rather you choose well — even if that's not us. These are the seven questions that do the filtering.",
         ],
       },
       {

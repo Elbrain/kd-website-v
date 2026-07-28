@@ -13,7 +13,7 @@ import { SectionHeading, TrialCta } from "@/components/ui";
 export const metadata: Metadata = pageMetadata({
   title: "About Us — KD Personal Training Fitness Studio, Blackheath",
   description:
-    "KD Personal Training has helped Blackheath get stronger since 2018 — a completely private studio, one coach, and programmes built around each client. Meet Karolina and the studio.",
+    "KD Personal Training has helped Blackheath get stronger since 2016 — a completely private studio, one coach, and programmes built around each client. Meet Karolina and the studio.",
   path: "/about-us/",
 });
 
@@ -26,10 +26,17 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-4 pb-16 pt-10 sm:px-6">
           <Breadcrumbs tone="dark" crumbs={[{ name: "About", path: "/about-us/" }]} />
           <p className="eyebrow mb-4 text-gold">Est. {business.foundingYear} · Blackheath</p>
-          <h1 className="display max-w-3xl text-3xl text-paper sm:text-[2.6rem]">Who we are</h1>
+          <h1 className="display max-w-3xl text-3xl text-paper sm:text-[2.6rem]">
+            Private personal training in Blackheath
+          </h1>
           <p className="mt-5 max-w-2xl text-lg text-mist">
-            A private personal training studio in the heart of Blackheath — helping locals lose
-            fat, build strength and come back from injury since {business.foundingYear}.
+            Located near Blackheath station, our fully private studio offers exclusive one-to-one
+            and couples personal training — no crowds, distractions or waiting for equipment.
+          </p>
+          <p className="mt-4 max-w-2xl text-mist">
+            Every programme is tailored to your goals, from fat loss and muscle gain to strength,
+            fitness and mobility. If pain or restricted movement is holding you back, targeted
+            exercise may help reduce discomfort, improve movement and support lasting relief.
           </p>
         </div>
       </section>
@@ -120,34 +127,27 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Pillars */}
+      {/* Why choose us */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
-        <SectionHeading eyebrow="What you get" title="The KD standard" />
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <SectionHeading eyebrow="Why choose us" title="Why train with KD" />
+        <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {[
-            {
-              t: "Quality equipment",
-              c: "Free weights, kettlebells, the Monster G9 rig and much more — everything maintained, everything to hand.",
-            },
-            {
-              t: "Personal nutrition guidance",
-              c: "Good food choices improve everything from energy to recovery. Your programme includes practical nutrition guidance matched to your goal.",
-            },
-            {
-              t: "Programmes that adapt",
-              c: "Your plan is reviewed constantly and adjusted to your progress, your sleep, your week — not a printout that never changes.",
-            },
-            {
-              t: "Health first",
-              c: "Staying active is one of the best investments in long-term health. We train for the decades ahead, not just the next month.",
-            },
-          ].map((p) => (
-            <div key={p.t} className="border border-line bg-white p-6">
-              <h3 className="display text-2xl text-ink">{p.t}</h3>
-              <p className="mt-2 text-stone">{p.c}</p>
-            </div>
+            "Degree-qualified personal trainer",
+            "Over 10 years' experience helping Blackheath clients",
+            "Fully private, well-equipped studio",
+            "Personalised one-to-one and couples training",
+            "Mobility, pain-management and injury-prevention support",
+            "Focused coaching for safe, lasting results",
+          ].map((reason) => (
+            <li
+              key={reason}
+              className="flex items-start gap-3 border border-line bg-white px-5 py-4 text-ink transition-colors hover:border-brass"
+            >
+              <span aria-hidden className="mt-2.5 h-px w-4 shrink-0 bg-brass" />
+              <span>{reason}</span>
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
 
       {/* Expansion note */}
