@@ -227,8 +227,8 @@ export default function HomePage() {
               <div className="relative max-w-xl">
                 <div className="card-img relative aspect-[4/3] w-full overflow-hidden">
                   <Image
-                    src={images.trainerBarbell.src}
-                    alt={images.trainerBarbell.alt}
+                    src={images.coachPortrait.src}
+                    alt={images.coachPortrait.alt}
                     fill
                     sizes="(min-width: 1024px) 40vw, 100vw"
                     className="photo object-cover"
