@@ -11,6 +11,10 @@ export interface Service {
   intro: string;
   audience: string[];
   goals?: string[];
+  /** One-off consultation: bullet list of what the session includes. */
+  includes?: string[];
+  /** Optional closing line for consultation-style pages. */
+  pitch?: string;
   related: string[]; // slugs
 }
 
@@ -81,6 +85,34 @@ export const services: Service[] = [
       "People training around a long-standing niggle",
     ],
     related: ["1-to-1-training", "fitness-for-50"],
+  },
+  {
+    slug: "movement-pain-consultation",
+    name: "Movement & Pain Consultation",
+    shortName: "Movement & Pain",
+    card: "A private, in-depth one-off consultation for muscle or joint discomfort, stiffness or restricted movement — with a personalised written programme to take away.",
+    metaTitle: "Movement & Pain Consultation in Blackheath | KD Personal Training",
+    metaDescription:
+      "A private, in-depth movement and pain consultation in Blackheath, London — posture, mobility and strength screening with practical coaching and a personalised written exercise programme.",
+    h1: "Movement & Pain Consultation",
+    intro:
+      "Living with ongoing muscle or joint discomfort, stiffness or restricted movement? Weakness, tightness, reduced mobility and movement patterns can sometimes contribute to pain. During this in-depth consultation, I will assess how you move and identify areas that may benefit from improved strength, mobility and control. You'll learn suitable exercises and receive practical advice to help you move more comfortably and confidently.",
+    audience: [
+      "Anyone living with ongoing muscle or joint discomfort or stiffness",
+      "People with restricted movement, tightness or reduced mobility",
+      "Those whose movement patterns may be contributing to their pain",
+      "Anyone who wants to move, train and go about daily life more comfortably",
+    ],
+    includes: [
+      "A detailed discussion about your discomfort, lifestyle and goals",
+      "Posture, mobility, strength and movement screening",
+      "Identification of areas that may need additional support",
+      "Coaching through appropriate strength and mobility exercises",
+      "Practical guidance for training and everyday movement",
+      "A personalised written exercise programme following your session",
+    ],
+    pitch: "Take the first step towards moving better, becoming stronger and living with less pain.",
+    related: ["sport-rehabilitation", "1-to-1-training"],
   },
   {
     slug: "fitness-for-50",

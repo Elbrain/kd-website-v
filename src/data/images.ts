@@ -128,6 +128,14 @@ export const images = {
     alt: "Two women doing bodyweight squats together in a bright private training studio",
     provenance: "owner-published",
   },
+  /** Coach guiding a client through a movement/strength check — consultation. */
+  movementConsult: {
+    src: "/images/movement-consultation.jpg",
+    width: 1280,
+    height: 720,
+    alt: "Coach guiding a client through a movement and strength assessment in a private studio",
+    provenance: "owner-published",
+  },
 } satisfies Record<string, SiteImage>;
 
 /** Photo per service page hero. */
@@ -135,6 +143,7 @@ export const serviceImages: Record<string, SiteImage> = {
   "1-to-1-training": images.oneToOne,
   "couples-training": images.couples,
   "sport-rehabilitation": images.rehab,
+  "movement-pain-consultation": images.movementConsult,
   "fitness-for-50": images.fifties,
   "perimenopause-training": images.perimenopause,
 };

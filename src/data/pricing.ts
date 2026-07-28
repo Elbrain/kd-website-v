@@ -11,6 +11,11 @@ export interface PricePlan {
   single: number;
   blocks: { sessions: number; price: number }[];
   note?: string;
+  /**
+   * One-off consultation — priced as a single flat fee (`single`), rendered
+   * without the per-session block table. When set, `blocks` is empty.
+   */
+  oneOff?: { duration: string; blurb: string; ctaLabel: string; ctaHref: string };
 }
 
 export const currency = "£";
@@ -49,6 +54,20 @@ export const pricePlans: PricePlan[] = [
       { sessions: 8, price: 600 },
       { sessions: 10, price: 700 },
     ],
+  },
+  {
+    serviceSlug: "movement-pain-consultation",
+    serviceName: "Movement & Pain Consultation",
+    unitLabel: "one-off consultation",
+    single: 300,
+    blocks: [],
+    oneOff: {
+      duration: "One-off session, up to 2 hours",
+      blurb:
+        "A private, in-depth session for anyone experiencing muscle or joint discomfort, stiffness or restricted movement. Includes strength and mobility checks, guided exercises, practical advice and a personalised written training programme.",
+      ctaLabel: "Book your consultation",
+      ctaHref: "/contact-us/",
+    },
   },
   {
     serviceSlug: "fitness-for-50",

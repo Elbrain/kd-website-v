@@ -45,7 +45,7 @@ export default function PersonalTrainingHub() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
-        <SectionHeading eyebrow="Choose your path" title="Five ways to train with KD" />
+        <SectionHeading eyebrow="Choose your path" title="Ways to train with KD" />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => {
             const img = serviceImages[s.slug];

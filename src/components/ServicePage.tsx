@@ -22,6 +22,7 @@ export function ServicePage({ slug }: { slug: string }) {
   const img = serviceImages[slug];
   const faqs = serviceFaqs[slug] ?? [];
   const plan = pricePlans.find((p) => p.serviceSlug === slug);
+  const isConsult = Boolean(plan?.oneOff);
   const related = service.related
     .map((r) => services.find((s) => s.slug === r))
     .filter((s): s is NonNullable<typeof s> => Boolean(s));
@@ -74,7 +75,7 @@ export function ServicePage({ slug }: { slug: string }) {
                 style={{ ["--rise-delay" as string]: "370ms" }}
               >
                 <Link href="/contact-us/" className="btn btn-primary">
-                  Book a free intro session
+                  {isConsult ? "Book your consultation" : "Book a free intro session"}
                 </Link>
                 <a
                   href={business.whatsapp}
@@ -142,7 +143,30 @@ export function ServicePage({ slug }: { slug: string }) {
         </div>
       </section>
 
+      {/* What's included — consultation only */}
+      {service.includes && (
+        <section className="bg-white">
+          <div className="mx-auto max-w-7xl border-y border-line px-4 py-16 sm:px-6">
+            <SectionHeading eyebrow="What's included" title="Your consultation includes" />
+            <ul className="grid gap-3 sm:grid-cols-2">
+              {service.includes.map((item) => (
+                <li key={item} className="flex gap-3">
+                  <span aria-hidden className="mt-3 h-px w-4 shrink-0 bg-brass" />
+                  <span className="text-ink-soft">{item}</span>
+                </li>
+              ))}
+            </ul>
+            {service.pitch && (
+              <p className="mt-8 max-w-2xl border-l border-brass pl-4 text-lg text-ink">
+                {service.pitch}
+              </p>
+            )}
+          </div>
+        </section>
+      )}
+
       {/* How it works */}
+      {!isConsult && (
       <section className="bg-white">
         <div className="mx-auto max-w-7xl border-y border-line px-4 py-20 sm:px-6">
           <SectionHeading eyebrow="How it works" title="From first session to results" />
@@ -185,9 +209,10 @@ export function ServicePage({ slug }: { slug: string }) {
           )}
         </div>
       </section>
+      )}
 
       {/* Pricing */}
-      {plan && (
+      {plan && !plan.oneOff && (
         <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
           <SectionHeading eyebrow="Pricing" title={`${service.shortName} prices`} />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -249,6 +274,32 @@ export function ServicePage({ slug }: { slug: string }) {
               Full price list
             </Link>
           </div>
+        </section>
+      )}
+
+      {/* Consultation price — one-off */}
+      {plan?.oneOff && (
+        <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+          <SectionHeading eyebrow="Pricing" title="Book your consultation" />
+          <Reveal>
+            <div className="card-lift flex max-w-xl flex-col border border-ink bg-ink p-8 text-paper">
+              <p className="eyebrow text-gold">{plan.oneOff.duration}</p>
+              <p className="display mt-3 text-4xl text-paper">
+                {currency}
+                {plan.single}
+                <span className="ml-2 text-base text-mist">one-off</span>
+              </p>
+              <p className="mt-3 text-mist">{plan.oneOff.blurb}</p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <Link href={plan.oneOff.ctaHref} className="btn btn-primary">
+                  {plan.oneOff.ctaLabel}
+                </Link>
+                <Link href="/pricing-plans/" className="btn btn-outline-light">
+                  Full price list
+                </Link>
+              </div>
+            </div>
+          </Reveal>
         </section>
       )}
 

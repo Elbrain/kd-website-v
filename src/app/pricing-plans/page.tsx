@@ -39,47 +39,66 @@ export default function PricingPage() {
                     {currency}
                     {p.single}
                   </span>{" "}
-                  <span className="text-mist">single · {p.unitLabel}</span>
+                  <span className="text-mist">
+                    {p.oneOff ? p.unitLabel : `single · ${p.unitLabel}`}
+                  </span>
                 </p>
               </div>
               <div className="flex flex-1 flex-col p-6">
-                <table className="w-full text-left">
-                  <caption className="sr-only">{p.serviceName} block pricing</caption>
-                  <thead>
-                    <tr className="text-sm text-stone">
-                      <th scope="col" className="pb-2 font-medium">
-                        Block
-                      </th>
-                      <th scope="col" className="pb-2 font-medium">
-                        Price
-                      </th>
-                      <th scope="col" className="pb-2 font-medium">
-                        Per session
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {p.blocks.map((b) => (
-                      <tr key={b.sessions} className="border-t border-line">
-                        <td className="py-2.5">{b.sessions} sessions</td>
-                        <td className="py-2.5 font-medium text-ink">
-                          {currency}
-                          {b.price}
-                        </td>
-                        <td className="py-2.5 text-stone">
-                          {currency}
-                          {Math.round(b.price / b.sessions)}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-                {p.note && <p className="mt-3 text-sm text-stone">{p.note}</p>}
-                <div className="mt-auto pt-5">
-                  <Link href={`/${p.serviceSlug}/`} className="btn btn-outline w-full">
-                    About {p.serviceName}
-                  </Link>
-                </div>
+                {p.oneOff ? (
+                  <>
+                    <p className="text-sm font-medium text-ink">{p.oneOff.duration}</p>
+                    <p className="mt-2 text-sm text-stone">{p.oneOff.blurb}</p>
+                    <div className="mt-auto space-y-3 pt-5">
+                      <Link href={p.oneOff.ctaHref} className="btn btn-primary w-full">
+                        {p.oneOff.ctaLabel}
+                      </Link>
+                      <Link href={`/${p.serviceSlug}/`} className="btn btn-outline w-full">
+                        About {p.serviceName}
+                      </Link>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <table className="w-full text-left">
+                      <caption className="sr-only">{p.serviceName} block pricing</caption>
+                      <thead>
+                        <tr className="text-sm text-stone">
+                          <th scope="col" className="pb-2 font-medium">
+                            Block
+                          </th>
+                          <th scope="col" className="pb-2 font-medium">
+                            Price
+                          </th>
+                          <th scope="col" className="pb-2 font-medium">
+                            Per session
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {p.blocks.map((b) => (
+                          <tr key={b.sessions} className="border-t border-line">
+                            <td className="py-2.5">{b.sessions} sessions</td>
+                            <td className="py-2.5 font-medium text-ink">
+                              {currency}
+                              {b.price}
+                            </td>
+                            <td className="py-2.5 text-stone">
+                              {currency}
+                              {Math.round(b.price / b.sessions)}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                    {p.note && <p className="mt-3 text-sm text-stone">{p.note}</p>}
+                    <div className="mt-auto pt-5">
+                      <Link href={`/${p.serviceSlug}/`} className="btn btn-outline w-full">
+                        About {p.serviceName}
+                      </Link>
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           ))}
