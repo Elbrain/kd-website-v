@@ -10,9 +10,9 @@ import { Reveal } from "@/components/Reveal";
 import { BlueprintPanel, SectionHeading } from "@/components/ui";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Blackheath Personal Training | Private Fitness Studio in Blackheath, London",
+  title: "Personal Trainer in Blackheath | KD Personal Training",
   description:
-    "KD Personal Training is an established private gym in Blackheath, London SE3 — 1-to-1 coaching, couples training, over-50s and perimenopause programmes, plus professional treatment and office rooms. Free 30-minute intro session.",
+    "Private personal training in Blackheath, London — 1-to-1, couples, over-50s and rehab in a completely private studio. Free 30-minute intro session.",
   path: "/",
 });
 
