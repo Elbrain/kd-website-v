@@ -9,7 +9,7 @@ import { EnquiryForm } from "@/components/EnquiryForm";
 export const metadata: Metadata = pageMetadata({
   title: "Contact Us — KD Personal Training, Blackheath",
   description:
-    "Contact KD Personal Training in Blackheath, London SE3: book your free 30-minute introductory session, enquire about studio hire, or ask about treatment and office rooms to rent. Call 07772 923803.",
+    "Contact KD Personal Training in Blackheath SE3 — book your free 30-minute intro session or ask about studio hire and rooms. Call 07772 923803.",
   path: "/contact-us/",
 });
 

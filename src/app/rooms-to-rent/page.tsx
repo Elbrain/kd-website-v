@@ -14,7 +14,7 @@ import { EnquiryForm } from "@/components/EnquiryForm";
 export const metadata: Metadata = pageMetadata({
   title: "Treatment & Professional Rooms to Rent in Blackheath | KD",
   description:
-    "Private treatment, therapy and office rooms to rent in Blackheath, London — inside a modern fitness and professional building anchored by KD Personal Training. Enquire about availability and arrange a viewing.",
+    "Private treatment, therapy and office rooms to rent in Blackheath, London. Enquire about availability and arrange a viewing.",
   path: "/rooms-to-rent/",
   noindex: !roomsIndexable,
 });

@@ -13,7 +13,7 @@ import { EnquiryForm } from "@/components/EnquiryForm";
 export const metadata: Metadata = pageMetadata({
   title: "Therapy & Treatment Rooms to Rent in Blackheath | KD",
   description:
-    "Private therapy and treatment rooms to rent in Blackheath, London — suited to physiotherapy, sports therapy, massage and consultations. Flexible arrangements — enquire about availability and viewings.",
+    "Private therapy and treatment rooms to rent in Blackheath — suited to physiotherapy, sports therapy and massage. Enquire about viewings.",
   path: "/rooms-to-rent/treatment-rooms/",
   noindex: !roomsIndexable,
 });

@@ -44,6 +44,21 @@ export async function generateMetadata({
 
 const dateFmt = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric" });
 
+/** Render inline [label](/internal-path/) links inside post paragraphs. */
+function withLinks(text: string): React.ReactNode {
+  const parts = text.split(/(\[[^\]]+\]\(\/[^)]*\))/g);
+  if (parts.length === 1) return text;
+  return parts.map((part, i) => {
+    const m = part.match(/^\[([^\]]+)\]\((\/[^)]*)\)$/);
+    if (!m) return part;
+    return (
+      <Link key={i} href={m[2]} className="text-brass underline">
+        {m[1]}
+      </Link>
+    );
+  });
+}
+
 export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = getPost(slug);
@@ -81,11 +96,11 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 <section key={i}>
                   {s.h2 && <h2>{s.h2}</h2>}
                   {s.h3 && <h3>{s.h3}</h3>}
-                  {s.paragraphs?.map((p) => <p key={p.slice(0, 40)}>{p}</p>)}
+                  {s.paragraphs?.map((p) => <p key={p.slice(0, 40)}>{withLinks(p)}</p>)}
                   {s.list && (
                     <ul>
                       {s.list.map((li) => (
-                        <li key={li.slice(0, 40)}>{li}</li>
+                        <li key={li.slice(0, 40)}>{withLinks(li)}</li>
                       ))}
                     </ul>
                   )}

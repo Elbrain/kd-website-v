@@ -4,7 +4,7 @@ import { pageMetadata } from "@/lib/seo";
 import { LegalPage } from "@/components/LegalPage";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Privacy Policy",
+  title: "Privacy Policy — KD Personal Training",
   description: "How KD Personal Training LTD collects, uses and protects your personal data.",
   path: "/privacy-policy/",
 });

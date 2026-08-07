@@ -8,7 +8,7 @@ import { SectionHeading, TrialCta } from "@/components/ui";
 export const metadata: Metadata = pageMetadata({
   title: "Pricing Plans — Personal Training Prices in Blackheath",
   description:
-    "Clear personal training prices at KD Personal Training, Blackheath: 1-to-1 from £70 per session on a block, couples from £45 each. Free 30-minute introductory session for every new client.",
+    "Clear personal training prices in Blackheath: 1-to-1 from £70 per session on a block, couples from £45 each. Free 30-minute intro session.",
   path: "/pricing-plans/",
 });
 

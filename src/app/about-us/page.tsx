@@ -11,9 +11,9 @@ import { personSchema } from "@/lib/schema";
 import { SectionHeading, TrialCta } from "@/components/ui";
 
 export const metadata: Metadata = pageMetadata({
-  title: "About Us — KD Personal Training Fitness Studio, Blackheath",
+  title: "About Us — KD Personal Training, Blackheath",
   description:
-    "KD Personal Training has helped Blackheath get stronger since 2016 — a completely private studio, one coach, and programmes built around each client. Meet Karolina and the studio.",
+    "A completely private studio in Blackheath, one coach, and programmes built around each client since 2016. Meet Karolina and the KD studio.",
   path: "/about-us/",
 });
 

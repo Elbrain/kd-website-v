@@ -14,7 +14,7 @@ import { SectionHeading, TrialCta } from "@/components/ui";
 export const metadata: Metadata = pageMetadata({
   title: "Personal Training in Blackheath | Private 1-to-1 Coaching",
   description:
-    "Private personal training in Blackheath, London — 1-to-1 coaching, couples training, sport rehabilitation, over-50s and perimenopause programmes in a completely private studio. Free 30-minute intro session.",
+    "Private personal training in Blackheath — 1-to-1, couples, rehab, over-50s and perimenopause programmes. Free 30-minute intro session.",
   path: "/personal-training/",
 });
 

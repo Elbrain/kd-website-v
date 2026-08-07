@@ -4,7 +4,7 @@ import { pageMetadata } from "@/lib/seo";
 import { LegalPage } from "@/components/LegalPage";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Terms of Use",
+  title: "Terms of Use — KD Personal Training",
   description: "Terms of use for the KD Personal Training website.",
   path: "/terms/",
 });

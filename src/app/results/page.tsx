@@ -8,7 +8,7 @@ import { SectionHeading, TrialCta } from "@/components/ui";
 export const metadata: Metadata = pageMetadata({
   title: "Results & Reviews — KD Personal Training, Blackheath",
   description:
-    "Real results from real Blackheath clients. Read genuine KD Personal Training reviews on Google — fat loss, strength, post-injury comebacks and midlife training wins since 2016.",
+    "Real results from Blackheath clients — genuine Google reviews covering fat loss, strength, post-injury comebacks and midlife wins since 2016.",
   path: "/results/",
 });
 

@@ -13,7 +13,7 @@ import { EnquiryForm } from "@/components/EnquiryForm";
 export const metadata: Metadata = pageMetadata({
   title: "Small Office Rooms to Rent in Blackheath | Private & Flexible",
   description:
-    "Private office rooms to rent in Blackheath, London — quiet, presentable rooms for independent professionals and small businesses. Not coworking: your own lockable room. Enquire about availability.",
+    "Private office rooms to rent in Blackheath — quiet, presentable, your own lockable room, not coworking. Enquire about availability.",
   path: "/rooms-to-rent/office-rooms/",
   noindex: !roomsIndexable,
 });

@@ -12,9 +12,9 @@ import { faqSchema, serviceSchema } from "@/lib/schema";
 import { FaqList, SectionHeading } from "@/components/ui";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Private Gym Hire for Personal Trainers in Blackheath | Studio Rental",
+  title: "Gym Hire for Personal Trainers in Blackheath | KD",
   description:
-    "Rent a private, fully equipped personal training studio in Blackheath, London by the hour. No contracts, pay as you go, keep 100% of what you earn — ideal for new and growing PTs.",
+    "Rent a private, fully equipped PT studio in Blackheath by the hour. No contracts, pay as you go, keep 100% of what you earn.",
   path: "/gym-rent/",
 });
 

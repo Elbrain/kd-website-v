@@ -4,7 +4,7 @@ import { pageMetadata } from "@/lib/seo";
 import { LegalPage } from "@/components/LegalPage";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Cookie Policy",
+  title: "Cookie Policy — KD Personal Training",
   description: "How the KD Personal Training website uses cookies.",
   path: "/cookie-policy/",
 });

@@ -11,7 +11,7 @@ import { SectionHeading, TrialCta } from "@/components/ui";
 export const metadata: Metadata = pageMetadata({
   title: "The Private Gym in Blackheath | KD Personal Training",
   description:
-    "Inside KD's private Blackheath gym — power rack, smith machine, cable system, assault bike and a full free-weight range, with professional treatment and office rooms alongside. One client at a time.",
+    "Inside KD's private Blackheath gym — power rack, smith machine, cables, assault bike and full free weights. One client at a time.",
   path: "/gym/",
 });
 

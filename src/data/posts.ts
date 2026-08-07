@@ -32,6 +32,107 @@ export interface Post {
 
 export const posts: Post[] = [
   /* ============================================================
+   * NEW — August 2026
+   * ============================================================ */
+  {
+    slug: "personal-trainer-near-greenwich-lewisham-lee",
+    title: "Looking for a Personal Trainer Near Greenwich, Lewisham or Lee?",
+    metaTitle: "Personal Trainer Near Greenwich, Lewisham & Lee | KD",
+    metaDescription:
+      "Why clients from Greenwich, Lewisham, Lee, Charlton and across south-east London train at a completely private studio in Blackheath village.",
+    datePublished: "2026-08-07",
+    dateModified: "2026-08-07",
+    readingMinutes: 5,
+    excerpt:
+      "Most of our clients don't live in Blackheath itself — they travel in from Greenwich, Lewisham, Lee and beyond. Here's why a private studio is worth a ten-minute journey.",
+    relatedServiceSlug: "1-to-1-training",
+    sections: [
+      {
+        paragraphs: [
+          "Search for a personal trainer in south-east London and you'll mostly find two options: a coach who works out of a busy commercial gym, or an online plan with no coach in the room at all. There is a third option, and it's the reason most of our clients travel to us from outside Blackheath itself: a completely private studio, one client at a time.",
+          "KD Personal Training sits in the heart of Blackheath village, two minutes' walk from Blackheath station. That puts us within a short journey of most of south-east London — and it means the whole floor is yours for every session: no members, no queues for equipment, no one watching.",
+        ],
+      },
+      {
+        h2: "Where our clients travel from",
+        paragraphs: [
+          "The studio's catchment is roughly everywhere within five or six miles of the village. In practice that means clients come to us from Greenwich and North Greenwich, Lewisham and Hither Green, Lee, Grove Park and Kidbrooke, Charlton and Woolwich, Eltham, Catford, Brockley, Deptford and New Cross — and from further out, Forest Hill, Sydenham, Dulwich and Canary Wharf.",
+          "From most of these areas the door-to-door journey is 10–20 minutes. Blackheath station is on the direct line from Lewisham, Hither Green and Grove Park; buses run through the village from Greenwich, Lee and Kidbrooke; and there's on-street parking nearby if you'd rather drive. Full directions are on our [find us page](/location/).",
+        ],
+      },
+      {
+        h2: "Why people travel past three gyms to get here",
+        paragraphs: [
+          "Nobody travels for a treadmill. The reason clients pass bigger, closer gyms is what happens inside the session: fully personalised [1-to-1 coaching](/1-to-1-training/) in a space where the coach's attention is never split and nobody else is waiting for the rack.",
+          "Privacy matters more than people expect. If you're starting from zero, returning after years away, or simply hate being watched while you train, a private floor removes the biggest barrier before the first rep. It's also why [couples training](/couples-training/) works so well here — two of you, one coach, and nobody else.",
+        ],
+      },
+      {
+        h2: "Programmes for every starting point",
+        paragraphs: [
+          "Every client gets a programme written for them, whatever the goal: fat loss, strength, [training in your 50s and beyond](/fitness-for-50/), [perimenopause training](/perimenopause-training/), or a structured return after injury through [sport rehabilitation](/sport-rehabilitation/).",
+          "If ongoing aches or restricted movement are the thing holding you back, our one-off [Movement & Pain Consultation](/movement-pain-consultation/) is a thorough place to start.",
+        ],
+      },
+      {
+        h2: "Try it before you decide",
+        paragraphs: [
+          "Every new client starts with a free 30-minute introductory session — a chance to see the studio, talk through your goals and find out how it feels to train with the whole floor to yourself. [Book your free session](/contact-us/) and judge the journey for yourself: most people find it shorter than their old walk to the gym floor through a crowded changing room.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "movement-pain-consultation-what-to-expect",
+    title: "Stiff, Achy or Moving Badly? What a Movement & Pain Consultation Involves",
+    metaTitle: "Movement & Pain Consultation — What to Expect | KD",
+    metaDescription:
+      "What actually happens in a Movement & Pain Consultation at our private Blackheath studio — screening, coached exercises and a written programme to take away.",
+    datePublished: "2026-08-07",
+    dateModified: "2026-08-07",
+    readingMinutes: 5,
+    excerpt:
+      "Ongoing stiffness or discomfort rarely fixes itself — but it often responds well to the right strength and mobility work. Here's exactly what the consultation involves.",
+    relatedServiceSlug: "movement-pain-consultation",
+    sections: [
+      {
+        paragraphs: [
+          "Plenty of people live with a background level of discomfort: a stiff back in the morning, a shoulder that complains at the top of a reach, knees that would rather not do stairs. It isn't bad enough for a referral, but it's persistent enough to shape what you do — and most people quietly train around it, or stop training altogether.",
+          "Weakness, tightness, reduced mobility and unhelpful movement patterns can sometimes contribute to that kind of pain. That's the gap our [Movement & Pain Consultation](/movement-pain-consultation/) is designed for: a private, in-depth session at our Blackheath studio that looks at how you actually move, then gives you a practical plan to move better.",
+        ],
+      },
+      {
+        h2: "What the consultation involves",
+        paragraphs: [
+          "It's a one-off private session of up to two hours, one-to-one with your coach. There's no crowd and no time pressure — enough space to look at things properly.",
+        ],
+        list: [
+          "A detailed discussion about your discomfort, lifestyle and goals",
+          "Posture, mobility, strength and movement screening",
+          "Identification of areas that may benefit from additional support",
+          "Coaching through appropriate strength and mobility exercises",
+          "Practical guidance for training and everyday movement",
+          "A personalised written exercise programme following your session",
+        ],
+      },
+      {
+        h2: "What it isn't",
+        paragraphs: [
+          "This is a coaching session, not a medical appointment — we don't diagnose or treat injuries, and nothing here replaces your GP, physiotherapist or consultant. If you're under their care, their guidance comes first and we work alongside it. What we bring is the training side: identifying where improved strength, mobility and control may help, and coaching you through exactly how to work on them.",
+          "If you're coming back from a specific, diagnosed injury, our ongoing [sport rehabilitation training](/sport-rehabilitation/) may be the better fit — the consultation is ideal when the problem is more general: stiffness, restriction, or discomfort that has crept in over time.",
+        ],
+      },
+      {
+        h2: "What happens afterwards",
+        paragraphs: [
+          "You leave with a written programme you can run yourself — at home, in your own gym, or with us. Some clients use the consultation as a one-off reset; others carry the work into regular [1-to-1 personal training](/1-to-1-training/) so the programme keeps evolving as they improve. Many of our [over-50s clients](/fitness-for-50/) start exactly this way.",
+          "The consultation costs £300, runs up to two hours, and takes place in a completely private studio two minutes from Blackheath station — with clients joining us from Greenwich, Lewisham, Lee and across south-east London. [Book your consultation](/contact-us/) and take the first step towards moving better, becoming stronger and living with less pain.",
+        ],
+      },
+    ],
+  },
+
+  /* ============================================================
    * NEW — July 2026
    * ============================================================ */
   {

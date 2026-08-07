@@ -10,9 +10,9 @@ import { faqSchema } from "@/lib/schema";
 import { FaqList, SectionHeading, Tbc, TrialCta } from "@/components/ui";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Find Us — Personal Trainer in Blackheath Village, London SE3 | KD",
+  title: "Find Us in Blackheath Village, London SE3 | KD",
   description:
-    "KD Personal Training is at 1st Floor, 5 Lee Road, Blackheath, London SE3 9RQ — two minutes from Blackheath station. Clients travel from Lewisham, Greenwich, Lee and Kidbrooke.",
+    "KD Personal Training, 1st Floor, 5 Lee Road, Blackheath SE3 9RQ — two minutes from the station. Serving Greenwich, Lewisham, Lee and beyond.",
   path: "/location/",
 });
 
@@ -144,11 +144,21 @@ export default function LocationPage() {
           <SectionHeading eyebrow="Areas we cover" title="Training clients across south-east London" />
           <p className="max-w-3xl text-stone">
             The studio sits in the heart of Blackheath village, and our clients travel from
-            right across the neighbouring areas — {business.serviceAreas.slice(1).join(", ")}{" "}
-            and beyond. With Blackheath station two minutes away and good bus links through the
-            village, most people reach us within a quarter of an hour — before work, after the
-            school run or on a lunch break.
+            right across south-east London — everywhere within five or six miles of the
+            village. With Blackheath station two minutes away and good bus links, most people
+            reach us within a quarter of an hour — before work, after the school run or on a
+            lunch break.
           </p>
+          <ul className="mt-6 flex max-w-4xl flex-wrap gap-2.5">
+            {business.serviceAreas.map((area) => (
+              <li
+                key={area}
+                className="border border-line bg-white px-3.5 py-1.5 text-sm text-ink-soft"
+              >
+                {area}
+              </li>
+            ))}
+          </ul>
         </div>
 
         {/* Map */}

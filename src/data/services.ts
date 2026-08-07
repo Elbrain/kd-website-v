@@ -24,9 +24,9 @@ export const services: Service[] = [
     name: "1 to 1 Personal Training",
     shortName: "1 to 1 Training",
     card: "Fully personalised one-to-one coaching in a private studio — your goals, your pace, our full attention.",
-    metaTitle: "1 to 1 Personal Training in Blackheath | KD Personal Training",
+    metaTitle: "1 to 1 Personal Training in Blackheath | KD",
     metaDescription:
-      "Private one-to-one personal training in Blackheath, London. Fully personalised programmes for fat loss, strength and muscle in a private studio. Free 30-minute intro session.",
+      "Private 1-to-1 personal training in Blackheath, London. Personalised programmes for fat loss, strength and muscle. Free 30-minute intro session.",
     h1: "1 to 1 Personal Training in Blackheath",
     intro:
       "Our most popular service. One-to-one training gives you our full attention in a completely private studio — no crowds, no queues for equipment, no one watching. Every programme is written for you: your goals, your starting point, your lifestyle.",
@@ -53,9 +53,9 @@ export const services: Service[] = [
     name: "Couples Personal Training",
     shortName: "Couples Training",
     card: "Train with your partner or a friend — shared sessions, shared motivation, at a lower cost per person.",
-    metaTitle: "Couples Personal Training in Blackheath | KD Personal Training",
+    metaTitle: "Couples Personal Training in Blackheath | KD",
     metaDescription:
-      "Couples personal training in Blackheath, London. Train with your partner or a friend in a private studio — individual coaching for both of you, at a lower cost per person.",
+      "Couples personal training in Blackheath — train with a partner or friend in a private studio. Individual coaching for both, lower cost per person.",
     h1: "Couples Personal Training in Blackheath",
     intro:
       "Want to train, but not on your own? Bring your partner or a friend. Couples training lets you both pursue your goals together — and at a lower cost per person than training alone. You don't need to be at the same fitness level: we run bespoke plans for each of you inside the same session.",
@@ -74,7 +74,7 @@ export const services: Service[] = [
     card: "Structured post-injury training to bring you back to your best — sometimes better than before.",
     metaTitle: "Sport Rehabilitation in Blackheath | Post-Injury Training",
     metaDescription:
-      "Post-injury fitness training in Blackheath, London. Individually tailored rehabilitation programmes to rebuild strength and confidence after injury. Free 30-minute intro session.",
+      "Post-injury training in Blackheath, London — tailored rehabilitation programmes to rebuild strength and confidence. Free 30-minute intro session.",
     h1: "Sport Rehabilitation in Blackheath",
     intro:
       "Injuries happen — what matters is the route back. We build individually tailored rehabilitation programmes using specific, progressive exercises, with the aim of returning you to your optimal level of fitness — sometimes at a better level than before. We work alongside the advice of your GP, physiotherapist or consultant, never instead of it.",
@@ -91,9 +91,9 @@ export const services: Service[] = [
     name: "Movement & Pain Consultation",
     shortName: "Movement & Pain",
     card: "A private, in-depth one-off consultation for muscle or joint discomfort, stiffness or restricted movement — with a personalised written programme to take away.",
-    metaTitle: "Movement & Pain Consultation in Blackheath | KD Personal Training",
+    metaTitle: "Movement & Pain Consultation in Blackheath | KD",
     metaDescription:
-      "A private, in-depth movement and pain consultation in Blackheath, London — posture, mobility and strength screening with practical coaching and a personalised written exercise programme.",
+      "A private, in-depth movement and pain consultation in Blackheath — posture, mobility and strength screening, plus a written exercise programme.",
     h1: "Movement & Pain Consultation",
     intro:
       "Living with ongoing muscle or joint discomfort, stiffness or restricted movement? Weakness, tightness, reduced mobility and movement patterns can sometimes contribute to pain. During this in-depth consultation, I will assess how you move and identify areas that may benefit from improved strength, mobility and control. You'll learn suitable exercises and receive practical advice to help you move more comfortably and confidently.",
@@ -119,9 +119,9 @@ export const services: Service[] = [
     name: "Personal Training for Over 50s",
     shortName: "Fitness for 50+",
     card: "Strength, mobility and confidence for your 50s, 60s and beyond — every exercise adapted to you.",
-    metaTitle: "Personal Training for Over 50s in Blackheath | Fitness for 50+",
+    metaTitle: "Personal Training for Over 50s in Blackheath | KD",
     metaDescription:
-      "Over-50s personal training in Blackheath, London. Build strength, protect your joints and move with confidence — private sessions adapted to your level. Free 30-minute assessment.",
+      "Over-50s personal training in Blackheath — build strength, protect joints and move with confidence. Private sessions, free 30-minute assessment.",
     h1: "Fitness for 50+: Strength, Mobility & Confidence",
     intro:
       "As we get older, the way we train matters more than ever. The 50+ programme is designed to help you build strength, improve mobility, protect your joints and feel confident in everyday movement — without pain, pressure or intimidation. Age is not a barrier: you can start at any fitness level, and every exercise is adapted to your abilities.",
@@ -148,9 +148,9 @@ export const services: Service[] = [
     name: "Perimenopause Personal Training",
     shortName: "Perimenopause Training",
     card: "Strength • Balance • Confidence — training designed for every stage of perimenopause.",
-    metaTitle: "Perimenopause Personal Training in Blackheath | KD Personal Training",
+    metaTitle: "Perimenopause Personal Training in Blackheath | KD",
     metaDescription:
-      "Perimenopause personal training in Blackheath, London. Strength-led private coaching designed for women in midlife — feel strong, energised and in control again.",
+      "Perimenopause personal training in Blackheath. Strength-led private coaching for women in midlife — feel strong, energised and in control again.",
     h1: "Perimenopause Training in Blackheath",
     intro:
       "Perimenopause usually begins between 35 and 50 and can bring unexpected changes: tiredness, weight gain around the middle, mood swings, poor sleep, or simply feeling not yourself. You are not doing anything wrong — your hormones are shifting, and the right training can completely change how you feel. This programme is designed specifically for women in midlife who want to feel strong, balanced and confident again.",
