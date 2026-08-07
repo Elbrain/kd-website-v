@@ -38,8 +38,10 @@ export default function PersonalTrainingHub() {
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-mist">
             Every KD programme is delivered one-to-one (or two-to-one) in a completely private
-            studio — no crowds, no queues, no judgement. Choose the service that fits where you
-            are right now; every one of them starts with a free 30-minute introductory session.
+            studio — no crowds, no queues, no judgement. Clients join us from across south-east
+            London — Greenwich, Lewisham, Lee, Charlton and beyond — with Blackheath station two
+            minutes away. Choose the service that fits where you are right now; every one of
+            them starts with a free 30-minute introductory session.
           </p>
         </div>
       </section>

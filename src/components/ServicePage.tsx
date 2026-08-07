@@ -143,6 +143,22 @@ export function ServicePage({ slug }: { slug: string }) {
         </div>
       </section>
 
+      {/* In-depth: how sessions work for this service */}
+      {service.detail && (
+        <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6">
+          <Reveal>
+            <SectionHeading eyebrow="Inside the sessions" title={service.detail.title} />
+            <div className="max-w-3xl space-y-4">
+              {service.detail.paragraphs.map((p) => (
+                <p key={p.slice(0, 40)} className="text-stone">
+                  {p}
+                </p>
+              ))}
+            </div>
+          </Reveal>
+        </section>
+      )}
+
       {/* What's included — consultation only */}
       {service.includes && (
         <section className="bg-white">

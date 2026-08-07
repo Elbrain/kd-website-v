@@ -13,6 +13,8 @@ export interface Service {
   goals?: string[];
   /** One-off consultation: bullet list of what the session includes. */
   includes?: string[];
+  /** Optional in-depth section rendered between "Who it's for" and "How it works". */
+  detail?: { title: string; paragraphs: string[] };
   /** Optional closing line for consultation-style pages. */
   pitch?: string;
   related: string[]; // slugs
@@ -46,6 +48,13 @@ export const services: Service[] = [
       "Pre and post natal",
       "Post-injury rehabilitation",
     ],
+    detail: {
+      title: "What a session with us looks like",
+      paragraphs: [
+        "Every session is coached, not supervised. You warm up with movement work matched to the day's training, then work through your programme with your coach on the floor beside you — adjusting load, tightening technique and keeping you honest on the reps you'd skip on your own. The studio is yours for the whole session: squat rack, smith machine, cable pulley system, the Monster G9 rig, assault bike, rower, free weights and kettlebells, with no waiting and nobody else on the floor.",
+        "Between sessions your programme does the quiet work. It's written for you after your free introductory session, then reviewed and adjusted as you progress — heavier when you're ready, scaled back when life gets in the way. Most clients train with us one to three times a week; if you also train elsewhere, your plan covers those days too.",
+      ],
+    },
     related: ["couples-training", "fitness-for-50"],
   },
   {
@@ -65,6 +74,13 @@ export const services: Service[] = [
       "Mixed fitness levels — programmes are individual within the shared session",
       "Anyone who finds accountability easier as a two",
     ],
+    detail: {
+      title: "How a shared session actually works",
+      paragraphs: [
+        "You train side by side, but never on the same generic plan. Before your first full session we learn each of your goals and starting points, then write two individual programmes that run inside the same hour — one of you might be squatting while the other works on the cable machine, with the coach moving between you on every set.",
+        "That structure is why mixed levels work so well here: a complete beginner can train alongside an experienced partner and both get a session that genuinely fits. And because the studio is completely private, it's just the two of you and your coach — which makes it far easier to try things, fail reps and actually enjoy training together.",
+      ],
+    },
     related: ["1-to-1-training", "sport-rehabilitation"],
   },
   {
@@ -84,6 +100,13 @@ export const services: Service[] = [
       "Athletes rebuilding towards their sport",
       "People training around a long-standing niggle",
     ],
+    detail: {
+      title: "Structured, progressive — and honest",
+      paragraphs: [
+        "Rehabilitation training lives in the gap between physiotherapy discharge and full training. We start from what your clinician has cleared you to do, then build progressively: restoring range and control first, then strength, then the confidence to load the movement patterns you've been protecting. Every stage is coached one-to-one in a private studio, so nothing is rushed and nothing is left to guesswork.",
+        "We're equally honest about the boundaries. This is fitness training after injury, not treatment — we don't diagnose, and we work alongside the advice of your GP, physiotherapist or consultant, never instead of it. If we think you need clinical input before training, we'll say so.",
+      ],
+    },
     related: ["1-to-1-training", "fitness-for-50"],
   },
   {
@@ -141,6 +164,13 @@ export const services: Service[] = [
       "Increase daily energy",
       "Improve confidence and independence",
     ],
+    detail: {
+      title: "Training that respects your starting point",
+      paragraphs: [
+        "The first session is a conversation and a gentle movement check, not a test. From there your programme builds gradually: strength work for the muscles that protect your joints, balance and mobility work you'll feel on the stairs and in the garden, and enough challenge to keep progress coming without leaving you wrecked for two days.",
+        "Everything happens in a completely private studio — no mirrors full of twenty-somethings, no music you can't hear yourself think over, no one watching. Many of our over-50s clients hadn't set foot in a gym for decades before their first session; within weeks the studio simply feels like theirs.",
+      ],
+    },
     related: ["perimenopause-training", "sport-rehabilitation"],
   },
   {
@@ -168,6 +198,13 @@ export const services: Service[] = [
       "Supports better sleep and steadier energy",
       "Sustainable fat loss without burnout",
     ],
+    detail: {
+      title: "Strength-led, not cardio-punishment",
+      paragraphs: [
+        "The old advice — eat less, do more cardio — tends to backfire in midlife. This programme is built around progressive strength training instead: building muscle to support your metabolism, protecting bone density, strengthening your core and pelvic floor, and keeping intensity at a level that manages stress rather than piling more on. Sessions are coached one-to-one in a completely private studio, and the plan flexes with your week — including the weeks when sleep and energy don't cooperate.",
+        "You don't need any gym experience to start. The free introductory session is a conversation about how you're actually feeling and a gentle look at how you move; the programme starts wherever you are, and progresses at a pace your body will thank you for.",
+      ],
+    },
     related: ["fitness-for-50", "1-to-1-training"],
   },
 ];

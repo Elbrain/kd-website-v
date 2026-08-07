@@ -52,6 +52,24 @@ export const serviceFaqs: Record<string, Faq[]> = {
       a: "Common examples include knee, shoulder and back issues, post-operative deconditioning and sports injuries. Tell us your situation in the enquiry form and we'll be honest about whether we're the right fit.",
     },
   ],
+  "movement-pain-consultation": [
+    {
+      q: "How long is the consultation and what does it cost?",
+      a: "It's a one-off private session of up to two hours, priced at £300. That includes the full discussion, movement screening, coached exercises and a personalised written programme sent after your session.",
+    },
+    {
+      q: "Is this a medical appointment or physiotherapy?",
+      a: "No. It's a coaching session — we don't diagnose or treat injuries, and it doesn't replace your GP, physiotherapist or consultant. We look at how you move and coach the strength and mobility work that may help you move more comfortably.",
+    },
+    {
+      q: "What do I take away from it?",
+      a: "A personalised written exercise programme based on what we find, plus practical guidance for training and everyday movement. You can run it yourself, or continue the work with regular 1-to-1 sessions.",
+    },
+    {
+      q: "Do I need to prepare anything?",
+      a: "Just comfortable training clothes. If you have relevant guidance from a clinician, bring it along — we always work alongside medical advice, never instead of it.",
+    },
+  ],
   "fitness-for-50": [
     {
       q: "I haven't exercised in years. Can I still start?",
