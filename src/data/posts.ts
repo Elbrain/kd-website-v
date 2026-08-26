@@ -35,6 +35,67 @@ export const posts: Post[] = [
    * NEW — August 2026
    * ============================================================ */
   {
+    slug: "gyms-in-blackheath",
+    title: "Gyms in Blackheath: Your Options, Honestly Compared",
+    metaTitle: "Gyms in Blackheath — Your Options Compared | KD",
+    metaDescription:
+      "Every gym in and around Blackheath compared — budget chains, council leisure centres, boutique studios and private training. An honest local guide.",
+    datePublished: "2026-08-26",
+    dateModified: "2026-08-26",
+    readingMinutes: 6,
+    excerpt:
+      "Budget chains, council pools, boutique studios — and one completely private training floor. Here's the honest map of your options in and around Blackheath.",
+    relatedServiceSlug: "1-to-1-training",
+    sections: [
+      {
+        paragraphs: [
+          "Search \"gyms in Blackheath\" and the results are messier than the village deserves: chains that are actually in Lewisham, leisure centres a bus ride away, and directories that haven't been updated in years. So here's the honest local map — who's actually here, what each option is good at, and who it genuinely suits.",
+          "Full disclosure first: we run [KD Personal Training](/gym/), a completely private training studio in the heart of the village. We'll make the case for private training at the end — but the comparison itself is played straight, because the truth is that different options suit different people.",
+        ],
+      },
+      {
+        h2: "The surprise: there's no big gym in Blackheath itself",
+        paragraphs: [
+          "Here's the thing most people don't realise until they start looking: none of the big-name gyms actually operate in Blackheath Village or SE3. Every chain gym \"in Blackheath\" is really in Lewisham, Charlton or Greenwich — a 25–40 minute walk or a bus ride from the village. What Blackheath itself offers is smaller and more personal: a cluster of boutique Pilates and yoga studios, and our own private personal training studio two minutes from the station.",
+        ],
+      },
+      {
+        h2: "The budget chains (Lewisham, Charlton & Greenwich)",
+        paragraphs: [
+          "If you want maximum access for minimum money and you're happy training self-directed among a crowd, the chains deliver exactly that. The nearest to Blackheath are in Lewisham town centre — PureGym on the High Street and The Gym Group at Thurston Central, both open 24/7 on contract-free monthly plans, around a mile and a half from the village. Towards Charlton's retail parks you'll find another PureGym and a JD Gyms (24/7, saunas included), and The Gym Group has a site by Cutty Sark in Greenwich. Anytime Fitness (Greenwich Shopping Park and Hither Green) and Snap Fitness (East Greenwich) sit in the middle: 24-hour franchise clubs with worldwide access.",
+          "The honest trade-off: you get equipment and opening hours, not outcomes. Nobody checks your technique, nobody adjusts your programme, and peak hours mean queues for the squat rack. We've written a fuller comparison in [private gym vs commercial gym](/private-gym-vs-commercial-gym/).",
+        ],
+      },
+      {
+        h2: "The council leisure centres",
+        paragraphs: [
+          "The Better (GLL) leisure centres are the family all-rounders, and the strongest reason to pick one is water: Glass Mill in Lewisham has a 25m competition pool alongside its gym and studios, The Greenwich Centre pairs its gym with two pools, Charlton Lido offers a heated 50m outdoor pool year-round, and Sutcliffe Park by Kidbrooke station covers athletics and indoor sports. If swimming, classes or kids' activities are the priority, a leisure centre is genuinely the right call.",
+          "For focused strength training, though, they share the commercial-gym limitation: busy floors, shared kit and no one in your corner.",
+        ],
+      },
+      {
+        h2: "The boutique studios in the village",
+        paragraphs: [
+          "Blackheath Village itself runs boutique: several excellent Pilates studios, yoga, and small specialist spaces. If you already know your discipline — reformer Pilates, yoga — the village has you covered, often within a five-minute walk.",
+        ],
+      },
+      {
+        h2: "The private studio option",
+        paragraphs: [
+          "And then there's the model we chose to build: a [completely private training studio](/gym/) in the heart of the village, two minutes from Blackheath station. No members, no crowds, no queues — every session is one client (or one couple) and one coach, with the whole floor and all the kit (squat rack, smith machine, cable system, the Monster G9 rig, free weights) dedicated to you for the hour.",
+          "Who it genuinely suits: people who want coached results rather than gym access — beginners who don't want an audience, [couples training together](/couples-training/), adults [rebuilding strength in their 50s and beyond](/fitness-for-50/), and anyone whose previous memberships quietly lapsed because nobody noticed whether they turned up. If a £20-a-month chain membership you actually use every week is working for you — honestly, keep it. If what you're really buying is a plan, a coach and accountability, that's [what we do all day](/1-to-1-training/).",
+        ],
+      },
+      {
+        h2: "How to choose",
+        paragraphs: [
+          "Ask yourself one question: do you need access, or do you need coaching? Self-motivated with solid technique — take a chain, the value is real. Swimmer or class-lover — take a leisure centre. Devoted to a discipline — the village boutiques are excellent. But if what's been missing is a programme built for you and someone making sure it happens, try a private studio before you sign another 12 months of the same.",
+          "The easy way to find out: every new KD client starts with a [free 30-minute introductory session](/contact-us/) — see the studio, talk through your goals, and feel what a completely private floor is like. Prices are [published openly](/pricing-plans/), and we're [two minutes from the station](/location/).",
+        ],
+      },
+    ],
+  },
+  {
     slug: "personal-trainer-near-greenwich-lewisham-lee",
     title: "Looking for a Personal Trainer Near Greenwich, Lewisham or Lee?",
     metaTitle: "Personal Trainer Near Greenwich, Lewisham & Lee | KD",
