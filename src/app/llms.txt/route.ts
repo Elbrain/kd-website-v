@@ -12,6 +12,9 @@ import { SITE_URL } from "@/lib/seo";
 export function GET() {
   const priceLines = pricePlans
     .map((p) => {
+      if (p.blocks.length === 0) {
+        return `- ${p.serviceName}: ${currency}${p.single} ${p.unitLabel}${p.oneOff ? ` (${p.oneOff.duration.toLowerCase()})` : ""}`;
+      }
       const cheapest = p.blocks[p.blocks.length - 1];
       return `- ${p.serviceName}: ${currency}${p.single} single session; blocks from ${currency}${Math.round(
         cheapest.price / cheapest.sessions,

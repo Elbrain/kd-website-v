@@ -303,7 +303,7 @@ export const posts: Post[] = [
     title: "Private Gym vs Commercial Gym: Which Actually Gets You Results?",
     metaTitle: "Private Gym vs Commercial Gym — An Honest Comparison | KD Personal Training",
     metaDescription:
-      "Crowds and queues, or one coach and an empty floor? An honest comparison of commercial gyms and private personal training studios — and who each one genuinely suits. From KD in Blackheath.",
+      "Boutique private studio or big-chain gym? An honest comparison of crowds, coaching and cost — and who each one genuinely suits. From KD in Blackheath.",
     datePublished: "2026-06-09",
     dateModified: "2026-06-09",
     readingMinutes: 6,
@@ -319,8 +319,8 @@ export const posts: Post[] = [
       {
         h2: "What each one actually is",
         paragraphs: [
-          "A commercial gym sells access: equipment, space, and (usually) classes, shared with everyone else who bought the same membership. What you do with it is up to you.",
-          "A private studio sells outcomes: the room, the equipment and — crucially — the coach are dedicated to you for the hour. At KD there are no members and no crowds; every session is one client (or one couple) and one coach, with a programme written specifically for you.",
+          "A commercial gym — the big-chain model — sells access: equipment, space, and (usually) classes, shared with everyone else who bought the same membership. What you do with it is up to you.",
+          "A private studio — sometimes called a boutique gym — sells outcomes: the room, the equipment and — crucially — the coach are dedicated to you for the hour. At KD there are no members and no crowds; every session is one client (or one couple) and one coach, with a programme written specifically for you. Whether you compare it as boutique vs chain or private vs commercial, the difference is the same: shared access versus dedicated coaching.",
         ],
       },
       {
