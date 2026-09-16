@@ -32,6 +32,90 @@ export interface Post {
 
 export const posts: Post[] = [
   /* ============================================================
+   * NEW — September 2026
+   * ============================================================ */
+  {
+    slug: "what-is-a-private-gym",
+    title: "What Is a Private Gym? How One-Client-at-a-Time Training Works",
+    metaTitle: "What Is a Private Gym? | KD Personal Training",
+    metaDescription:
+      "What a private gym actually is: one client at a time, the whole floor and a dedicated coach. How it differs from commercial and boutique gyms.",
+    datePublished: "2026-09-16",
+    dateModified: "2026-09-16",
+    readingMinutes: 6,
+    excerpt:
+      "No members, no queues, no audience — just you, a coach and the whole floor. Here's what a private gym actually is, and who it genuinely suits.",
+    relatedServiceSlug: "1-to-1-training",
+    sections: [
+      {
+        h2: "The short answer",
+        paragraphs: [
+          "A private gym is a training space used by one client — or one couple — at a time, by appointment, with a coach dedicated to that session. There is no membership, no shared floor and no one else waiting for the equipment you are using. You book a slot; for that hour the room, the kit and the coach's attention are entirely yours.",
+          "That is the whole idea, and it is what separates a private gym from every other model. A commercial gym sells you access to a shared space. A private gym sells you a coached session in an unshared one.",
+        ],
+      },
+      {
+        h2: "What actually makes it different",
+        paragraphs: [
+          "Three things change when nobody else is on the floor, and they compound.",
+        ],
+        list: [
+          "Exclusivity — no queues for the squat rack, no waiting for a bench, no adjusting your session around whoever got there first. The plan you arrived with is the plan you do.",
+          "Undivided coaching — the coach is watching your set, not supervising a room. Technique gets corrected on the rep it goes wrong, not at the end of the block.",
+          "A programme written for you — because the coach sees every session, the plan evolves with your progress, your sleep and your week, rather than sitting unchanged in an app.",
+        ],
+      },
+      {
+        h2: "Private gym, boutique studio or commercial gym?",
+        paragraphs: [
+          "The three get used interchangeably, so it is worth being precise. A commercial gym — the big-chain model — is a large shared facility on a monthly membership: maximum access, minimum guidance. A boutique studio is usually small and discipline-led (reformer Pilates, yoga, spin) and typically runs small group classes rather than individual sessions. A private gym is the narrowest of the three: an entire training floor, used one client at a time, built around personal training rather than classes.",
+          "If you want the full side-by-side on cost, attention and results, we have written it up in [private gym vs commercial gym](/private-gym-vs-commercial-gym/). And if you are weighing up what is physically near you in south-east London, [gyms in Blackheath](/gyms-in-blackheath/) maps the local options honestly.",
+        ],
+      },
+      {
+        h2: "What a session in a private gym looks like",
+        paragraphs: [
+          "In practice it is calmer than most people expect. You arrive at a booked time to an empty floor. There is a warm-up matched to the day's work, then your programme, with the coach beside you adjusting load and technique set by set — and keeping you honest on the reps you would quietly drop on your own.",
+          "The kit matters less than the access to it, but it has to be there. At [our studio in Blackheath](/gym/) that means a squat rack, smith machine, cable pulley system, the Monster G9 rig, an assault bike and rower, plus free weights, kettlebells and mobility equipment — all of it available for your whole session, because nobody else is booked in.",
+        ],
+      },
+      {
+        h2: "Who it genuinely suits",
+        paragraphs: [
+          "Private training is not automatically better for everyone — it is better for some people, and decisively so.",
+        ],
+        list: [
+          "Complete beginners who do not want an audience while they learn. Most of our clients started here.",
+          "Anyone returning after years away, or training around a niggle, who needs the session adapted rather than endured.",
+          "People whose gym memberships quietly lapsed because nobody noticed whether they turned up.",
+          "Couples and friends who want to train together — see [couples training](/couples-training/), where two individual programmes run inside one shared session.",
+          "Adults [rebuilding strength in their 50s and beyond](/fitness-for-50/), where technique and progression matter more than intensity.",
+          "Anyone whose stiffness or discomfort is the real barrier — a [movement and pain consultation](/movement-pain-consultation/) is often the honest place to start.",
+        ],
+      },
+      {
+        h2: "Who it does not suit",
+        paragraphs: [
+          "If you are self-motivated, confident in your technique and happy training alone, a chain membership is genuinely better value — you are paying for access, and you will use it. If swimming or group classes are the point, a leisure centre wins. And if you are devoted to one discipline, a specialist boutique studio will go deeper than a general private gym can. We would rather you chose well than chose us.",
+        ],
+      },
+      {
+        h2: "What it costs — honestly",
+        paragraphs: [
+          "Per hour, private training costs more than a monthly membership; that is not a comparison worth pretending about. A chain membership can be under £25 a month. A coached one-to-one session with us is £80, with blocks of five, eight or ten sessions bringing the per-session price down — all [published openly on our pricing page](/pricing-plans/).",
+          "The fairer comparison is cost per result. A cheap membership you use twice in January costs infinitely more per outcome than eight coached sessions that actually change how you train. Which of those you are is the only question that matters here.",
+        ],
+      },
+      {
+        h2: "How to try one",
+        paragraphs: [
+          "The only reliable way to know whether training privately suits you is to stand in the room. Every new client at KD starts with a [free 30-minute introductory session](/contact-us/): we talk through your goals and history, look at how you move, and show you the studio — no pressure and no obligation either way.",
+          "We are [two minutes from Blackheath station](/location/) in the heart of the village, with clients travelling in from Greenwich, Lewisham, Lee, Charlton and across south-east London. If the idea of a whole training floor to yourself sounds like the thing that has been missing, come and see what it feels like.",
+        ],
+      },
+    ],
+  },
+  /* ============================================================
    * NEW — August 2026
    * ============================================================ */
   {
