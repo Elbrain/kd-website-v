@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getService, services } from "@/data/services";
 import { serviceFaqs } from "@/data/faqs";
+import { posts } from "@/data/posts";
 import { pricePlans, currency } from "@/data/pricing";
 import { business, isMoving } from "@/data/business";
 import { serviceImages } from "@/data/images";
@@ -23,6 +24,7 @@ export function ServicePage({ slug }: { slug: string }) {
   const faqs = serviceFaqs[slug] ?? [];
   const plan = pricePlans.find((p) => p.serviceSlug === slug);
   const isConsult = Boolean(plan?.oneOff);
+  const relatedPosts = posts.filter((p) => p.relatedServiceSlug === slug).slice(0, 3);
   const related = service.related
     .map((r) => services.find((s) => s.slug === r))
     .filter((s): s is NonNullable<typeof s> => Boolean(s));
@@ -324,6 +326,32 @@ export function ServicePage({ slug }: { slug: string }) {
         <section className="mx-auto max-w-7xl px-4 pb-16 sm:px-6">
           <SectionHeading eyebrow="FAQ" title="Common questions" />
           <FaqList faqs={faqs} />
+        </section>
+      )}
+
+      {/* Related reading — articles that support this service */}
+      {relatedPosts.length > 0 && (
+        <section className="mx-auto max-w-7xl px-4 pb-16 sm:px-6">
+          <SectionHeading eyebrow="Reading" title="More on this" />
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {relatedPosts.map((p, i) => (
+              <Reveal key={p.slug} delay={i * 110}>
+                <Link
+                  href={`/${p.slug}/`}
+                  className="card-lift group flex h-full flex-col border border-line bg-white p-6"
+                >
+                  <p className="eyebrow text-[0.68rem] text-brass">{p.readingMinutes} min read</p>
+                  <h3 className="display mt-2 text-xl leading-snug text-ink transition-colors group-hover:text-brass">
+                    {p.title}
+                  </h3>
+                  <p className="mt-2 flex-1 text-sm text-stone">{p.excerpt}</p>
+                  <span className="eyebrow mt-4 text-[0.68rem] text-brass">
+                    Read <span className="card-arrow">&rarr;</span>
+                  </span>
+                </Link>
+              </Reveal>
+            ))}
+          </div>
         </section>
       )}
 
