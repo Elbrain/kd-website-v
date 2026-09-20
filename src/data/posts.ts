@@ -35,6 +35,76 @@ export const posts: Post[] = [
    * NEW — September 2026
    * ============================================================ */
   {
+    slug: "blackheath-couples-personal-training",
+    title: "Blackheath Couples Personal Training: Train Together, Not Identically",
+    metaTitle: "Blackheath Couples Personal Training | KD",
+    metaDescription:
+      "Couples personal training in Blackheath: two individual programmes inside one private session, from £45 each. How it works when you're at different levels.",
+    datePublished: "2026-09-21",
+    dateModified: "2026-09-21",
+    readingMinutes: 6,
+    excerpt:
+      "Two people, two programmes, one private studio — and a lower cost per person than training alone. How couples training actually works in Blackheath.",
+    relatedServiceSlug: "couples-training",
+    sections: [
+      {
+        paragraphs: [
+          "Most people who ask us about [couples personal training in Blackheath](/couples-training/) arrive with the same worry: one of them trains regularly and the other has not been near a gym in years. They assume the session will be a compromise — too hard for one, too gentle for the other.",
+          "It is not how it works. In a private studio you are not sharing a class or a plan; you are sharing an hour. Inside that hour each of you follows your own programme, written for your own starting point, with one coach moving between you.",
+        ],
+      },
+      {
+        h2: "What couples training actually is",
+        paragraphs: [
+          "Two people, two individual programmes, one private session. Before your first full session we learn each of your goals and starting points separately, then write two plans that run side by side. One of you might be squatting while the other works on the cable machine; the coach is with whoever is mid-set, then swaps.",
+          "The pairing does not have to be romantic, either. Partners, friends, siblings, colleagues, a parent and an adult child — anyone who would rather turn up with someone than alone. The only requirement is that you book the hour together.",
+        ],
+      },
+      {
+        h2: "Different fitness levels are the normal case",
+        paragraphs: [
+          "This is the question we get most, so here is the straight answer: mixed levels are not a problem to work around, they are the standard setup. A complete beginner can train alongside an experienced lifter and both get a session that genuinely fits — different exercises, different loads, different progressions, same hour.",
+          "In practice the gap usually helps. The more experienced partner gets a coach correcting technique they have drifted on for years; the newer one gets to learn in a room with no audience and no queue, next to someone they trust. Neither is waiting around, because the programmes are built to interleave.",
+        ],
+      },
+      {
+        h2: "What a shared session looks like in the studio",
+        paragraphs: [
+          "Our studio sits in the heart of Blackheath village, two minutes' walk from the station, and it is [completely private](/what-is-a-private-gym/) — no members, no crowds. For your hour the whole floor belongs to the two of you: squat rack, smith machine, cable pulley system, the Monster G9 rig, assault bike and rower, plus free weights, kettlebells and mobility kit.",
+          "That privacy matters more for couples than for anyone else. Training together means one of you will fail a rep in front of the other, ask a question you would not ask in a busy gym, or try something new and look awkward doing it. With nobody else in the room, that stops being a reason to avoid the session.",
+        ],
+      },
+      {
+        h2: "What it costs — and why it is cheaper each",
+        paragraphs: [
+          "A couples session is £100 and that price covers both of you, which works out at £50 each — already less per person than an £80 one-to-one session. Blocks bring it down further: five sessions for £500, eight for £760, or ten for £900, which is £45 each per session.",
+          "Put side by side: ten sessions of individual [1-to-1 training](/1-to-1-training/) is £70 each per session; ten couples sessions is £45 each. You are paying less per person and getting a coach who knows both of you, your schedules and the excuses you make for each other. Everything is [published openly on our pricing page](/pricing-plans/).",
+        ],
+      },
+      {
+        h2: "Why training as a two actually sticks",
+        paragraphs: [
+          "Accountability is the honest reason couples training works. A solo membership lapses quietly because nobody notices. A booked session with someone you live with does not — the appointment is in two diaries, and neither of you wants to be the one who cancels.",
+          "It also fixes the logistics problem that kills most training plans in couples: instead of finding two separate slots in a shared week, you find one. An hour together, then the evening back.",
+        ],
+      },
+      {
+        h2: "Coming in from Greenwich, Lewisham or Lee",
+        paragraphs: [
+          "Plenty of the pairs we train do not live in Blackheath itself. Blackheath station is a direct hop from Lewisham, Hither Green and Grove Park; buses run through the village from Greenwich, Lee and Kidbrooke; and there is on-street parking nearby if one of you is driving in from Charlton or Eltham. Door to door it is usually 10 to 20 minutes — the same journey most people already make to a chain gym.",
+          "If you are weighing up the trip, we wrote about [training in Blackheath when you live nearby](/personal-trainer-near-greenwich-lewisham-lee/), and full directions are on the [find us page](/location/).",
+        ],
+      },
+      {
+        h2: "How to start",
+        paragraphs: [
+          "Both of you come to a free 30-minute introductory session. We talk through what each of you wants, take a gentle look at how you both move, and show you the studio — so you can judge the room and the coaching before spending anything. No pressure and no obligation either way.",
+          "If it turns out one of you wants to train more often than the other, that is fine too: plenty of couples mix a weekly shared session with extra individual ones, or start together and split later. [Book your free session](/contact-us/) and we will work the rest out in the room.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "what-is-a-private-gym",
     title: "What Is a Private Gym? How One-Client-at-a-Time Training Works",
     metaTitle: "What Is a Private Gym? | KD Personal Training",
