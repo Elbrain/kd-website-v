@@ -32,6 +32,360 @@ export interface Post {
 
 export const posts: Post[] = [
   /* ============================================================
+   * NEW — October 2026
+   * ============================================================ */
+  {
+    slug: "blackheath-personal-trainer-cost",
+    title: "Blackheath Personal Training Prices: How Much Does a Personal Trainer Cost in 2026?",
+    metaTitle: "Blackheath Personal Trainer Cost: Real 2026 Prices | KD",
+    metaDescription:
+      "Personal trainer cost in Blackheath: £80 a session, £70 a session on a block of ten, couples from £45 each. Our published prices and how to compare value.",
+    datePublished: "2026-10-11",
+    dateModified: "2026-10-11",
+    readingMinutes: 6,
+    excerpt:
+      "What personal training really costs in Blackheath: our published prices, what drives PT rates, the hidden costs of the cheaper route and how to compare value fairly.",
+    relatedServiceSlug: "1-to-1-training",
+    sections: [
+      {
+        paragraphs: [
+          "How much does a personal trainer cost in Blackheath? At KD Personal Training, our private studio in Blackheath village, a single one-to-one session is £80, a ten-session block brings that down to £70 a session, and couples training is £100 for the two of you — from £45 each per session on a ten-session block. Your first 30 minutes are free.",
+          "Those are our actual published prices, listed in full on our [pricing page](/pricing-plans/), not directory estimates. Below we explain how they compare with published London ranges, what drives personal training prices, the costs hidden behind a cheaper rate, and how to compare value fairly.",
+        ],
+      },
+      {
+        h2: "What personal training costs at KD, line by line",
+        paragraphs: [
+          "Every price is per session unless stated, and there is no gym membership to pay on top: the studio has no members, only clients. The five-session block costs the same £80 a session as paying as you go; the per-session price drops on the eight- and ten-session blocks. For session length, block validity and payment options, contact us and we will talk you through it.",
+        ],
+        list: [
+          "[1-to-1 training](/1-to-1-training/): £80 a session. Blocks are £400 for five, £600 for eight (£75 a session) and £700 for ten (£70 a session).",
+          "Couples training: £100 a session for both of you, so £50 each. Blocks are £500 for five, £760 for eight (£95 a session, £47.50 each) and £900 for ten (£90 a session, £45 each).",
+          "Sport rehabilitation, Fitness for 50+ and perimenopause training: the same prices as 1-to-1, from £80 a session down to £70 on a ten-session block.",
+          "Movement & Pain Consultation: £300 for a one-off private session of up to two hours, including a personalised written exercise programme.",
+          "Introductory session: a free 30 minutes for every new client.",
+        ],
+      },
+      {
+        h2: "How much does a personal trainer cost in Blackheath compared with London?",
+        paragraphs: [
+          "There is no official price list for London personal training. Published pricing guides, mostly from trainer marketplaces and personal training course providers, put a one-to-one hour in London at roughly £40 to £100, with central London at the upper end and some guides quoting up to £150. One large trainer marketplace puts south London at about £50 to £70 an hour. One training provider points out that there is no credible, openly sourced survey of what UK personal trainers charge, so treat every range as a rough guide.",
+          "So our £80 single session sits above that south London estimate and within the wider London range, and £70 on a ten-session block sits at the top of the south London figure. Guides mix hourly and per-session figures, so when you compare quotes, check exactly what each one includes. The rest of this guide is about what the difference pays for.",
+        ],
+      },
+      {
+        h2: "What drives personal training prices",
+        list: [
+          "Coach time and attention. A coach beside you on every set costs more to provide than one also supervising a gym floor or splitting the hour across a small group.",
+          "Experience and qualifications. Pricing guides note that rates vary with a trainer's credentials. Karolina, our founder and head coach, is a degree-qualified personal trainer with over 10 years' experience helping Blackheath clients.",
+          "Private or shared space. A trainer in a commercial gym shares the cost of the room with its members. A private studio used by one client, or one couple, at a time carries the full cost of the room for every hour.",
+          "Programming between sessions. Some rates cover the hour and nothing else. Ours include a programme written for you after your free introductory session, then reviewed and adjusted as you progress.",
+        ],
+      },
+      {
+        h2: "The hidden costs of the cheaper route",
+        paragraphs: [
+          "A lower session rate at a commercial gym is not always the whole bill. If you also need a gym membership to train there, ask whether it sits on top of every session fee and keeps running in the weeks you do not train. Other costs are not in money: queueing for the squat rack at peak times, rearranging your plan around whoever reached the bench first, and a coach whose attention is shared with a busy room.",
+          "At KD there is no membership on top. You pay for the session, and the whole floor is yours for it: squat rack, smith machine, cable pulley system, the Monster G9 rig, assault bike, rower, free weights and kettlebells. We set out the wider differences in our [private gym vs commercial gym comparison](/private-gym-vs-commercial-gym/).",
+        ],
+      },
+      {
+        h2: "How to compare value fairly",
+        paragraphs: [
+          "The cheapest hourly rate is not always the cheapest way to get fitter: what matters is the cost per result. These are the comparisons we would make in your position.",
+        ],
+        list: [
+          "Cost per session that actually happens. A cheap block you abandon after three weeks is poor value at any price. Convenience and accountability decide how many sessions you really attend, and a studio by Blackheath station is easier to fit before work, after the school run or on a lunch break.",
+          "Cost per week, not per hour. Most of our clients train with us one to three times a week, so price the frequency you will realistically keep up.",
+          "Blocks against pay-as-you-go. Ten sessions on a block cost £700, against £800 paid one at a time. If you will train regularly, the eight- and ten-session blocks are the better value.",
+          "Training as a couple. On a ten-session block, couples training works out at £45 each per session, against £70 a session on a ten-session 1-to-1 block. If a partner or friend wants to train too, [couples training](/couples-training/) is the lowest per-person price on our list.",
+        ],
+      },
+      {
+        h2: "Is a personal trainer worth the money?",
+        paragraphs: [
+          "That depends on what you would do otherwise. If you already train consistently and only want your technique checked, a handful of sessions and a good programme may be enough. If you have started and stopped before, the value lies less in any single hour than in the structure around it: a booked time, a plan that changes as you do, and someone who notices when you skip.",
+          "There is no set number of sessions you need, and we will not pretend otherwise. If discomfort or stiffness is what holds you back, the [Movement & Pain Consultation](/movement-pain-consultation/) is a one-off option: a coaching session rather than a medical appointment, with a written programme you can run yourself or continue with regular 1-to-1 sessions. It works alongside the advice of your GP or physiotherapist, never instead of it. Weighing up several trainers? Our [seven questions to ask before you choose](/choose-personal-trainer-blackheath/) cover everything beyond price.",
+        ],
+      },
+      {
+        h2: "The simplest way to judge the price: a free first session",
+        paragraphs: [
+          "Every new client starts with a free 30-minute introductory session at our first-floor studio on Lee Road, [two minutes' walk from Blackheath station](/location/). We talk through your goals, check how you move and show you the studio. No pressure, no obligation — you see the room and the coaching before you spend anything.",
+          "Clients come to us from Greenwich, Lewisham, Lee and across south-east London, and our [full price list](/pricing-plans/) is always published. When you are ready, [book your free introductory session](/contact-us/) and we will tell you honestly which option suits you best.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "blackheath-training-with-back-or-knee-pain",
+    title: "Blackheath Personal Trainer for Bad Back or Knee Pain: How Adapted Training Works",
+    metaTitle: "Blackheath Personal Trainer for Back or Knee Pain | KD",
+    metaDescription:
+      "Looking for a personal trainer for a bad back or knee pain in Blackheath? How adapted strength work may help, and when to see your GP or physio first.",
+    datePublished: "2026-10-11",
+    dateModified: "2026-10-11",
+    readingMinutes: 6,
+    excerpt:
+      "Avoiding exercise because of a stiff back or sore knees? How adapted, coached training may help you move more comfortably, and when to see your GP or physio first.",
+    relatedServiceSlug: "movement-pain-consultation",
+    sections: [
+      {
+        paragraphs: [
+          "If your back stiffens after a day at the desk or your knees complain on the stairs, the honest answer is that, for many people, carefully adapted training can be more helpful than avoiding exercise altogether. That holds as long as the pain is a familiar, ongoing niggle rather than something new, severe or getting worse, and your GP or physiotherapist is happy for you to exercise. This is the work we do as a personal trainer for bad back or knee pain in Blackheath: choosing positions, ranges and loads that feel manageable, coaching every rep, and progressing slowly.",
+          "What we don't do is diagnose or treat. KD Personal Training is a coaching studio in Blackheath village, not a clinic, and we work alongside the advice of your GP or physiotherapist, never instead of it. For many people a good starting point is our [Movement & Pain Consultation](/movement-pain-consultation/), a one-off private session that looks at how you move and ends with a personalised written programme.",
+        ],
+      },
+      {
+        h2: "When to see your GP or physiotherapist first",
+        paragraphs: [
+          "Training around a niggle only makes sense once anything more serious has been ruled out. Being under treatment doesn't automatically rule training out: we start from what your clinician has cleared you to do, so bring any guidance you've been given.",
+          "Speak to your GP or physiotherapist before you start if any of these apply:",
+        ],
+        list: [
+          "Pain that came on suddenly, or is severe",
+          "Pain that is getting steadily worse",
+          "Pain after a fall, an accident or a knock",
+          "Numbness, tingling, or pain that travels down your leg",
+          "Swelling around the knee or another joint",
+          "You are under active treatment for the problem",
+        ],
+      },
+      {
+        h2: "Should you exercise with knee pain or a stiff back?",
+        paragraphs: [
+          "Rest feels like the safe choice, and with a new injury your GP or physiotherapist's advice comes first. With a long-standing niggle, though, doing less can work against you. For many people, the muscles around a stiff back or a sore knee gradually lose strength, movement settles into a smaller range, and stairs, shopping bags and getting up from the floor start to feel harder.",
+          "The principle underneath sensible training is load management: muscles, tendons and joints generally adapt to what they are regularly asked to do, provided the dose rises gradually. If your physiotherapist has given you guidance on how much discomfort is acceptable during exercise, we work within it, and any sharp, unfamiliar or escalating pain is a signal to stop and check with them. The aim is never to push through pain; it's to find a level your body tolerates well, then nudge it up.",
+        ],
+      },
+      {
+        h2: "How strength, mobility and control work may help",
+        paragraphs: [
+          "Weakness, tightness, reduced mobility and the way you move can sometimes contribute to pain. They aren't always the cause, but they are the parts a coach can work on. For knees, that often means building strength in the thighs and hips so the joint may feel better supported on stairs and slopes. For backs, it tends to mean strength through the trunk and hips, plus mobility in the hips and upper back, so bending, lifting and turning may feel more evenly shared across the body.",
+          "Control is the third piece: moving slowly and steadily through a range rather than bracing or rushing. So can a personal trainer help with lower back pain or sore knees? A good one may help you move more comfortably and confidently, but through exercise rather than treatment, and without promises about outcomes.",
+        ],
+      },
+      {
+        h2: "What adapted training looks like in practice",
+        paragraphs: [
+          "People often ask which exercises are safe with a bad knee or back. Very few exercises are safe or unsafe for everyone; what matters is the version, the range and the load. The squat rack, smith machine and cable pulley system in our studio make it easy to adjust angles, add support and guide a movement, and the free weights, mats and mobility kit cover the rest. If your back is stiffer one week, the session changes with it.",
+          "In practice, adapted training means:",
+        ],
+        list: [
+          "Positions that suit you: a split squat holding the rack for balance, or a cable row instead of a bent-over row",
+          "Ranges you can control: squatting to a comfortable depth, then extending it gradually over the weeks",
+          "Loads below your limit, so there is room to adapt",
+          "Slow, controlled reps, with your coach watching each one",
+          "Progress at your pace: heavier or deeper only when you're ready, and scaled back when a week is harder",
+        ],
+      },
+      {
+        h2: "Choosing a personal trainer for bad back or knee pain in Blackheath",
+        paragraphs: [
+          "Whoever you train with, look for someone who asks about your history and your clinician's advice before you lift anything, adapts exercises rather than telling you to push through, and is honest about their limits. Karolina, our founder and head coach, is a degree-qualified personal trainer with over 10 years' experience helping Blackheath clients, and if we think you need clinical input before training, we'll say so.",
+          "Modified exercises can feel awkward in a busy gym, where it's tempting to copy the person next to you. Our [private studio in Blackheath village](/gym/) is two minutes' walk from the station: one client, one coach, nobody watching. Technique is corrected in real time, and loads are matched to how you're moving that day.",
+        ],
+      },
+      {
+        h2: "Personal trainer or physio: which do I need?",
+        paragraphs: [
+          "If you want a diagnosis, or the problem is new, severe or changing, start with your GP or a physiotherapist. They assess and treat; we don't. Where we fit is the training side, alongside their advice or once they've discharged you.",
+          "At KD there are two routes. [Sport rehabilitation training](/sport-rehabilitation/) is ongoing, progressive training after an injury, built from what your clinician has cleared you to do; our guide to [returning to exercise after an injury](/returning-to-exercise-after-injury/) explains that process. The Movement & Pain Consultation suits the more general picture: stiffness, restriction or discomfort that has crept in over time without one clear injury behind it.",
+        ],
+      },
+      {
+        h2: "Start with a Movement & Pain Consultation",
+        paragraphs: [
+          "The consultation is a one-off private session of up to two hours, priced at £300. It covers a detailed discussion of your discomfort, lifestyle and goals; posture, mobility, strength and movement screening; coaching through appropriate strength and mobility exercises; and practical guidance for training and everyday movement, followed by a personalised written exercise programme sent after your session.",
+          "You can run that programme yourself, or carry it into regular [1-to-1 personal training](/1-to-1-training/) so it keeps adjusting as you progress. Read [what to expect from a Movement & Pain Consultation](/movement-pain-consultation-what-to-expect/) for a fuller account, or see the [consultation details and booking page](/movement-pain-consultation/).",
+        ],
+      },
+      {
+        h2: "Book a free introductory session",
+        paragraphs: [
+          "Every new client starts with a free 30-minute introductory session: we'll talk through your back or knees, check how you move and show you the studio, with no pressure and no obligation. Clients join us from Lee, Lewisham, Greenwich and across south-east London, and most reach the village within a quarter of an hour; our [find us page](/location/) has directions. [Book your free introductory session](/contact-us/) and tell us what has been holding you back.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "blackheath-getting-back-into-exercise",
+    title: "Blackheath Personal Training: Getting Back Into Exercise After a Long Break",
+    metaTitle: "Blackheath: Back Into Exercise After a Long Break | KD",
+    metaDescription:
+      "Getting back into exercise after a long break in Blackheath? A sensible first month, the mistakes to avoid and why a private studio helps. Free 30-min intro.",
+    datePublished: "2026-10-11",
+    dateModified: "2026-10-11",
+    readingMinutes: 6,
+    excerpt:
+      "Restarting after years away can feel harder than starting. How to avoid the week-one mistakes and build a first month that sticks, in a private Blackheath studio.",
+    relatedServiceSlug: "1-to-1-training",
+    sections: [
+      {
+        paragraphs: [
+          "Getting back into exercise after a long break can feel harder than starting from scratch. You remember what you used to be able to do, your body no longer agrees, and the gap between the two makes the first few weeks feel like a test you are bound to fail. Returners train at our private Blackheath studio alongside complete beginners, and the restart is the part most worth planning.",
+          "The short answer: start well below your old level, train two or three times a week rather than every day, and judge the first month on whether you turned up, not on what you lifted. Habit comes back first and fitness follows. This guide covers how that works in practice, from the mistakes that derail many restarts to what a sensible first month can look like in a private studio in Blackheath village.",
+        ],
+      },
+      {
+        h2: "Why restarting feels harder than starting",
+        paragraphs: [
+          "A true beginner has no benchmark. A returner has a very clear one, often from a decade ago, and every session gets measured against it. Add whatever caused the break in the first place, whether a demanding job, small children, caring for a parent, burnout or a few busy years that quietly turned into ten, and restarting carries far more weight than it should.",
+          "It helps to be clear about why you stopped. If the gap was life rather than injury, your job is to rebuild habit, fitness and confidence, roughly in that order. If you are coming back from an injury or an operation, the priorities are different, and our guide to [returning to exercise after an injury](/returning-to-exercise-after-injury/) is the better place to start.",
+        ],
+      },
+      {
+        h2: "The mistakes that derail many comebacks",
+        paragraphs: [
+          "The people who stall are rarely lazy. They usually make one of a handful of very understandable mistakes:",
+        ],
+        list: [
+          "Going too hard in week one, then spending days too sore to walk downstairs, let alone train again.",
+          "Picking up where you left off, with the old weights, the old running pace or the old class, and treating the drop as failure.",
+          "Training every day out of enthusiasm and leaving no recovery days, so the second week collapses.",
+          "Joining a crowded gym, feeling watched, queuing for kit, skipping the induction and letting the membership lapse.",
+          "Setting a vague goal such as getting fit again, which gives you nothing to measure and no reason to go on a wet Tuesday.",
+        ],
+      },
+      {
+        h2: "How long does it take to get fitness back after a break?",
+        paragraphs: [
+          "It depends on how long you were away, how much you trained before and what your week looks like now, and anyone who gives you a precise number is guessing. After several years off, it is sensible to treat your stamina as a fresh start rather than something waiting to be switched back on.",
+          "The encouraging part is that people who trained before often find technique comes back more readily than it did the first time, because the movements are familiar. Nobody can promise a timescale, which is why realistic goals matter. Pick something you can measure within a few months, such as training twice a week without missing a week, or a confident, well-coached squat, rather than chasing a number from your twenties.",
+        ],
+      },
+      {
+        h2: "Getting back into exercise after a long break in Blackheath: a sensible first month",
+        paragraphs: [
+          "Every programme is written for the person in front of us, so treat this as a rough guide rather than a fixed plan. A sensible first month back with [1-to-1 training](/1-to-1-training/) might look like this:",
+        ],
+        list: [
+          "Before anything else, a free 30-minute introductory session: we talk through your goals, check how you move and show you the studio. No pressure, no obligation. Your programme is written for you after it.",
+          "Weeks one and two: around two sessions a week, loads comfortably below what you used to lift and technique over weight on every exercise. You should leave feeling you had more in the tank.",
+          "Weeks three and four: the same frequency with small, earned increases, and proper recovery days in between. A walk across the heath counts.",
+          "Throughout: your programme is reviewed and adjusted as you progress, heavier when you are ready and scaled back when life gets in the way.",
+        ],
+      },
+      {
+        h2: "Why a private studio takes the nerves out of it",
+        paragraphs: [
+          "Most advice about returning to the gym after years off is really advice about nerves: go at quieter times, say yes to the induction, remember everyone had a nervous first day. All true, and all workarounds for a room full of strangers.",
+          "A [private gym](/what-is-a-private-gym/) simply removes the strangers. [Our Blackheath studio](/gym/) runs one client and one coach at a time, with no members, no queues for equipment and nobody watching. The squat rack, cable pulley system, Monster G9 rig, rower, assault bike, free weights and kettlebells are yours for the session, and your coach is on the floor beside you, adjusting load and tightening technique on every set. Most of our clients started as complete beginners, so nobody expects you to know your way around.",
+        ],
+      },
+      {
+        h2: "Who should check with their GP first",
+        paragraphs: [
+          "If you have a long-term health condition, take regular medication, are pregnant or have recently had a baby, have noticed chest pain, dizziness or breathlessness you cannot explain, or have been largely inactive for years and are unsure where you stand, speak to your GP before you start. It is usually a short conversation, not a hurdle.",
+          "Tell us what they said at your introductory session and we will build your programme around it. We coach rather than diagnose, and we always work alongside the advice of your GP or physiotherapist, never instead of it.",
+        ],
+      },
+      {
+        h2: "Restarting in your 50s, or with someone else",
+        paragraphs: [
+          "If you are coming back in your 50s or beyond, our [Fitness for 50+ programme](/fitness-for-50/) is designed for a safe, structured restart, with strength, balance and mobility work adapted to you. Many of our over-50s clients had not set foot in a gym for decades before their first session.",
+          "If you would rather not do it alone, [couples training](/couples-training/) lets you restart with a partner or friend: two individual programmes in the same private session, at a lower cost per person. A session booked in two diaries is much harder to quietly skip.",
+        ],
+      },
+      {
+        h2: "How to take the first step",
+        paragraphs: [
+          "The studio is on the first floor of 5 Lee Road, in the heart of Blackheath village and two minutes' walk from Blackheath station, which makes it easy to fit in before work, after the school run or on a lunch break. Sessions are by appointment, so contact us for current availability. Clients come to us from Greenwich, Lewisham, Lee and right across south-east London.",
+          "Your first 30 minutes are free. [Book your free introductory session](/contact-us/), tell us how long it has been, and we will plan a restart around the life you have now. If you would like to read more first, see how [one-to-one personal training in Blackheath](/1-to-1-training/) works, or check [our published prices](/pricing-plans/): single sessions are £80, with lower per-session prices on 8- and 10-session blocks.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "greenwich-personal-training-over-50s",
+    title: "Greenwich Over-50s: Private Personal Training Just Up the Hill in Blackheath",
+    metaTitle: "Greenwich Over-50s Personal Trainer in Blackheath | KD",
+    metaDescription:
+      "Looking for a personal trainer for over-50s near Greenwich? A private 1-to-1 studio just up the hill in Blackheath village. Your first 30 minutes are free.",
+    datePublished: "2026-10-11",
+    dateModified: "2026-10-11",
+    readingMinutes: 5,
+    excerpt:
+      "A private studio for Greenwich's over-50s and over-60s, just up the hill in Blackheath village: strength, balance and confidence, with nobody watching.",
+    relatedServiceSlug: "fitness-for-50",
+    sections: [
+      {
+        paragraphs: [
+          "If you're looking for a personal trainer for over-50s in Greenwich, here's the honest starting point: our studio isn't in Greenwich itself. It's just up the hill in Blackheath village, two minutes' walk from Blackheath station. From Greenwich it's a short bus ride or drive, or a walk up through Greenwich Park and across the heath.",
+          "What you'll find there is a completely private studio: one client, one coach, no members and no one watching. Our [Fitness for 50+ programme](/fitness-for-50/) is built around strength, mobility, balance and confidence for your 50s, 60s and beyond, whatever your starting level. Many of our over-50s clients hadn't set foot in a gym for decades before their first session, and your first 30 minutes are free.",
+        ],
+      },
+      {
+        h2: "Is it too late to start strength training at 60?",
+        paragraphs: [
+          "No. Strength tends to fade when we stop using it, and the loss shows up in ordinary places: the stairs, the shopping bags, how sure you feel on uneven ground. Age isn't a barrier, though. With proper coaching, progressive resistance training is one of the best things you can do for bone density, joint health, balance and independence.",
+          "Our [beginner's guide to strength training over 50](/strength-training-over-50-guide/) covers the why and the how in depth, so this piece sticks to where to start if you live in Greenwich. One caveat either way: if you have a health condition or haven't exercised in years, speak to your GP before you begin.",
+        ],
+      },
+      {
+        h2: "How often should over-50s lift weights?",
+        paragraphs: [
+          "There's no single right number, and at the start it matters far less than turning up consistently. Most of our clients train with us one to three times a week, and if you also walk in the park or swim, your plan covers those days too.",
+          "The principle is to start small. Starting where you are usually means chair squats, supported movements and light dumbbells, with loads rising only when your technique and your joints are ready. We coach technique closely and progress loads carefully, and every exercise is adapted to your abilities.",
+        ],
+      },
+      {
+        h2: "Personal trainer, chain gym or gentle class? Choosing as an over-50 in Greenwich",
+        paragraphs: [
+          "If you live in Greenwich you have plenty of choice, and different options genuinely suit different people. Our [honest comparison of local gyms](/gyms-in-blackheath/) goes into the detail; in short:",
+        ],
+        list: [
+          "Budget chain gyms: long opening hours and plenty of kit for a low monthly fee. The trade-off is that nobody checks your technique or adjusts your programme, and peak times are busy.",
+          "Leisure centres: a gym alongside pools and classes. If swimming is what you enjoy, that's the right call.",
+          "Gentle and seated classes: community groups and charities often run sociable, low-key sessions for older adults. A good way to get active, though usually not progressive strength training.",
+          "A private 1-to-1 studio like ours in Blackheath village: the middle ground. Real strength training with a coach beside you on every set, without the crowd, the noise or the feeling of being in someone else's space.",
+        ],
+      },
+      {
+        h2: "Why a private studio suits people who feel out of place in big gyms",
+        paragraphs: [
+          "For many people in their 50s and 60s, the hardest part of training isn't the exercise but walking onto a busy gym floor. Our studio has no mirrors full of twenty-somethings, no music you can't hear yourself think over, and nobody watching. Sessions run one client (or one couple) at a time, so the squat rack, smith machine, cable pulley system, Monster G9 rig, assault bike, rower, free weights and kettlebells are yours for the whole session.",
+          "Every session is also coached, not supervised: your coach is on the floor beside you, watching your form on each rep and adjusting the load as you go. That's the real difference from a membership, which sells you access to the equipment and leaves the rest to you.",
+        ],
+      },
+      {
+        h2: "What over-50s and over-60s training looks like with KD",
+        paragraphs: [
+          "The first session is a conversation and a gentle movement check, not a test. From there your programme builds gradually, with enough challenge to keep progress coming without leaving you wrecked for two days. KD is founded and led by Karolina Desiatnikova, a degree-qualified personal trainer who has coached Blackheath locals since 2016, including adults over 50 rebuilding strength. If you're training around an old injury, we work alongside your GP or physiotherapist's advice, never instead of it.",
+          "Depending on what you tell us, the aims of our [over-50s personal training](/fitness-for-50/) usually include:",
+        ],
+        list: [
+          "Mobility and flexibility you'll notice on the stairs and in the garden",
+          "Strength in the muscles that protect your joints",
+          "Better balance and stability, and more confidence on your feet",
+          "Supporting bone density through progressive resistance training",
+          "Confidence and independence in everyday life",
+        ],
+      },
+      {
+        h2: "For women in midlife: perimenopause, menopause and strength",
+        paragraphs: [
+          "For many women, the years around 50 overlap with perimenopause or menopause, and the old advice to eat less and do more cardio tends to backfire. Our [perimenopause training](/perimenopause-training/) is strength-led instead: building muscle to support your metabolism, protecting bone health with progressive resistance work, strengthening the core and pelvic floor, and keeping intensity at a level that manages stress rather than adding to it.",
+          "Everyone is different and we'll never promise outcomes, but we will build the plan around how you actually feel from week to week, including the weeks when sleep and energy don't cooperate. For medical concerns, always speak to your GP.",
+        ],
+      },
+      {
+        h2: "Getting to Blackheath village from Greenwich",
+        paragraphs: [
+          "Greenwich Park adjoins the heath, so on a fine day you can walk up through the park and across the heath into the village. Otherwise, buses run through the village from Greenwich, and there's on-street parking nearby if you'd rather drive. From most nearby areas the trip is 10 to 20 minutes door to door.",
+          "We're on the first floor of 5 Lee Road, Blackheath, London SE3 9RQ. If access is a concern, mention it when you get in touch and we'll talk it through. Full directions are on our [find us page](/location/), and we've also written about [training in Blackheath when you live in Greenwich, Lewisham or Lee](/personal-trainer-near-greenwich-lewisham-lee/).",
+        ],
+      },
+      {
+        h2: "Start with a free 30-minute introductory session",
+        paragraphs: [
+          "Every new client starts with a free 30-minute introductory session. We'll talk through your goals, take a gentle look at how you move and show you the studio, with no pressure and no obligation. After that, Fitness for 50+ sessions are £80 each, £75 per session on an eight-session block or £70 per session on a ten-session block; the full list is on our [pricing page](/pricing-plans/).",
+          "If you live in Greenwich and have been putting off the gym for years, this is the low-stakes way to find out whether a private studio suits you. [Book your free introductory session](/contact-us/) and we'll find a time that works.",
+        ],
+      },
+    ],
+  },
+  /* ============================================================
    * NEW — September 2026
    * ============================================================ */
   {
