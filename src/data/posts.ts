@@ -39,18 +39,18 @@ export const posts: Post[] = [
     title: "Blackheath Personal Trainer for Weight Loss: An Honest, Strength-Led Approach",
     metaTitle: "Blackheath Personal Trainer for Weight Loss | KD",
     metaDescription:
-      "Weight loss personal training in Blackheath: a private studio, strength-led programmes and no crash promises. How it works, what it costs, free intro.",
+      "Weight loss personal training in Blackheath: a private studio, strength-led training, a full nutrition plan and no crash promises. Free 30-minute intro.",
     datePublished: "2026-10-31",
     dateModified: "2026-10-31",
     readingMinutes: 5,
     excerpt:
-      "Strength-led training in a completely private Blackheath studio, honest about food and free of crash-diet promises. How weight loss training with us works.",
+      "Strength-led training in a completely private Blackheath studio, a full nutrition plan and no crash-diet promises. How weight loss training with us works.",
     relatedServiceSlug: "1-to-1-training",
     sections: [
       {
         paragraphs: [
-          "Looking for a personal trainer for weight loss in Blackheath? Here is what we offer: coached, strength-led sessions in a completely private studio in Blackheath village, a programme written around you, and no crash-diet promises. We can't tell you how many kilos you will lose by a certain date, because nobody can. What we can do is make the training part consistent, effective and something you actually want to turn up for.",
-          "Weight loss usually comes down to what you do over months rather than weeks: how you train, how you eat, and whether you keep both going when life gets busy. This guide explains where [one-to-one personal training](/1-to-1-training/) fits into that, what a session at our studio looks like, and where food and other professionals come in.",
+          "Looking for a personal trainer for weight loss in Blackheath? Here is what we offer: coached, strength-led sessions in a completely private studio in Blackheath village, a training programme and a full nutrition plan written around you, and no crash-diet promises. We can't tell you how many kilos you will lose by a certain date, because nobody can. What we can do is make the training part consistent, effective and something you actually want to turn up for.",
+          "Weight loss usually comes down to what you do over months rather than weeks: how you train, how you eat, and whether you keep both going when life gets busy. This guide explains where [one-to-one personal training](/1-to-1-training/) fits into that, what a session at our studio looks like, and how your nutrition plan fits alongside it.",
         ],
       },
       {
@@ -84,6 +84,7 @@ export const posts: Post[] = [
           "Every session is coached, not supervised: your coach is beside you, adjusting the load and your technique set by set.",
           "[The whole studio](/gym/) is yours for the session: squat rack, smith machine, cable pulley system, the Monster G9 rig, assault bike, rower, free weights and kettlebells.",
           "Your plan is reviewed and adjusted as you progress, harder when you are ready and scaled back when life gets in the way.",
+          "Alongside your training, Karolina writes you a full nutrition plan, built around your goal, your week and the food you actually enjoy.",
         ],
       },
       {
@@ -99,10 +100,10 @@ export const posts: Post[] = [
         ],
       },
       {
-        h2: "Food, honestly",
+        h2: "Food: a full nutrition plan, not a crash diet",
         paragraphs: [
-          "We won't pretend food doesn't matter, because for weight loss it matters a great deal. What tends to work is not a dramatic diet but a way of eating you can keep up for months.",
-          "A personal trainer isn't a dietitian. If you want a structured eating plan, have a medical condition, or take medication that affects your appetite or weight, a registered dietitian or your GP is the right person to see. What we bring is the training side and a routine you can keep, which makes the rest easier.",
+          "We won't pretend food doesn't matter, because for weight loss it matters a great deal. That is why your training comes with a full nutrition plan from Karolina, written around your goal, your routine and the food you like. The aim is not a dramatic diet but a way of eating you can keep up for months.",
+          "Training and food then pull in the same direction: the sessions build strength and keep you moving, and the plan makes the rest of your week match. If you have a medical condition or take medication that affects your appetite or weight, check with your GP first; for clinical nutrition a registered dietitian is the right specialist, and we work alongside their advice rather than instead of it.",
         ],
       },
       {

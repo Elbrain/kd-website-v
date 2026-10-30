@@ -32,6 +32,7 @@ export function GET() {
 - Address: ${business.currentAddress.display} (2 minutes from Blackheath station)
 - Contact: ${business.email} · ${business.phoneDisplay} · WhatsApp available
 - Trainer: ${business.trainer.fullName}, founder & head coach
+- Clients receive a full personalised nutrition plan alongside their training programme
 - Every new client starts with a FREE 30-minute introductory session
 - Serves: ${business.serviceAreas.join(", ")} (south-east London)
 - Reviews: genuine client reviews on the Google Business Profile

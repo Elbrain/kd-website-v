@@ -28,7 +28,7 @@ export const services: Service[] = [
     card: "Fully personalised one-to-one coaching in a private studio — your goals, your pace, our full attention.",
     metaTitle: "1 to 1 Personal Training in Blackheath | KD",
     metaDescription:
-      "Private 1-to-1 personal training in Blackheath, London. Personalised programmes for fat loss, strength and muscle. Free 30-minute intro session.",
+      "Private 1-to-1 personal training in Blackheath. Personalised training and a full nutrition plan for fat loss, strength and muscle. Free 30-minute intro.",
     h1: "1 to 1 Personal Training in Blackheath",
     intro:
       "Our most popular service. One-to-one training gives you our full attention in a completely private studio — no crowds, no queues for equipment, no one watching. Every programme is written for you: your goals, your starting point, your lifestyle.",
@@ -52,7 +52,7 @@ export const services: Service[] = [
       title: "What a session with us looks like",
       paragraphs: [
         "Every session is coached, not supervised. You warm up with movement work matched to the day's training, then work through your programme with your coach on the floor beside you — adjusting load, tightening technique and keeping you honest on the reps you'd skip on your own. The studio is yours for the whole session: squat rack, smith machine, cable pulley system, the Monster G9 rig, assault bike, rower, free weights and kettlebells, with no waiting and nobody else on the floor.",
-        "Between sessions your programme does the quiet work. It's written for you after your free introductory session, then reviewed and adjusted as you progress — heavier when you're ready, scaled back when life gets in the way. Most clients train with us one to three times a week; if you also train elsewhere, your plan covers those days too.",
+        "Between sessions your programme does the quiet work. It's written for you after your free introductory session, then reviewed and adjusted as you progress — heavier when you're ready, scaled back when life gets in the way. Most clients train with us one to three times a week; if you also train elsewhere, your plan covers those days too. Alongside your training, Karolina writes you a full nutrition plan matched to your goal.",
       ],
     },
     related: ["couples-training", "fitness-for-50"],
