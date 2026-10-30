@@ -21,7 +21,7 @@ export const serviceFaqs: Record<string, Faq[]> = {
     },
     {
       q: "What does it cost?",
-      a: "Single sessions are £80, with blocks of 5, 8 or 10 sessions reducing the per-session price — see the pricing page for the full list. Your first 30-minute introductory session is free.",
+      a: "Single sessions are £80. A 5-session block is the same rate, and blocks of 8 or 10 sessions bring the per-session price down — see the pricing page for the full list. Your first 30-minute introductory session is free.",
     },
   ],
   "couples-training": [

@@ -35,6 +35,93 @@ export const posts: Post[] = [
    * NEW — October 2026
    * ============================================================ */
   {
+    slug: "blackheath-personal-trainer-weight-loss",
+    title: "Blackheath Personal Trainer for Weight Loss: An Honest, Strength-Led Approach",
+    metaTitle: "Blackheath Personal Trainer for Weight Loss | KD",
+    metaDescription:
+      "Weight loss personal training in Blackheath: a private studio, strength-led programmes and no crash promises. How it works, what it costs, free intro.",
+    datePublished: "2026-10-31",
+    dateModified: "2026-10-31",
+    readingMinutes: 5,
+    excerpt:
+      "Strength-led training in a completely private Blackheath studio, honest about food and free of crash-diet promises. How weight loss training with us works.",
+    relatedServiceSlug: "1-to-1-training",
+    sections: [
+      {
+        paragraphs: [
+          "Looking for a personal trainer for weight loss in Blackheath? Here is what we offer: coached, strength-led sessions in a completely private studio in Blackheath village, a programme written around you, and no crash-diet promises. We can't tell you how many kilos you will lose by a certain date, because nobody can. What we can do is make the training part consistent, effective and something you actually want to turn up for.",
+          "Weight loss usually comes down to what you do over months rather than weeks: how you train, how you eat, and whether you keep both going when life gets busy. This guide explains where [one-to-one personal training](/1-to-1-training/) fits into that, what a session at our studio looks like, and where food and other professionals come in.",
+        ],
+      },
+      {
+        h2: "What a personal trainer can and can't do for weight loss",
+        paragraphs: [
+          "A good personal trainer can teach you to train well, build strength and fitness safely, keep your sessions progressing and hold you to turning up. Those things can change how you feel and what your body can do, and for many people they make the rest of their habits easier to keep.",
+          "What a personal trainer can't do is out-train everything else. Food has a large effect on body weight, and so do sleep, stress and some medication. Anyone promising a set number of kilos in a set number of weeks is guessing. If you have a medical condition, take medication that affects your weight, or have, or have had, an eating disorder or disordered eating, speak to your GP before you start.",
+        ],
+      },
+      {
+        h2: "Why we lead with strength, not endless cardio",
+        paragraphs: [
+          "The instinct when people want to lose weight is to do as much cardio as possible. Cardio has its place, and the assault bike and rower are in the studio for a reason, but on its own it does little to build strength, and many people find a cardio-only routine hard to keep up.",
+          "Strength training sits at the centre of our programmes because it builds and maintains muscle, makes everyday life feel easier, and gives you progress you can see in what you lift, not just on the scale. For many people, keeping their strength as they lose weight is what makes the result feel worth having. Sessions mix strength work with conditioning, matched to your level and adjusted as you improve.",
+        ],
+      },
+      {
+        h2: "Why privacy matters more than people admit",
+        paragraphs: [
+          "For a lot of people, the gym itself is the barrier: the mirrors, the crowd, and the feeling of being watched while you work out what to do. It is hard to commit to something when every session starts with feeling self-conscious.",
+          "Our studio is [completely private](/what-is-a-private-gym/). There are no members and no crowds, just you and your coach on the floor. You can learn, struggle with a set, ask the questions you would never ask in a busy gym and get on with it, with nobody else in the room.",
+        ],
+      },
+      {
+        h2: "What weight loss training at our Blackheath studio looks like",
+        paragraphs: [
+          "It starts with a free 30-minute introductory session: we talk through your goals and history, look at how you move and show you round the studio. Your programme is written for you after that, around your starting point, your week and what you enjoy.",
+        ],
+        list: [
+          "Most clients train with us one to three times a week, and your programme includes guidance for the days you train on your own.",
+          "Every session is coached, not supervised: your coach is beside you, adjusting the load and your technique set by set.",
+          "[The whole studio](/gym/) is yours for the session: squat rack, smith machine, cable pulley system, the Monster G9 rig, assault bike, rower, free weights and kettlebells.",
+          "Your plan is reviewed and adjusted as you progress, harder when you are ready and scaled back when life gets in the way.",
+        ],
+      },
+      {
+        h2: "Measuring progress beyond the scale",
+        paragraphs: [
+          "The scale is one measure, and a noisy one: it moves from day to day for reasons that have little to do with fat. We would rather you watched several things together.",
+        ],
+        list: [
+          "Strength: the weights you lift and the reps you manage, from one session to the next.",
+          "Everyday ease: climbing stairs, carrying the shopping, getting up off the floor.",
+          "How your clothes fit and how you feel through the day.",
+          "Consistency: the number of weeks in a row you have trained. Over months, this tends to be the number that matters most.",
+        ],
+      },
+      {
+        h2: "Food, honestly",
+        paragraphs: [
+          "We won't pretend food doesn't matter, because for weight loss it matters a great deal. What tends to work is not a dramatic diet but a way of eating you can keep up for months.",
+          "A personal trainer isn't a dietitian. If you want a structured eating plan, have a medical condition, or take medication that affects your appetite or weight, a registered dietitian or your GP is the right person to see. What we bring is the training side and a routine you can keep, which makes the rest easier.",
+        ],
+      },
+      {
+        h2: "Midlife, women and the over-50s",
+        paragraphs: [
+          "Many people find their weight harder to shift in midlife. For women, perimenopause can bring weight gain around the middle along with tiredness and poor sleep. Our [perimenopause training](/perimenopause-training/) is strength-led and aims for sustainable fat loss without burnout.",
+          "If you are in your 50s, 60s or beyond, our [Fitness for 50+ programme](/fitness-for-50/) adapts every exercise to you, and its goals include maintaining a healthy weight alongside strength, mobility and balance.",
+        ],
+      },
+      {
+        h2: "What it costs and how to start",
+        paragraphs: [
+          "A single one-to-one session is £80, and a five-session block is £400. Longer blocks bring the price down: £600 for eight (£75 a session) and £700 for ten (£70 a session). If you would rather do it with a partner or friend, [couples training](/blackheath-couples-personal-training/) is £100 for the two of you, or £45 each per session on a ten-session block. Everything is [published on our pricing page](/pricing-plans/), and our [guide to personal trainer costs in Blackheath](/blackheath-personal-trainer-cost/) explains how to compare value.",
+          "The studio is on the first floor of 5 Lee Road, two minutes' walk from Blackheath station, with clients coming in from Greenwich, Lewisham, Lee and across south-east London. [Book your free 30-minute introductory session](/contact-us/), tell us what you want to change, and we will show you how we would approach it, with no pressure and no obligation.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "blackheath-personal-trainer-cost",
     title: "Blackheath Personal Training Prices: How Much Does a Personal Trainer Cost in 2026?",
     metaTitle: "Blackheath Personal Trainer Cost: Real 2026 Prices | KD",
