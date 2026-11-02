@@ -32,6 +32,101 @@ export interface Post {
 
 export const posts: Post[] = [
   /* ============================================================
+   * NEW — November 2026
+   * ============================================================ */
+  {
+    slug: "blackheath-female-personal-trainer",
+    title: "Blackheath Female Personal Trainer: Private One-to-One Coaching With Karolina",
+    metaTitle: "Blackheath Female Personal Trainer, Private Studio | KD",
+    metaDescription:
+      "Looking for a female personal trainer in Blackheath? One-to-one coaching with Karolina in a completely private studio, plus a full nutrition plan. Free intro.",
+    datePublished: "2026-11-02",
+    dateModified: "2026-11-02",
+    readingMinutes: 4,
+    excerpt:
+      "One-to-one coaching with Karolina in a completely private Blackheath studio: what it involves, perimenopause support, a full nutrition plan and prices.",
+    relatedServiceSlug: "1-to-1-training",
+    sections: [
+      {
+        paragraphs: [
+          "Looking for a female personal trainer in Blackheath? KD Personal Training is founded and led by Karolina, who has coached Blackheath locals one client at a time since 2016. Every session takes place in a completely private studio on Lee Road, two minutes' walk from Blackheath station, with nobody else on the floor but you and your coach.",
+          "We are not a women-only gym, and we won't pretend to be: we coach men, women and couples. But if what you want is a female coach and a space where nobody is watching, this guide explains what training with Karolina involves, from your free first session to the nutrition plan that comes with your training.",
+        ],
+      },
+      {
+        h2: "Why some women prefer a female personal trainer",
+        paragraphs: [
+          "There is no right answer here, and plenty of women train happily with male coaches. For others, a female trainer simply makes it easier to start. It can mean feeling more relaxed talking about your cycle, perimenopause symptoms, your pelvic floor or how you feel about your body, and less self-conscious learning new movements in front of someone.",
+          "What matters most is that you feel comfortable enough to turn up, ask questions and tell your coach honestly how a session felt. If a female coach is what gets you through the door, that is a perfectly good reason to choose one.",
+        ],
+      },
+      {
+        h2: "A female coach in a completely private studio",
+        paragraphs: [
+          "Being coached by a woman only solves half the problem if the session happens in a crowded gym. At our studio there are no members and no queues for equipment: it is [a completely private space](/what-is-a-private-gym/) where each session is one client, or one couple, and one coach.",
+          "That privacy changes how training feels. You can try a new exercise, get it wrong, laugh about it and try again without an audience. It can be the difference between dreading a session and looking forward to it.",
+          "It also means no mirrors full of strangers and no music you can't hear yourself think over, just the kit you need and a coach whose attention is entirely on you.",
+        ],
+      },
+      {
+        h2: "What training with Karolina looks like",
+        paragraphs: [
+          "It starts with a free 30-minute introductory session: we talk through your goals and history, look at how you move and show you the studio. From there, [one-to-one training](/1-to-1-training/) is built entirely around you.",
+          "You don't need to be fit before you start. Most of our clients started as complete beginners, and every programme begins at your level, with a gentle movement check in that first session.",
+        ],
+        list: [
+          "A programme written for your goals and starting point, reviewed and adjusted as you progress.",
+          "Coaching on every set, with technique and load adjusted in the moment.",
+          "A full nutrition plan written by Karolina, matched to your goal.",
+          "Most clients train with us one to three times a week, and your programme includes guidance for the days you train on your own.",
+          "The whole studio for your session: squat rack, smith machine, cable pulley system, the Monster G9 rig, assault bike, rower, free weights and kettlebells.",
+        ],
+      },
+      {
+        h2: "Will strength training make you bulky?",
+        paragraphs: [
+          "A common worry is that lifting weights will make you look bulky. In practice, building a lot of muscle takes years of training and eating deliberately for that purpose. For most women, a well-designed strength programme builds strength and muscle without noticeable bulk.",
+          "Day to day, getting stronger tends to show up in practical ways: everyday lifting and carrying feel easier, and you simply feel more capable.",
+          "Strength training sits at the centre of our programmes whatever your goal, including if you want to lose weight, which we cover in our guide to [weight loss personal training in Blackheath](/blackheath-personal-trainer-weight-loss/).",
+        ],
+      },
+      {
+        h2: "Perimenopause, midlife and beyond",
+        paragraphs: [
+          "Perimenopause can bring tiredness, weight gain around the middle, poor sleep and mood changes, and the right training can change how you feel. Everyone is different, and for medical concerns, always speak to your GP. Our [perimenopause training](/perimenopause-training/) is strength-led and designed for this stage of life, and our [perimenopause training guide](/perimenopause-training-guide/) explains the background. The programme's aims include:",
+        ],
+        list: [
+          "Building muscle and supporting your metabolism.",
+          "Strengthening your core and pelvic floor.",
+          "Protecting bone health with progressive resistance training.",
+          "Supporting better sleep and steadier energy.",
+          "Sustainable fat loss without burnout.",
+        ],
+      },
+      {
+        h2: "Training with a friend, sister or mum",
+        paragraphs: [
+          "If you would rather not train alone, [couples training](/couples-training/) works for any pair, not just partners. Two individual programmes run inside one private session, at a lower cost per person: £100 for the two of you, or £45 each per session on a ten-session block.",
+          "It is a good way to keep each other turning up, and you don't need to be at the same level: a complete beginner can train alongside someone more experienced, because each of you follows your own programme.",
+        ],
+      },
+      {
+        h2: "Experience and reviews",
+        paragraphs: [
+          "Karolina is a degree-qualified personal trainer with over ten years' experience helping Blackheath clients. You don't have to take our word for it: [read what clients say](/results/) in their own Google reviews.",
+          "When you meet Karolina at your free introductory session, ask her anything: how she would approach your goal, what a typical week would look like, and how she adapts training when life gets busy.",
+        ],
+      },
+      {
+        h2: "Prices and how to book",
+        paragraphs: [
+          "A single one-to-one session is £80, and a five-session block is £400. Longer blocks bring the price down: £600 for eight (£75 a session) and £700 for ten (£70 a session). All prices are [published on our pricing page](/pricing-plans/).",
+          "The studio is on the first floor of 5 Lee Road, Blackheath, with clients coming in from Greenwich, Lewisham, Lee and across south-east London. [Book your free 30-minute introductory session](/contact-us/) and meet Karolina before you decide anything.",
+        ],
+      },
+    ],
+  },
+  /* ============================================================
    * NEW — October 2026
    * ============================================================ */
   {
@@ -84,7 +179,7 @@ export const posts: Post[] = [
           "Every session is coached, not supervised: your coach is beside you, adjusting the load and your technique set by set.",
           "[The whole studio](/gym/) is yours for the session: squat rack, smith machine, cable pulley system, the Monster G9 rig, assault bike, rower, free weights and kettlebells.",
           "Your plan is reviewed and adjusted as you progress, harder when you are ready and scaled back when life gets in the way.",
-          "Alongside your training, Karolina writes you a full nutrition plan, built around your goal, your week and the food you actually enjoy.",
+          "Alongside your training, Karolina writes you a full nutrition plan, matched to your goal.",
         ],
       },
       {
@@ -102,7 +197,7 @@ export const posts: Post[] = [
       {
         h2: "Food: a full nutrition plan, not a crash diet",
         paragraphs: [
-          "We won't pretend food doesn't matter, because for weight loss it matters a great deal. That is why your training comes with a full nutrition plan from Karolina, written around your goal, your routine and the food you like. The aim is not a dramatic diet but a way of eating you can keep up for months.",
+          "We won't pretend food doesn't matter, because for weight loss it matters a great deal. That is why your training comes with a full nutrition plan from Karolina, matched to your goal. The aim is not a dramatic diet but a way of eating you can keep up for months.",
           "Training and food then pull in the same direction: the sessions build strength and keep you moving, and the plan makes the rest of your week match. If you have a medical condition or take medication that affects your appetite or weight, check with your GP first; for clinical nutrition a registered dietitian is the right specialist, and we work alongside their advice rather than instead of it.",
         ],
       },
