@@ -66,6 +66,7 @@ export function localBusinessSchema(): JsonLd {
       availableLanguage: "en",
     },
     sameAs: [
+      business.googleMapsUrl, // Google Business Profile — ties the site to the GBP entity
       business.social.facebook,
       business.social.instagram,
       business.social.linkedin,

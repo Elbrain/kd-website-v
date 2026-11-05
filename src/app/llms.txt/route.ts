@@ -29,7 +29,8 @@ export function GET() {
 > The building also offers professional treatment and office rooms to rent.
 
 ## Key facts
-- Address: ${business.currentAddress.display} (2 minutes from Blackheath station)
+- Address: ${business.currentAddress.display} — in Blackheath Village; nearest station: ${business.nearestStation}
+- Map: ${business.googleMapsUrl}
 - Contact: ${business.email} · ${business.phoneDisplay} · WhatsApp available
 - Trainer: ${business.trainer.fullName}, founder & head coach
 - Clients receive a full personalised nutrition plan alongside their training programme

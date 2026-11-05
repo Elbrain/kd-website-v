@@ -41,7 +41,7 @@ export const posts: Post[] = [
     metaDescription:
       "Looking for a female personal trainer in Blackheath? One-to-one coaching with Karolina in a completely private studio, plus a full nutrition plan. Free intro.",
     datePublished: "2026-11-02",
-    dateModified: "2026-11-02",
+    dateModified: "2026-11-05",
     readingMinutes: 4,
     excerpt:
       "One-to-one coaching with Karolina in a completely private Blackheath studio: what it involves, perimenopause support, a full nutrition plan and prices.",
@@ -49,7 +49,7 @@ export const posts: Post[] = [
     sections: [
       {
         paragraphs: [
-          "Looking for a female personal trainer in Blackheath? KD Personal Training is founded and led by Karolina, who has coached Blackheath locals one client at a time since 2016. Every session takes place in a completely private studio on Lee Road, two minutes' walk from Blackheath station, with nobody else on the floor but you and your coach.",
+          "Looking for a female personal trainer in Blackheath? KD Personal Training is founded and led by Karolina, who has coached Blackheath locals one client at a time since 2016. Every session takes place in a completely private studio on Montpelier Vale, three minutes' walk from Blackheath station, with nobody else on the floor but you and your coach.",
           "We are not a women-only gym, and we won't pretend to be: we coach men, women and couples. But if what you want is a female coach and a space where nobody is watching, this guide explains what training with Karolina involves, from your free first session to the nutrition plan that comes with your training.",
         ],
       },
@@ -121,7 +121,7 @@ export const posts: Post[] = [
         h2: "Prices and how to book",
         paragraphs: [
           "A single one-to-one session is £80, and a five-session block is £400. Longer blocks bring the price down: £600 for eight (£75 a session) and £700 for ten (£70 a session). All prices are [published on our pricing page](/pricing-plans/).",
-          "The studio is on the first floor of 5 Lee Road, Blackheath, with clients coming in from Greenwich, Lewisham, Lee and across south-east London. [Book your free 30-minute introductory session](/contact-us/) and meet Karolina before you decide anything.",
+          "The studio is at 35 Montpelier Vale, in the heart of Blackheath Village, with clients coming in from Greenwich, Lewisham, Lee and across south-east London. [Book your free 30-minute introductory session](/contact-us/) and meet Karolina before you decide anything.",
         ],
       },
     ],
@@ -136,7 +136,7 @@ export const posts: Post[] = [
     metaDescription:
       "Weight loss personal training in Blackheath: a private studio, strength-led training, a full nutrition plan and no crash promises. Free 30-minute intro.",
     datePublished: "2026-10-31",
-    dateModified: "2026-10-31",
+    dateModified: "2026-11-05",
     readingMinutes: 5,
     excerpt:
       "Strength-led training in a completely private Blackheath studio, a full nutrition plan and no crash-diet promises. How weight loss training with us works.",
@@ -212,7 +212,7 @@ export const posts: Post[] = [
         h2: "What it costs and how to start",
         paragraphs: [
           "A single one-to-one session is £80, and a five-session block is £400. Longer blocks bring the price down: £600 for eight (£75 a session) and £700 for ten (£70 a session). If you would rather do it with a partner or friend, [couples training](/blackheath-couples-personal-training/) is £100 for the two of you, or £45 each per session on a ten-session block. Everything is [published on our pricing page](/pricing-plans/), and our [guide to personal trainer costs in Blackheath](/blackheath-personal-trainer-cost/) explains how to compare value.",
-          "The studio is on the first floor of 5 Lee Road, two minutes' walk from Blackheath station, with clients coming in from Greenwich, Lewisham, Lee and across south-east London. [Book your free 30-minute introductory session](/contact-us/), tell us what you want to change, and we will show you how we would approach it, with no pressure and no obligation.",
+          "The studio is at 35 Montpelier Vale, three minutes' walk from Blackheath station, with clients coming in from Greenwich, Lewisham, Lee and across south-east London. [Book your free 30-minute introductory session](/contact-us/), tell us what you want to change, and we will show you how we would approach it, with no pressure and no obligation.",
         ],
       },
     ],
@@ -224,7 +224,7 @@ export const posts: Post[] = [
     metaDescription:
       "Personal trainer cost in Blackheath: £80 a session, £70 a session on a block of ten, couples from £45 each. Our published prices and how to compare value.",
     datePublished: "2026-10-11",
-    dateModified: "2026-10-11",
+    dateModified: "2026-11-05",
     readingMinutes: 6,
     excerpt:
       "What personal training really costs in Blackheath: our published prices, what drives PT rates, the hidden costs of the cheaper route and how to compare value fairly.",
@@ -294,7 +294,7 @@ export const posts: Post[] = [
       {
         h2: "The simplest way to judge the price: a free first session",
         paragraphs: [
-          "Every new client starts with a free 30-minute introductory session at our first-floor studio on Lee Road, [two minutes' walk from Blackheath station](/location/). We talk through your goals, check how you move and show you the studio. No pressure, no obligation — you see the room and the coaching before you spend anything.",
+          "Every new client starts with a free 30-minute introductory session at our studio on Montpelier Vale, [three minutes' walk from Blackheath station](/location/). We talk through your goals, check how you move and show you the studio. No pressure, no obligation — you see the room and the coaching before you spend anything.",
           "Clients come to us from Greenwich, Lewisham, Lee and across south-east London, and our [full price list](/pricing-plans/) is always published. When you are ready, [book your free introductory session](/contact-us/) and we will tell you honestly which option suits you best.",
         ],
       },
@@ -307,7 +307,7 @@ export const posts: Post[] = [
     metaDescription:
       "Looking for a personal trainer for a bad back or knee pain in Blackheath? How adapted strength work may help, and when to see your GP or physio first.",
     datePublished: "2026-10-11",
-    dateModified: "2026-10-11",
+    dateModified: "2026-11-05",
     readingMinutes: 6,
     excerpt:
       "Avoiding exercise because of a stiff back or sore knees? How adapted, coached training may help you move more comfortably, and when to see your GP or physio first.",
@@ -366,7 +366,7 @@ export const posts: Post[] = [
         h2: "Choosing a personal trainer for bad back or knee pain in Blackheath",
         paragraphs: [
           "Whoever you train with, look for someone who asks about your history and your clinician's advice before you lift anything, adapts exercises rather than telling you to push through, and is honest about their limits. Karolina, our founder and head coach, is a degree-qualified personal trainer with over 10 years' experience helping Blackheath clients, and if we think you need clinical input before training, we'll say so.",
-          "Modified exercises can feel awkward in a busy gym, where it's tempting to copy the person next to you. Our [private studio in Blackheath village](/gym/) is two minutes' walk from the station: one client, one coach, nobody watching. Technique is corrected in real time, and loads are matched to how you're moving that day.",
+          "Modified exercises can feel awkward in a busy gym, where it's tempting to copy the person next to you. Our [private studio in Blackheath village](/gym/) is three minutes' walk from the station: one client, one coach, nobody watching. Technique is corrected in real time, and loads are matched to how you're moving that day.",
         ],
       },
       {
@@ -398,7 +398,7 @@ export const posts: Post[] = [
     metaDescription:
       "Getting back into exercise after a long break in Blackheath? A sensible first month, the mistakes to avoid and why a private studio helps. Free 30-min intro.",
     datePublished: "2026-10-11",
-    dateModified: "2026-10-11",
+    dateModified: "2026-11-05",
     readingMinutes: 6,
     excerpt:
       "Restarting after years away can feel harder than starting. How to avoid the week-one mistakes and build a first month that sticks, in a private Blackheath studio.",
@@ -473,7 +473,7 @@ export const posts: Post[] = [
       {
         h2: "How to take the first step",
         paragraphs: [
-          "The studio is on the first floor of 5 Lee Road, in the heart of Blackheath village and two minutes' walk from Blackheath station, which makes it easy to fit in before work, after the school run or on a lunch break. Sessions are by appointment, so contact us for current availability. Clients come to us from Greenwich, Lewisham, Lee and right across south-east London.",
+          "The studio is at 35 Montpelier Vale, in the heart of Blackheath village and three minutes' walk from Blackheath station, which makes it easy to fit in before work, after the school run or on a lunch break. Sessions are by appointment, so contact us for current availability. Clients come to us from Greenwich, Lewisham, Lee and right across south-east London.",
           "Your first 30 minutes are free. [Book your free introductory session](/contact-us/), tell us how long it has been, and we will plan a restart around the life you have now. If you would like to read more first, see how [one-to-one personal training in Blackheath](/1-to-1-training/) works, or check [our published prices](/pricing-plans/): single sessions are £80, with lower per-session prices on 8- and 10-session blocks.",
         ],
       },
@@ -486,7 +486,7 @@ export const posts: Post[] = [
     metaDescription:
       "Looking for a personal trainer for over-50s near Greenwich? A private 1-to-1 studio just up the hill in Blackheath village. Your first 30 minutes are free.",
     datePublished: "2026-10-11",
-    dateModified: "2026-10-11",
+    dateModified: "2026-11-05",
     readingMinutes: 5,
     excerpt:
       "A private studio for Greenwich's over-50s and over-60s, just up the hill in Blackheath village: strength, balance and confidence, with nobody watching.",
@@ -494,7 +494,7 @@ export const posts: Post[] = [
     sections: [
       {
         paragraphs: [
-          "If you're looking for a personal trainer for over-50s in Greenwich, here's the honest starting point: our studio isn't in Greenwich itself. It's just up the hill in Blackheath village, two minutes' walk from Blackheath station. From Greenwich it's a short bus ride or drive, or a walk up through Greenwich Park and across the heath.",
+          "If you're looking for a personal trainer for over-50s in Greenwich, here's the honest starting point: our studio isn't in Greenwich itself. It's just up the hill in Blackheath village, three minutes' walk from Blackheath station. From Greenwich it's a short bus ride or drive, or a walk up through Greenwich Park and across the heath.",
           "What you'll find there is a completely private studio: one client, one coach, no members and no one watching. Our [Fitness for 50+ programme](/fitness-for-50/) is built around strength, mobility, balance and confidence for your 50s, 60s and beyond, whatever your starting level. Many of our over-50s clients hadn't set foot in a gym for decades before their first session, and your first 30 minutes are free.",
         ],
       },
@@ -556,7 +556,7 @@ export const posts: Post[] = [
         h2: "Getting to Blackheath village from Greenwich",
         paragraphs: [
           "Greenwich Park adjoins the heath, so on a fine day you can walk up through the park and across the heath into the village. Otherwise, buses run through the village from Greenwich, and there's on-street parking nearby if you'd rather drive. From most nearby areas the trip is 10 to 20 minutes door to door.",
-          "We're on the first floor of 5 Lee Road, Blackheath, London SE3 9RQ. If access is a concern, mention it when you get in touch and we'll talk it through. Full directions are on our [find us page](/location/), and we've also written about [training in Blackheath when you live in Greenwich, Lewisham or Lee](/personal-trainer-near-greenwich-lewisham-lee/).",
+          "We're at 35 Montpelier Vale, Blackheath, London SE3 0TJ. If access is a concern, mention it when you get in touch and we'll talk it through. Full directions are on our [find us page](/location/), and we've also written about [training in Blackheath when you live in Greenwich, Lewisham or Lee](/personal-trainer-near-greenwich-lewisham-lee/).",
         ],
       },
       {
@@ -578,7 +578,7 @@ export const posts: Post[] = [
     metaDescription:
       "Couples personal training in Blackheath: two individual programmes inside one private session, from £45 each. How it works when you're at different levels.",
     datePublished: "2026-09-21",
-    dateModified: "2026-09-21",
+    dateModified: "2026-11-05",
     readingMinutes: 6,
     excerpt:
       "Two people, two programmes, one private studio — and a lower cost per person than training alone. How couples training actually works in Blackheath.",
@@ -607,7 +607,7 @@ export const posts: Post[] = [
       {
         h2: "What a shared session looks like in the studio",
         paragraphs: [
-          "Our studio sits in the heart of Blackheath village, two minutes' walk from the station, and it is [completely private](/what-is-a-private-gym/) — no members, no crowds. For your hour the whole floor belongs to the two of you: squat rack, smith machine, cable pulley system, the Monster G9 rig, assault bike and rower, plus free weights, kettlebells and mobility kit.",
+          "Our studio sits in the heart of Blackheath village, three minutes' walk from the station, and it is [completely private](/what-is-a-private-gym/) — no members, no crowds. For your hour the whole floor belongs to the two of you: squat rack, smith machine, cable pulley system, the Monster G9 rig, assault bike and rower, plus free weights, kettlebells and mobility kit.",
           "That privacy matters more for couples than for anyone else. Training together means one of you will fail a rep in front of the other, ask a question you would not ask in a busy gym, or try something new and look awkward doing it. With nobody else in the room, that stops being a reason to avoid the session.",
         ],
       },
@@ -648,7 +648,7 @@ export const posts: Post[] = [
     metaDescription:
       "What a private gym actually is: one client at a time, the whole floor and a dedicated coach. How it differs from commercial and boutique gyms.",
     datePublished: "2026-09-16",
-    dateModified: "2026-09-16",
+    dateModified: "2026-11-05",
     readingMinutes: 6,
     excerpt:
       "No members, no queues, no audience — just you, a coach and the whole floor. Here's what a private gym actually is, and who it genuinely suits.",
@@ -717,7 +717,7 @@ export const posts: Post[] = [
         h2: "How to try one",
         paragraphs: [
           "The only reliable way to know whether training privately suits you is to stand in the room. Every new client at KD starts with a [free 30-minute introductory session](/contact-us/): we talk through your goals and history, look at how you move, and show you the studio — no pressure and no obligation either way.",
-          "We are [two minutes from Blackheath station](/location/) in the heart of the village, with clients travelling in from Greenwich, Lewisham, Lee, Charlton and across south-east London. If the idea of a whole training floor to yourself sounds like the thing that has been missing, come and see what it feels like.",
+          "We are [on Montpelier Vale, three minutes from Blackheath station](/location/), in the heart of the village, with clients travelling in from Greenwich, Lewisham, Lee, Charlton and across south-east London. If the idea of a whole training floor to yourself sounds like the thing that has been missing, come and see what it feels like.",
         ],
       },
     ],
@@ -732,7 +732,7 @@ export const posts: Post[] = [
     metaDescription:
       "Every gym in and around Blackheath compared — budget chains, council leisure centres, boutique studios and private training. An honest local guide.",
     datePublished: "2026-08-26",
-    dateModified: "2026-08-26",
+    dateModified: "2026-11-05",
     readingMinutes: 6,
     excerpt:
       "Budget chains, council pools, boutique studios — and one completely private training floor. Here's the honest map of your options in and around Blackheath.",
@@ -747,7 +747,7 @@ export const posts: Post[] = [
       {
         h2: "The surprise: there's no big gym in Blackheath itself",
         paragraphs: [
-          "Here's the thing most people don't realise until they start looking: none of the big-name gyms actually operate in Blackheath Village or SE3. Every chain gym \"in Blackheath\" is really in Lewisham, Charlton or Greenwich — a 25–40 minute walk or a bus ride from the village. What Blackheath itself offers is smaller and more personal: a cluster of boutique Pilates and yoga studios, and our own private personal training studio two minutes from the station.",
+          "Here's the thing most people don't realise until they start looking: none of the big-name gyms actually operate in Blackheath Village or SE3. Every chain gym \"in Blackheath\" is really in Lewisham, Charlton or Greenwich — a 25–40 minute walk or a bus ride from the village. What Blackheath itself offers is smaller and more personal: a cluster of boutique Pilates and yoga studios, and our own private personal training studio on Montpelier Vale, three minutes from the station.",
         ],
       },
       {
@@ -773,7 +773,7 @@ export const posts: Post[] = [
       {
         h2: "The private studio option",
         paragraphs: [
-          "And then there's the model we chose to build: a [completely private training studio](/gym/) in the heart of the village, two minutes from Blackheath station. No members, no crowds, no queues — every session is one client (or one couple) and one coach, with the whole floor and all the kit (squat rack, smith machine, cable system, the Monster G9 rig, free weights) dedicated to you for the hour.",
+          "And then there's the model we chose to build: a [completely private training studio](/gym/) in the heart of the village, three minutes from Blackheath station. No members, no crowds, no queues — every session is one client (or one couple) and one coach, with the whole floor and all the kit (squat rack, smith machine, cable system, the Monster G9 rig, free weights) dedicated to you for the hour.",
           "Who it genuinely suits: people who want coached results rather than gym access — beginners who don't want an audience, [couples training together](/couples-training/), adults [rebuilding strength in their 50s and beyond](/fitness-for-50/), and anyone whose previous memberships quietly lapsed because nobody noticed whether they turned up. If a £20-a-month chain membership you actually use every week is working for you — honestly, keep it. If what you're really buying is a plan, a coach and accountability, that's [what we do all day](/1-to-1-training/).",
         ],
       },
@@ -781,7 +781,7 @@ export const posts: Post[] = [
         h2: "How to choose",
         paragraphs: [
           "Ask yourself one question: do you need access, or do you need coaching? Self-motivated with solid technique — take a chain, the value is real. Swimmer or class-lover — take a leisure centre. Devoted to a discipline — the village boutiques are excellent. But if what's been missing is a programme built for you and someone making sure it happens, try a private studio before you sign another 12 months of the same.",
-          "The easy way to find out: every new KD client starts with a [free 30-minute introductory session](/contact-us/) — see the studio, talk through your goals, and feel what a completely private floor is like. Prices are [published openly](/pricing-plans/), and we're [two minutes from the station](/location/).",
+          "The easy way to find out: every new KD client starts with a [free 30-minute introductory session](/contact-us/) — see the studio, talk through your goals, and feel what a completely private floor is like. Prices are [published openly](/pricing-plans/), and we're [three minutes from the station](/location/).",
         ],
       },
     ],
@@ -793,7 +793,7 @@ export const posts: Post[] = [
     metaDescription:
       "Why clients from Greenwich, Lewisham, Lee, Charlton and across south-east London train at a completely private studio in Blackheath village.",
     datePublished: "2026-08-07",
-    dateModified: "2026-08-07",
+    dateModified: "2026-11-05",
     readingMinutes: 5,
     excerpt:
       "Most of our clients don't live in Blackheath itself — they travel in from Greenwich, Lewisham, Lee and beyond. Here's why a private studio is worth a ten-minute journey.",
@@ -802,7 +802,7 @@ export const posts: Post[] = [
       {
         paragraphs: [
           "Search for a personal trainer in south-east London and you'll mostly find two options: a coach who works out of a busy commercial gym, or an online plan with no coach in the room at all. There is a third option, and it's the reason most of our clients travel to us from outside Blackheath itself: a completely private studio, one client at a time.",
-          "KD Personal Training sits in the heart of Blackheath village, two minutes' walk from Blackheath station. That puts us within a short journey of most of south-east London — and it means the whole floor is yours for every session: no members, no queues for equipment, no one watching.",
+          "KD Personal Training sits at 35 Montpelier Vale, in the heart of Blackheath village, three minutes' walk from Blackheath station. That puts us within a short journey of most of south-east London — and it means the whole floor is yours for every session: no members, no queues for equipment, no one watching.",
         ],
       },
       {
@@ -841,7 +841,7 @@ export const posts: Post[] = [
     metaDescription:
       "What actually happens in a Movement & Pain Consultation at our private Blackheath studio — screening, coached exercises and a written programme to take away.",
     datePublished: "2026-08-07",
-    dateModified: "2026-08-07",
+    dateModified: "2026-11-05",
     readingMinutes: 5,
     excerpt:
       "Ongoing stiffness or discomfort rarely fixes itself — but it often responds well to the right strength and mobility work. Here's exactly what the consultation involves.",
@@ -878,7 +878,7 @@ export const posts: Post[] = [
         h2: "What happens afterwards",
         paragraphs: [
           "You leave with a written programme you can run yourself — at home, in your own gym, or with us. Some clients use the consultation as a one-off reset; others carry the work into regular [1-to-1 personal training](/1-to-1-training/) so the programme keeps evolving as they improve. Many of our [over-50s clients](/fitness-for-50/) start exactly this way.",
-          "The consultation costs £300, runs up to two hours, and takes place in a completely private studio two minutes from Blackheath station — with clients joining us from Greenwich, Lewisham, Lee and across south-east London. [Book your consultation](/contact-us/) and take the first step towards moving better, becoming stronger and living with less pain.",
+          "The consultation costs £300, runs up to two hours, and takes place in a completely private studio three minutes from Blackheath station — with clients joining us from Greenwich, Lewisham, Lee and across south-east London. [Book your consultation](/contact-us/) and take the first step towards moving better, becoming stronger and living with less pain.",
         ],
       },
     ],
@@ -1057,7 +1057,7 @@ export const posts: Post[] = [
     metaDescription:
       "Boutique private studio or big-chain gym? An honest comparison of crowds, coaching and cost — and who each one genuinely suits. From KD in Blackheath.",
     datePublished: "2026-06-09",
-    dateModified: "2026-06-09",
+    dateModified: "2026-11-05",
     readingMinutes: 6,
     excerpt:
       "A commercial gym membership costs less per month — but which option actually delivers results? An honest comparison from a private studio in Blackheath.",
@@ -1130,7 +1130,7 @@ export const posts: Post[] = [
       {
         h2: "Try the difference",
         paragraphs: [
-          "If you've read this far, you probably already know which side you're on. The clean way to find out for certain: book a free 30-minute introductory session at our Blackheath studio — two minutes from the station, completely private, no obligation. Worst case, you've lost half an hour and gained a clear answer.",
+          "If you've read this far, you probably already know which side you're on. The clean way to find out for certain: book a free 30-minute introductory session at our Blackheath studio — three minutes from the station, completely private, no obligation. Worst case, you've lost half an hour and gained a clear answer.",
         ],
       },
     ],
@@ -1146,7 +1146,7 @@ export const posts: Post[] = [
     metaDescription:
       "Looking for a personal trainer in Blackheath? Seven questions that separate great coaches from expensive disappointments — trial sessions, programming, reviews, pricing and where you'll actually train.",
     datePublished: "2026-05-18",
-    dateModified: "2026-05-18",
+    dateModified: "2026-11-05",
     readingMinutes: 6,
     excerpt:
       "Blackheath has no shortage of trainers. These seven questions will tell you within one conversation whether a coach is worth your money — and your next six months.",
@@ -1204,8 +1204,8 @@ export const posts: Post[] = [
       {
         h2: "The Blackheath advantage",
         paragraphs: [
-          "One local note: convenience is a results multiplier. A trainer two minutes from Blackheath station fits before work, after the school run, or into a lunch break — and sessions that fit your life are sessions that happen.",
-          "If you'd like to put us through the seven questions, we'd genuinely enjoy it. Book a free 30-minute introductory session at our private studio on Lee Road — we'll talk goals, check how you move, and you'll leave with an honest answer either way.",
+          "One local note: convenience is a results multiplier. A trainer three minutes from Blackheath station fits before work, after the school run, or into a lunch break — and sessions that fit your life are sessions that happen.",
+          "If you'd like to put us through the seven questions, we'd genuinely enjoy it. Book a free 30-minute introductory session at our private studio on Montpelier Vale — we'll talk goals, check how you move, and you'll leave with an honest answer either way.",
         ],
       },
     ],

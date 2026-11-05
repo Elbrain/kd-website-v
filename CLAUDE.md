@@ -16,8 +16,10 @@ V2 must be a **completely different visual design with exactly the same content*
    redirects in `next.config.ts` stay as they are. Redesign = components, layouts, globals.css.
 2. **No relocation narrative anywhere.** The gym is presented as simply established
    (`moveStatus: CURRENT_LOCATION` in `src/data/business.ts`). Never mention moving,
-   September 2026, "new premises", waiting lists. NAP stays Lee Road until the client
-   confirms the real new address — never invent addresses, prices, room specs, testimonials.
+   September 2026, "new premises", waiting lists. NAP (client-confirmed final address,
+   Nov 2026): **35 Montpelier Vale, Blackheath, London SE3 0TJ** — set only in
+   `business.currentAddress`; never mention the old Lee Road premises in live copy. Never
+   invent addresses, prices, room specs, testimonials.
 3. The "new gym" photo (`public/images/new-gym.png`) is an owner-supplied AI render —
    always keep a discreet "Interior visualisation" caption on it.
 4. British English only. No fitness calculators. Mobile-first, no horizontal overflow.

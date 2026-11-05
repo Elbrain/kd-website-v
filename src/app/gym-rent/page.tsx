@@ -122,7 +122,7 @@ export default function GymRentPage() {
               <p className="text-stone">
                 A clean, well-equipped studio suitable for individual workouts and coached
                 sessions alike: squat rack, Monster G9 rig, cable system, assault bike, rower,
-                full free-weight range. Two minutes from Blackheath station — easy for you, easy
+                full free-weight range. Three minutes&apos; walk from Blackheath station — easy for you, easy
                 for your clients.
               </p>
               <p className="mt-4 text-stone">

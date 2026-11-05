@@ -102,7 +102,7 @@ export default function RoomsToRentPage() {
               practitioners to build natural working relationships alongside the gym.
             </p>
             <p className="mt-4 text-stone">
-              Location: Blackheath, London — full address provided when you enquire.
+              Location: {business.currentAddress.display}.
             </p>
             <ul className="mt-6 space-y-2.5">
               {[

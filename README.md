@@ -41,9 +41,10 @@ email delivery is configured).
 
 `src/data/business.ts` → `moveStatus`:
 
-- `CURRENT_LOCATION` — no move messaging anywhere.
-- `MOVING_SOON` *(current)* — Lee Road stays the operational address in copy, footer, contact
-  and structured data; the expansion is announced with September 2026 messaging; rooms pages
+- `CURRENT_LOCATION` *(current)* — no move messaging anywhere; `currentAddress`
+  (35 Montpelier Vale, Blackheath, London SE3 0TJ) is the NAP in copy, footer, contact,
+  map and structured data.
+- `MOVING_SOON` — `currentAddress` stays operational while a move is announced; rooms pages
   run in waiting-list mode.
 - `NEW_LOCATION_OPEN` — flips the NAP, schema, map and copy to the new address (fill in
   `futureAddress` first). See `docs/location-migration-plan.md` for the full cutover checklist.

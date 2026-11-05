@@ -10,16 +10,15 @@ import { faqSchema } from "@/lib/schema";
 import { FaqList, SectionHeading, Tbc, TrialCta } from "@/components/ui";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Find Us in Blackheath Village, London SE3 | KD",
-  description:
-    "KD Personal Training, 1st Floor, 5 Lee Road, Blackheath SE3 9RQ — two minutes from the station. Serving Greenwich, Lewisham, Lee and beyond.",
+  title: "Find Us: 35 Montpelier Vale, Blackheath SE3 0TJ | KD",
+  description: `${business.name}, ${business.currentAddress.display} — three minutes' walk from Blackheath station. Serving Greenwich, Lewisham and Lee.`,
   path: "/location/",
 });
 
 const locationFaqs = [
   {
     q: "Where exactly is the studio?",
-    a: "We're on the first floor of 5 Lee Road, Blackheath, London SE3 9RQ — in the heart of Blackheath village, about a two-minute walk from Blackheath station (trains to London Bridge, Charing Cross and Cannon Street).",
+    a: `We're at ${business.currentAddress.display} — in the heart of Blackheath Village, about a three-minute walk from Blackheath station (trains to London Bridge, Charing Cross and Cannon Street).`,
   },
   {
     q: "Which areas do you cover?",
@@ -42,7 +41,7 @@ export default function LocationPage() {
         <div className="mx-auto max-w-7xl px-4 pb-16 pt-10 sm:px-6">
           <Breadcrumbs tone="dark" crumbs={[{ name: "Find Us", path: "/location/" }]} />
           <p className="eyebrow mb-4 text-gold">Blackheath, London SE3</p>
-          <h1 className="display max-w-3xl text-3xl text-paper sm:text-[2.6rem]">Find us</h1>
+          <h1 className="display max-w-3xl text-3xl text-paper sm:text-[2.6rem]">Find us in Blackheath Village</h1>
           {isMoving() && (
             <p className="mt-5 max-w-2xl text-lg text-mist">
               One business, one area — and during our expansion, two addresses to know about.
@@ -74,11 +73,11 @@ export default function LocationPage() {
               </li>
               <li className="flex gap-3">
                 <span aria-hidden className="mt-3 h-px w-4 shrink-0 bg-brass" />
-                First-floor studio; on-street parking nearby
+                On-street parking in the streets around the village
               </li>
             </ul>
             <div className="mt-6 flex flex-wrap gap-4">
-              <a href={business.googleMapsUrl} target="_blank" rel="noopener" className="btn btn-primary">
+              <a href={business.directionsUrl} target="_blank" rel="noopener" className="btn btn-primary">
                 Directions
               </a>
               <a href={`tel:${business.phone}`} className="btn btn-outline">
@@ -145,7 +144,7 @@ export default function LocationPage() {
           <p className="max-w-3xl text-stone">
             The studio sits in the heart of Blackheath village, and our clients travel from
             right across south-east London — everywhere within five or six miles of the
-            village. With Blackheath station two minutes away and good bus links, most people
+            village. With Blackheath station a three-minute walk away and good bus links, most people
             reach us within a quarter of an hour — before work, after the school run or on a
             lunch break.
           </p>
@@ -166,9 +165,9 @@ export default function LocationPage() {
           <SectionHeading eyebrow="Map" title="Getting here" />
           <div className="overflow-hidden border border-line">
             <iframe
-              title="Map showing KD Personal Training at 5 Lee Road, Blackheath"
+              title={`Map showing ${business.name} at ${business.currentAddress.display}`}
               src={`https://www.google.com/maps?q=${encodeURIComponent(
-                "KD Personal Training, 5 Lee Road, Blackheath, London SE3 9RQ",
+                business.currentAddress.display,
               )}&output=embed`}
               className="h-[420px] w-full border-0"
               loading="lazy"

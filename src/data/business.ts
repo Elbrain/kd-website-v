@@ -42,24 +42,24 @@ export const business = {
    * contact page, footer and all structured data.
    *
    * CURRENT_LOCATION → no move messaging
-   * MOVING_SOON      → Lee Road is the operational address; new premises announced
+   * MOVING_SOON      → currentAddress is operational; new premises announced
    * NEW_LOCATION_OPEN→ new premises becomes the NAP everywhere
    *
    * July 2026, client decision: present the gym as simply established —
-   * no relocation narrative anywhere on the site. The published NAP stays
-   * Lee Road until the new address is confirmed (never invent an address);
-   * when it is, fill futureAddress and switch to NEW_LOCATION_OPEN.
+   * no relocation narrative anywhere on the site.
+   * November 2026: client confirmed the final address, 35 Montpelier Vale —
+   * published as the one and only NAP (no mention of the old premises).
    */
   moveStatus: "CURRENT_LOCATION" as MoveStatus,
 
-  /** Verified current operating address — the published NAP until the move completes. */
+  /** Verified operating address — the published NAP. Keep identical to the Google Business Profile. */
   currentAddress: {
-    line1: "1st Floor, 5 Lee Road",
+    line1: "35 Montpelier Vale",
     locality: "Blackheath",
     region: "London",
-    postcode: "SE3 9RQ",
+    postcode: "SE3 0TJ",
     country: "GB",
-    display: "1st Floor, 5 Lee Road, Blackheath, London SE3 9RQ",
+    display: "35 Montpelier Vale, Blackheath, London SE3 0TJ",
   } satisfies Address,
 
   /**
@@ -85,16 +85,20 @@ export const business = {
   whatsapp: "https://wa.me/447772923803",
   email: "info@kdpersonaltraining.co.uk",
 
-  /** Verified coordinates of the current studio. */
-  geo: { lat: 51.4649566, lng: 0.0092286 },
+  /** Coordinates of the 35 Montpelier Vale building (OpenStreetMap building footprint). */
+  geo: { lat: 51.4673443, lng: 0.0081179 },
 
-  googleMapsUrl:
-    "https://www.google.com/maps/place/KD+PERSONAL+TRAINING/@51.4649566,0.0070399,17z/data=!3m1!4b1!4m7!3m6!1s0x0:0x73856cd7b3d1df87!8m2!3d51.4649566!4d0.0092286!9m1!1b1",
-  /** Same link — the reviews panel of the Google Business Profile. */
+  /** Google Business Profile by its place ID (cid) — stays valid when the profile's address changes. */
+  googleMapsUrl: "https://www.google.com/maps?cid=8324179159954874247",
+  /** Turn-by-turn directions to the street address itself. */
+  directionsUrl:
+    "https://www.google.com/maps/dir/?api=1&destination=35+Montpelier+Vale%2C+Blackheath%2C+London+SE3+0TJ",
+  /** The reviews panel of the Google Business Profile (resolved by the place ID in `1s…`). */
   googleReviewsUrl:
-    "https://www.google.com/maps/place/KD+PERSONAL+TRAINING/@51.4649566,0.0070399,17z/data=!3m1!4b1!4m7!3m6!1s0x0:0x73856cd7b3d1df87!8m2!3d51.4649566!4d0.0092286!9m1!1b1",
+    "https://www.google.com/maps/place/KD+PERSONAL+TRAINING/@51.4673443,0.0081179,17z/data=!3m1!4b1!4m7!3m6!1s0x0:0x73856cd7b3d1df87!8m2!3d51.4673443!4d0.0081179!9m1!1b1",
 
-  nearestStation: "Blackheath station (2-minute walk)",
+  /** ~180 m from the station entrance as the crow flies — about a 3-minute walk. */
+  nearestStation: "Blackheath station (3-minute walk)",
 
   /**
    * Genuine service area — where clients actually travel from (adjacent
@@ -123,8 +127,8 @@ export const business = {
     "Canary Wharf",
     "Dulwich",
   ],
-  parkingInfo: "On-street parking nearby; TODO_CONFIRM_BUILDING_AMENITIES for the new premises",
-  accessibilityInfo: "Current studio is on the first floor. TODO_CONFIRM_ACCESSIBILITY for the new premises",
+  parkingInfo: "On-street parking in the streets around Blackheath Village",
+  accessibilityInfo: "TODO_CONFIRM_ACCESSIBILITY (floor / step-free access at 35 Montpelier Vale)",
 
   /** Never published on the old site — confirm before rendering as fact. */
   openingHours: null as null | { day: string; opens: string; closes: string }[],

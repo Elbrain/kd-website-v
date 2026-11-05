@@ -1,5 +1,10 @@
 # Location Migration Plan — Lee Road → New Blackheath Premises
 
+> **Resolved — November 2026.** The client confirmed the final address:
+> **35 Montpelier Vale, Blackheath, London SE3 0TJ**. It is now `business.currentAddress`
+> (site stays in `CURRENT_LOCATION` — presented as simply established, no move narrative).
+> The plan below is kept for history.
+
 **Current location:** 1st Floor, 5 Lee Road, Blackheath, London SE3 9RQ (verified live NAP)
 **Future location:** `TODO_CONFIRM_NEW_ADDRESS` — Blackheath (same locality — confirmed by owner brief)
 **Expected opening:** September 2026 (`TODO_CONFIRM_OPENING_DATE` for the exact date)
